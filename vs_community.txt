@@ -1,0 +1,2 @@
+<a>vs_community.exe --layout "indirilecek dizin" --lang en-US tr-TR
+vs community exesinin olduğıu yerde bunu çalıştınırız.</a>
