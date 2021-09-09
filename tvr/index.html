@@ -1,0 +1,79 @@
+<html>
+<head>
+    <meta name="google-site-verification" content="slrW544StiiGPgULPcN6D3hvx-BCNi8ch9PXDwCceJk" />
+    <script type="text/javascript" src="static/decode.js"></script>
+    <script type="text/javascript" src="static/sprintf.js"></script>
+    <script type="text/javascript">
+
+    function decode() {
+        var tag = $('tag_field').value
+        var value = $('value_field').value
+        var tag_data = tags[tag]
+        var errors = tag_data.validate(value)
+        if (errors) {
+            $('display').innerHTML = errors;
+        } else {
+            $('display').innerHTML = tag_data.decode(value);
+        }
+    }   
+
+    function $(id){
+      return document.getElementById(id);
+    }
+
+    function setMaxLength() {
+        var value_field = $('value_field')
+        var maxLength = tags[$('tag_field').value].field_length
+        value_field.maxLength = maxLength
+        if (value_field.value.length > maxLength) {
+            value_field.value = value_field.value.substr(0, maxLength)
+        }
+    }
+    </script>
+    <style type="text/css">
+html, body {
+   height: 100%;
+}
+div#container {
+   height: auto !important;
+   height: 100%;
+   min-height: 100%;
+}
+      div#footer {
+         margin: -35px 0 0 0;
+         text-align: center;
+         font-size: x-small;
+      }
+   </style>
+   <title>TVR Decoder</title>
+</head>
+<body onload="setMaxLength()">
+    <div id="container"><div id="padding">
+    <form onsubmit="decode();return false">
+    <select id="tag_field" onchange="setMaxLength()">
+        <option value="TVR">TVR</option>
+        <option value="TSI">TSI</option>
+        <option value="AIP">AIP</option>
+        <option value="CVM List">CVM List</option>
+        <option value="CVM Results">CVM Results</option>
+    </select>
+    <input type="text" id="value_field"/>
+    <input type="submit" value="Decode"/>
+    </form>
+    <div id="display">
+    </div>
+    </div></div>
+    <div id="footer">
+        <a href="http://code.google.com/p/tvr-decoder/">Project</a>
+    </div>
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-7717677-1");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+</body>
+</html>
