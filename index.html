@@ -4,7 +4,7 @@
     <title>Abdurrahman Kaan Dikeç</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="keywords" content="Abdurrahman Kaan Dikeç, Kaan Dikeç, Dikeç, Kaan, Abdurrahman, Düzce üniversitesi, duzce universitesi , duzce, düzce , mühendis ,muhendis, engineer, bilgisayar mühendisi, github dikeckaan, abdurrahman kaan, hacker, white hacker, developer, gsi , android rom, istanbul, maltepe, istanbul maltepe, telegram kaandikec, müiad başkanı, müiad, Müstakil Sanayici ve İşadamları Derneği,Müslüman İşadamları Derneği, duzce.edu.tr">
+    <meta name="keywords" content="Abdurrahman Kaan Dikeç, Kaan Dikeç, Dikeç, Kaan, Abdurrahman, Düzce üniversitesi, duzce universitesi , duzce, düzce , mühendis ,muhendis, engineer, bilgisayar mühendisi, github dikeckaan, abdurrahman kaan, hacker, white hacker, developer, gsi , android rom, istanbul, maltepe, istanbul maltepe, telegram kaandikec, müıad başkanı, müıad, Müstakil Sanayici ve İşadamları Derneği,Müssülman İşadamları Derneği, duzce.edu.tr">
     <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <link rel="stylesheet" href="assets/css/main.css">
     <script data-ad-client="ca-pub-2394670619690901" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -14,6 +14,10 @@
         }
         input, button {
             margin: 10px 0;
+        }
+        .honeypot {
+            visibility: hidden;
+            position: absolute;
         }
     </style>
 </head>
@@ -27,14 +31,15 @@
         </header>
 
         <!-- Signup Form -->
-        <form action="https://send.pageclip.co/4b33s4y60r52vKw0joEHc6ruvLSIJSAc/contact" class="pageclip-form" method="post">
+        <form id="contact-form" action="https://send.pageclip.co/4b33s4y60r52vKw0joEHc6ruvLSIJSAc/contact" class="pageclip-form" method="post">
             <input type="email" name="email" placeholder="mail@example.com" required>
             <input type="text" name="subject" placeholder="A contact subject" required>
+            <input type="text" name="honeypot" class="honeypot" value="">
             <button type="submit" class="pageclip-form__submit">
                 <span>Send</span>
             </button>
-            <div class="h-captcha" data-sitekey="8ff30c24-e566-46e6-a4c9-46f71fbd9e03" style="display:none;"></div>
-<script src="https://hcaptcha.com/1/api.js" async defer></script>
+            <div class="h-captcha" data-sitekey="8ff30c24-e566-46e6-a4c9-46f71fbd9e03" ></div>
+            <script src="https://hcaptcha.com/1/api.js" async defer></script>
         </form>
 
         <!-- Google Ads -->
@@ -62,5 +67,26 @@
     <!-- Scripts -->
     <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            var honeypot = document.querySelector('input[name="honeypot"]').value;
+            if (honeypot) {
+                event.preventDefault();
+                alert('Spam detected!');
+                return;
+            }
+
+            var timestampStart = Date.now();
+            var timestampEnd;
+
+            event.target.addEventListener('submit', function () {
+                timestampEnd = Date.now();
+                if (timestampEnd - timestampStart < 3000) {
+                    event.preventDefault();
+                    alert('Form filled too quickly! Are you a bot?');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
