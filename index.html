@@ -1,12 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Abdurrahman Kaan Dikeç</title>
+    <title>Abdurrahman Kaan Dikeç - Developer, Engineer, Innovator</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="keywords" content="Abdurrahman Kaan Dikeç, Kaan Dikeç, Dikeç, Kaan, Abdurrahman, Düzce üniversitesi, duzce universitesi , duzce, düzce , mühendis ,muhendis, engineer, bilgisayar mühendisi, github dikeckaan, abdurrahman kaan, hacker, white hacker, developer, gsi , android rom, istanbul, maltepe, istanbul maltepe, telegram kaandikec, müsiad başkanı, müsiad, Müstakil Sanayici ve İşadamları Derneği,Müssülman İşadamları Derneği, duzce.edu.tr">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Official website of Abdurrahman Kaan Dikeç. Explore projects, achievements, and contact details.">
+    <meta name="keywords" content="Abdurrahman Kaan Dikeç, Developer, Engineer, Innovator, Technology, Projects">
+    <meta name="author" content="Abdurrahman Kaan Dikeç">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourwebsite.com/">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Abdurrahman Kaan Dikeç - Developer, Engineer, Innovator">
+    <meta property="og:description" content="Explore the official website of Abdurrahman Kaan Dikeç, including projects and contact details.">
+    <meta property="og:url" content="https://yourwebsite.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://yourwebsite.com/assets/images/profile.jpg">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Abdurrahman Kaan Dikeç - Developer, Engineer, Innovator">
+    <meta name="twitter:description" content="Explore the official website of Abdurrahman Kaan Dikeç, including projects and contact details.">
+    <meta name="twitter:image" content="https://yourwebsite.com/assets/images/profile.jpg">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/main.css">
-    <script data-ad-client="ca-pub-2394670619690901" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
     <style>
         .center {
             text-align: center;
@@ -24,28 +44,22 @@
     <div class="center">
         <!-- Header -->
         <header id="header">
-            <h1>KAAN DIKEC&nbsp;</h1>
-            <p>Website under development, please be patient...<br>
-            Check my projects on <a href="https://github.com/dikeckaan" target="_blank">GITHUB</a>.</p>
+            <h1>Abdurrahman Kaan Dikeç</h1>
+            <h2>Developer | Engineer | Innovator</h2>
+            <p>Welcome to my personal website. Explore my projects, skills, and achievements.<br>
+            Check my work on <a href="https://github.com/dikeckaan" target="_blank">GitHub</a>.</p>
         </header>
 
         <!-- Signup Form -->
         <form id="contact-form" action="https://siteform.dikeckaan.workers.dev/" method="post">
             <input type="email" name="email" placeholder="mail@example.com" required>
-            <input type="text" name="subject" placeholder="A contact subject" required>
-            <input type="hidden" name="timestamp" value="<%= Date.now() %>">
+            <input type="text" name="subject" placeholder="Your message subject" required>
+            <input type="hidden" name="formStartTime" value="">
             <input type="text" name="honeypot" class="honeypot" value="">
             <button type="submit">
                 <span>Send</span>
             </button>
         </form>
-
-        <!-- Google Ads -->
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2394670619690901" data-ad-slot="1919732585" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
     </div>
 
     <!-- Footer -->
@@ -57,32 +71,49 @@
             <li><a href="mailto:website@dikec.tk" target="_blank" class="icon fa-envelope"><span class="label">Email</span></a></li>
         </ul>
         <ul class="copyright">
-            <li>Abdurrahman Kaan Dikeç&copy;<script>document.write(new Date().getFullYear());</script> All Rights Reserved.</li>
-            <li>Contact Me Freely On <a href="https://t.me/kaandikec" target="_blank">TELEGRAM</a></li>
+            <li>&copy; <script>document.write(new Date().getFullYear());</script> Abdurrahman Kaan Dikeç. All rights reserved.</li>
+            <li>Contact me via <a href="https://t.me/kaandikec" target="_blank">Telegram</a>.</li>
         </ul>
     </footer>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Abdurrahman Kaan Dikeç",
+      "jobTitle": "Developer, Engineer",
+      "url": "https://yourwebsite.com/",
+      "sameAs": [
+        "https://twitter.com/kaandikec",
+        "https://instagram.com/kaandikec",
+        "https://github.com/dikeckaan"
+      ]
+    }
+    </script>
 
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>
     <script>
-        document.getElementById('contact-form').addEventListener('submit', function (event) {
-            var honeypot = document.querySelector('input[name="honeypot"]').value;
+        const contactForm = document.getElementById('contact-form');
+        const formStartTime = document.querySelector('input[name="formStartTime"]');
+
+        formStartTime.value = Date.now();
+
+        contactForm.addEventListener('submit', function (event) {
+            const honeypot = document.querySelector('input[name="honeypot"]').value;
             if (honeypot) {
                 event.preventDefault();
                 alert('Spam detected!');
                 return;
             }
 
-            var timestampStart = Date.now();
-            var timestampEnd;
-
-            event.target.addEventListener('submit', function () {
-                timestampEnd = Date.now();
-                if (timestampEnd - timestampStart < 3000) {
-                    event.preventDefault();
-                    alert('Form filled too quickly! Are you a bot?');
-                }
-            });
+            const formFilledDuration = Date.now() - parseInt(formStartTime.value, 10);
+            if (formFilledDuration < 3000) { // 3 saniyeden kısa sürede doldurulmuşsa
+                event.preventDefault();
+                alert('Form filled too quickly! Are you a bot?');
+                return;
+            }
         });
     </script>
 </body>
