@@ -1,113 +1,240 @@
+// Debug flag and authorized IP
+const DEBUG_MODE = false; // Enable or disable debug mode
+const ALLOWED_DEBUG_IP = '1.1.1.1'; // IP address allowed to access debug routes
+
+// Time configuration
+const RATE_LIMIT_DURATION_HOURS = 4; // Rate limit duration in hours
+const CLEANUP_OLD_RECORDS_DAYS = 32; // Number of days before old records are cleaned
+
+// KV Namespace Binding
+const kvNamespace = formSubmissionTimes; // KV Namespace for storing form submission data
+
+// Convert durations to milliseconds
+const RATE_LIMIT_DURATION = RATE_LIMIT_DURATION_HOURS * 60 * 60 * 1000; // Rate limit duration in milliseconds
+const CLEANUP_DURATION = CLEANUP_OLD_RECORDS_DAYS * 24 * 60 * 60 * 1000; // Cleanup duration in milliseconds
+
+// Main event listener for fetch events
 addEventListener('fetch', event => {
-  event.respondWith(handleRequest(event.request));
-  event.waitUntil(cleanUpOldRecords()); // Call function to clean up old records in the background
+  event.respondWith(handleRequest(event.request)); // Handle the incoming request
 });
 
-// Debug flag
-const DEBUG_MODE = false; // DEBUG_MODE variable; if true, IP listing is active, if false, it is inactive
-
+// Main request handler
 async function handleRequest(request) {
+  const url = new URL(request.url); // Parse the request URL
+  const clientIP = request.headers.get('cf-connecting-ip'); // Get the client's IP address
+
+  // Handle debug routes
+  if (DEBUG_MODE && clientIP === ALLOWED_DEBUG_IP) {
+    if (url.pathname === '/debug') {
+      return handleDebug(request); // Debug information
+    } else if (url.pathname === '/list-ips') {
+      return listIPs(); // List all IPs stored in KV
+    } else if (url.pathname === '/delete-ip' && request.method === 'POST') {
+      return deleteIP(request); // Delete a specific IP from KV
+    }
+  }
+
+  // Unauthorized debug access
+  if (DEBUG_MODE && url.pathname.startsWith('/debug')) {
+    return new Response('Unauthorized access to debug mode.', { status: 403 });
+  }
+
+  // Main functionality routes
   if (request.method === 'POST') {
-    const formData = await request.formData();
-    const email = formData.get('email'); // Extract the email field from the form data
-    const subject = formData.get('subject'); // Extract the subject field from the form data
-    const honeypot = formData.get('honeypot'); // Honeypot field for spam protection
-
-    // Single variable for time management
-    const RATE_LIMIT_HOURS = 4 ; // Adjustable number of hours, currently set to 4 hour
-
-    // Reject IPv6 Requests
-    const clientIP = request.headers.get('cf-connecting-ip'); // Get client IP address from request headers
-    if (clientIP.includes(':')) { // If the IP address is IPv6, reject the request
-      return new Response('<html><body><p>IPv6 requests are not allowed. Please use an IPv4 connection.</p><button onclick="window.history.back()">Go Back</button></body></html>', { status: 403, headers: { 'Content-Type': 'text/html' } });
-    }
-
-    // Spam Protection: Honeypot and Rate Limiting
-    if (honeypot) { // If honeypot field is filled, it's likely a spam submission
-      return new Response('<html><body><p>Spam detected!</p><button onclick="window.history.back()">Go Back</button></body></html>', { status: 403, headers: { 'Content-Type': 'text/html' } });
-    }
-
-    const currentTimestamp = Date.now(); // Get the current timestamp
-    const RATE_LIMIT_DURATION = RATE_LIMIT_HOURS * 60 * 60 * 1000; // Convert rate limit duration to milliseconds
-    const KV_NAMESPACE = "formSubmissionTimes"; // Namespace for storing submission times in KV
-
-    // Get the last submission time from KV
-    const lastSubmissionTime = await formSubmissionTimes.get(clientIP); // Retrieve the last submission time for the client IP
-    if (lastSubmissionTime) {
-      const timeSinceLastSubmission = currentTimestamp - parseInt(lastSubmissionTime, 10); // Calculate time since last submission
-      if (timeSinceLastSubmission < RATE_LIMIT_DURATION) { // If within rate limit duration, reject the request
-        return new Response('<html><body><p>You can only submit the form once every ' + RATE_LIMIT_HOURS + ' hours.</p><button onclick="window.history.back()">Go Back</button></body></html>', { status: 429, headers: { 'Content-Type': 'text/html' } });
-      }
-    }
-
-    // Store the current submission time
-    await formSubmissionTimes.put(clientIP, currentTimestamp.toString(), { expirationTtl: RATE_LIMIT_HOURS * 60 * 60 }); // Store the current submission time with expiration
-
-    // Telegram Bot Configuration
-    const botToken = 'bottoken'; // Bot token for Telegram API
-    const chatId = 'chatid'; // Chat ID to send the message to
-    const telegramUrl = `https://api.telegram.org/bot${botToken}/sendMessage`; // Telegram API URL
-
-    const message = `New Form Message\nEmail: ${email}\nSubject: ${subject}`; // Message to be sent to Telegram
-
-    // Send to Telegram
-    const telegramResponse = await fetch(telegramUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json' // Set content type to JSON
-      },
-      body: JSON.stringify({
-        chat_id: chatId, // Chat ID to send the message to
-        text: message // Message content
-      })
-    });
-
-    if (telegramResponse.ok) { // If Telegram response is OK, return success message
-      return new Response('<html><body><p>Form submitted successfully!</p><button onclick="window.history.back()">Go Back</button></body></html>', { status: 200, headers: { 'Content-Type': 'text/html' } });
-    } else { // If Telegram response is not OK, return error message
-      return new Response('<html><body><p>An error occurred, please try again!</p><button onclick="window.history.back()">Go Back</button></body></html>', { status: 500, headers: { 'Content-Type': 'text/html' } });
-    }
+    return handleFormSubmission(request); // Handle form submissions
+  } else if (request.method === 'GET' && url.pathname === '/cleanup') {
+    return handleCleanup(); // Handle cleanup of old records
   }
 
-  // IP Listing Endpoint
-  if (DEBUG_MODE && request.method === 'GET' && new URL(request.url).pathname === '/list-ips') {
-    const keysResponse = await formSubmissionTimes.list(); // List all keys from KV
-    if (keysResponse.keys.length === 0) { // If no keys are found, return message
-      return new Response('<html><body><p>No IPs found in KV.</p></body></html>', { status: 200, headers: { 'Content-Type': 'text/html' } });
-    }
-
-    let responseHtml = '<html><body><h3>IPs Stored in KV:</h3><ul>'; // Start HTML response for listing IPs
-    for (const key of keysResponse.keys) { // Loop through all keys and add to response
-      responseHtml += `<li>${key.name}</li>`;
-    }
-    responseHtml += '</ul></body></html>'; // End HTML response
-
-    return new Response(responseHtml, { status: 200, headers: { 'Content-Type': 'text/html' } }); // Return the list of IPs
-  }
-
-  // If method is not allowed, return method not allowed response
-  return new Response('<html><body><p>Method not allowed</p><button onclick="window.history.back()">Go Back</button></body></html>', { status: 405, headers: { 'Content-Type': 'text/html' } });
+  // Method not allowed for other routes
+  return new Response('Method not allowed.', { status: 405 });
 }
 
-// Function to clean up old records from KV
-async function cleanUpOldRecords() {
-  const currentTimestamp = Date.now(); // Get the current timestamp
-  const RATE_LIMIT_HOURS = 4; // Using the same duration here for cleaning up old records
-  
-  // Get all keys from KV
-  const keysResponse = await formSubmissionTimes.list(); // List all keys from KV
-  if (keysResponse.keys.length === 0) { // If no keys are found, exit the function
-    return;
-  }
+// Debug: Display general information
+async function handleDebug(request) {
+  try {
+    const keys = await kvNamespace.list(); // List all keys in KV Namespace
+    const keyValues = [];
 
-  for (const key of keysResponse.keys) {
-    const lastSubmissionTime = await formSubmissionTimes.get(key.name); // Get the last submission time for each key
-    if (lastSubmissionTime) {
-      const timeSinceLastSubmission = currentTimestamp - parseInt(lastSubmissionTime, 10); // Calculate time since last submission
-      // If the record is older than RATE_LIMIT_HOURS, delete it
-      if (timeSinceLastSubmission > RATE_LIMIT_HOURS * 60 * 60 * 1000) { // If the record is older than the rate limit duration, delete it
-        await formSubmissionTimes.delete(key.name); // Delete the record from KV
+    for (const key of keys.keys) {
+      const value = await kvNamespace.get(key.name); // Retrieve value for each key
+      keyValues.push({ key: key.name, value });
+    }
+
+    const clientIP = request.headers.get('cf-connecting-ip'); // Get the client's IP address
+
+    // Return HTML with debug information
+    return new Response(`
+      <html>
+        <body>
+          <h1>Debug Information</h1>
+          <h2>Client IP</h2>
+          <p>${clientIP || 'Unavailable'}</p>
+          
+          <h2>Secrets</h2>
+          <p><strong>BOT_TOKEN:</strong> ${BOT_TOKEN}</p>
+          <p><strong>CHAT_ID:</strong> ${CHAT_ID}</p>
+
+          <h2>KV Namespace Data</h2>
+          <ul>
+            ${keyValues
+              .map(item => `<li><strong>${item.key}:</strong> ${item.value}</li>`)
+              .join('')}
+          </ul>
+        </body>
+      </html>
+    `, {
+      status: 200,
+      headers: { 'Content-Type': 'text/html' },
+    });
+  } catch (error) {
+    console.error(`Error in debug handler: ${error.message}`);
+    return new Response('Debug Error.', { status: 500 });
+  }
+}
+
+// Debug: List all stored IPs
+async function listIPs() {
+  try {
+    const keys = await kvNamespace.list(); // List all keys in KV Namespace
+    if (keys.keys.length === 0) {
+      return new Response('No IPs found in KV Namespace.', { status: 404 });
+    }
+
+    let ipListHtml = '<h1>Stored IPs in KV Namespace</h1><ul>';
+    for (const key of keys.keys) {
+      ipListHtml += `<li>${key.name}</li>`; // Add each IP to the HTML list
+    }
+    ipListHtml += '</ul>';
+
+    // Return HTML for IP list with a form for deletion
+    return new Response(`
+      <html>
+        <body>
+          ${ipListHtml}
+          <form action="/delete-ip" method="post">
+            <h2>Delete an IP</h2>
+            <label for="ip">Enter IP to delete:</label>
+            <input type="text" id="ip" name="ip" required>
+            <button type="submit">Delete IP</button>
+          </form>
+        </body>
+      </html>
+    `, {
+      status: 200,
+      headers: { 'Content-Type': 'text/html' },
+    });
+  } catch (error) {
+    return new Response(`Error listing IPs: ${error.message}`, { status: 500 });
+  }
+}
+
+// Debug: Delete a specific IP from KV
+async function deleteIP(request) {
+  try {
+    const formData = await request.formData(); // Parse form data
+    const ipToDelete = formData.get('ip'); // Retrieve the IP to delete
+
+    if (!ipToDelete) {
+      return new Response('IP address is required.', { status: 400 });
+    }
+
+    const existingValue = await kvNamespace.get(ipToDelete); // Check if the IP exists in KV
+
+    if (!existingValue) {
+      return new Response(`IP "${ipToDelete}" not found in KV Namespace.`, { status: 404 });
+    }
+
+    await kvNamespace.delete(ipToDelete); // Delete the IP from KV
+
+    return new Response(`IP "${ipToDelete}" was successfully deleted from KV Namespace.`, {
+      status: 200,
+      headers: { 'Content-Type': 'text/plain' },
+    });
+  } catch (error) {
+    return new Response(`Error deleting IP: ${error.message}`, { status: 500 });
+  }
+}
+
+// Handle form submissions
+async function handleFormSubmission(request) {
+  try {
+    const formData = await request.formData(); // Parse the form data
+    const clientIP = request.headers.get('cf-connecting-ip'); // Retrieve the client's IP
+    const email = formData.get('email'); // Retrieve the email field
+    const subject = formData.get('subject'); // Retrieve the subject field
+    const honeypot = formData.get('honeypot'); // Honeypot field for spam detection
+
+    // Spam detection using honeypot
+    if (honeypot) {
+      return new Response('Spam detected!', { status: 403 });
+    }
+
+    // Check if the client is rate-limited
+    const lastSubmission = await kvNamespace.get(clientIP);
+    if (lastSubmission) {
+      const { timestamp } = JSON.parse(lastSubmission);
+      const timeElapsed = Date.now() - new Date(timestamp).getTime();
+
+      if (timeElapsed < RATE_LIMIT_DURATION) {
+        return new Response('Rate limit exceeded. Please try again later.', { status: 429 });
       }
     }
+
+    // Store form submission data in KV
+    const submissionData = {
+      email,
+      subject,
+      timestamp: new Date().toISOString(),
+    };
+    await kvNamespace.put(clientIP, JSON.stringify(submissionData), { expirationTtl: 24 * 60 * 60 });
+
+    // Send submission data to Telegram
+    const botToken = BOT_TOKEN;
+    const chatId = CHAT_ID;
+    const telegramUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
+    const message = `New Form Submission\nEmail: ${email}\nSubject: ${subject}\nIP: ${clientIP}`;
+    const telegramResponse = await fetch(telegramUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ chat_id: chatId, text: message }),
+    });
+
+    if (!telegramResponse.ok) {
+      const errorText = await telegramResponse.text();
+      console.error(`Telegram API Error: ${errorText}`);
+      return new Response('Failed to send Telegram message.', { status: 500 });
+    }
+
+    return new Response('Form submitted successfully!', { status: 200 });
+  } catch (error) {
+    console.error(`Error handling form submission: ${error.message}`);
+    return new Response('Internal Server Error.', { status: 500 });
+  }
+}
+
+// Cleanup old KV records
+async function handleCleanup() {
+  try {
+    const keys = await kvNamespace.list(); // List all keys in KV Namespace
+    const currentTime = Date.now(); // Get the current timestamp
+
+    for (const key of keys.keys) {
+      const data = await kvNamespace.get(key.name); // Retrieve data for each key
+      if (data) {
+        const { timestamp } = JSON.parse(data);
+        const recordTime = new Date(timestamp).getTime();
+
+        // Delete records older than the configured cleanup duration
+        if (currentTime - recordTime > CLEANUP_DURATION) {
+          await kvNamespace.delete(key.name);
+        }
+      }
+    }
+
+    return new Response('Cleanup completed successfully!', { status: 200 });
+  } catch (error) {
+    console.error(`Error during cleanup: ${error.message}`);
+    return new Response('Cleanup failed.', { status: 500 });
   }
 }
