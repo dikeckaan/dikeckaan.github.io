@@ -104,22 +104,31 @@
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>
     <script>
-      const contactForm = document.getElementById('contact-form');
-      const formStartTime = document.querySelector('input[name="formStartTime"]');
-      formStartTime.value = Date.now();
-      contactForm.addEventListener('submit', function(event) {
-        const honeypot = document.querySelector('input[name="honeypot"]').value;
-        if (honeypot) {
-          event.preventDefault();
-          alert('Spam detected!');
-          return;
+      document.addEventListener('DOMContentLoaded', () => {
+        const contactForm = document.getElementById('contact-form');
+        const formStartTimeInput = document.querySelector('input[name="formStartTime"]');
+        const honeypotInput = document.querySelector('input[name="honeypot"]');
+        // Sayfa yüklendiğinde formStartTime alanına zaman damgası yaz
+        if (formStartTimeInput) {
+          formStartTimeInput.value = Date.now().toString();
         }
-        const formFilledDuration = Date.now() - parseInt(formStartTime.value, 10);
-        if (formFilledDuration < 3000) { // 3 saniyeden kısa sürede doldurulmuşsa
-          event.preventDefault();
-          alert('Form filled too quickly! Are you a bot?');
-          return;
-        }
+        contactForm.addEventListener('submit', function(event) {
+          const honeypotValue = honeypotInput?.value || '';
+          // Eğer honeypot doldurulmuşsa, bu bottur
+          if (honeypotValue.trim() !== '') {
+            event.preventDefault();
+            alert('Spam detected!');
+            return;
+          }
+          // Form doldurma süresi çok kısaysa, şüpheli
+          const filledDuration = Date.now() - parseInt(formStartTimeInput.value || '0', 10);
+          if (filledDuration < 3000) {
+            event.preventDefault();
+            alert('Form filled too quickly! Are you a bot?');
+            return;
+          }
+          // Devam etmesine izin veriliyor (form gönderilir)
+        });
       });
     </script>
   </body>
