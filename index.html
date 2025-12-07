@@ -1,471 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Abdurrahman Kaan Dikeç - Developer, Engineer, Innovator</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Official website of Abdurrahman Kaan Dikeç. Explore projects, achievements, and contact details.">
-    <meta name="keywords" content="Abdurrahman Kaan Dikeç, Developer, Engineer, Innovator, Technology, Projects">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdurrahman Kaan Dikeç - Developer & Engineer</title>
+    <meta name="description" content="Software Developer, Engineer & Musician crafting digital experiences">
     <meta name="author" content="Abdurrahman Kaan Dikeç">
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://yourwebsite.com/">
-
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Abdurrahman Kaan Dikeç - Developer, Engineer, Innovator">
-    <meta property="og:description" content="Explore the official website of Abdurrahman Kaan Dikeç, including projects and contact details.">
-    <meta property="og:url" content="https://yourwebsite.com/">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Abdurrahman Kaan Dikeç">
+    <meta property="og:description" content="Software Developer, Engineer & Musician">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://yourwebsite.com/assets/images/profile.jpg">
 
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Abdurrahman Kaan Dikeç - Developer, Engineer, Innovator">
-    <meta name="twitter:description" content="Explore the official website of Abdurrahman Kaan Dikeç, including projects and contact details.">
-    <meta name="twitter:image" content="https://yourwebsite.com/assets/images/profile.jpg">
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/main.css">
-
-    <!-- Cloudflare Turnstile Script -->
+    <link rel="stylesheet" href="style.css">
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-
-    <style>
-        .center {
-            text-align: center;
-        }
-
-        /* Form Container Styling */
-        #contact-form {
-            max-width: 500px;
-            margin: 0 auto;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 15px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        /* Input Styling */
-        #contact-form input[type="email"],
-        #contact-form input[type="text"]:not(.honeypot),
-        #contact-form textarea {
-            width: 100%;
-            padding: 15px;
-            margin: 10px 0;
-            background: rgba(255, 255, 255, 0.1);
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            border-radius: 8px;
-            color: #fff;
-            font-size: 16px;
-            transition: all 0.3s ease;
-            box-sizing: border-box;
-        }
-
-        #contact-form input::placeholder,
-        #contact-form textarea::placeholder {
-            color: rgba(255, 255, 255, 0.5);
-        }
-
-        #contact-form input:focus,
-        #contact-form textarea:focus {
-            outline: none;
-            border-color: #4CAF50;
-            background: rgba(255, 255, 255, 0.15);
-            box-shadow: 0 0 15px rgba(76, 175, 80, 0.3);
-        }
-
-        /* Textarea Styling */
-        #contact-form textarea {
-            min-height: 120px;
-            resize: vertical;
-            font-family: inherit;
-        }
-
-        /* Button Styling */
-        #contact-form button[type="submit"] {
-            width: 100%;
-            padding: 15px;
-            margin-top: 15px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border: none;
-            border-radius: 8px;
-            color: #fff;
-            font-size: 18px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 50px;
-        }
-
-        #contact-form button[type="submit"]:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
-        }
-
-        #contact-form button[type="submit"]:active {
-            transform: translateY(0);
-        }
-
-        #contact-form button[type="submit"]:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-            transform: none;
-        }
-
-        /* Loading Spinner */
-        .spinner {
-            display: none;
-            width: 20px;
-            height: 20px;
-            border: 3px solid rgba(255, 255, 255, 0.3);
-            border-top-color: #fff;
-            border-radius: 50%;
-            animation: spin 0.8s linear infinite;
-            margin: 0 auto;
-        }
-
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-
-        /* Message Styling */
-        .form-message {
-            margin-top: 15px;
-            padding: 15px;
-            border-radius: 8px;
-            text-align: center;
-            font-weight: bold;
-            display: none;
-            animation: slideDown 0.3s ease;
-        }
-
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .form-message.success {
-            background: rgba(76, 175, 80, 0.2);
-            border: 2px solid #4CAF50;
-            color: #4CAF50;
-        }
-
-        .form-message.error {
-            background: rgba(244, 67, 54, 0.2);
-            border: 2px solid #f44336;
-            color: #f44336;
-        }
-
-        /* Honeypot - Completely Hidden */
-        .honeypot {
-            position: absolute !important;
-            left: -9999px !important;
-            width: 1px !important;
-            height: 1px !important;
-            opacity: 0 !important;
-            pointer-events: none !important;
-            tabindex: -1;
-        }
-
-        /* Character Counter */
-        .char-counter {
-            text-align: right;
-            font-size: 12px;
-            color: rgba(255, 255, 255, 0.5);
-            margin-top: -5px;
-            margin-bottom: 10px;
-        }
-
-        /* Cloudflare Turnstile Styling */
-        .cf-turnstile {
-            margin: 20px auto;
-            display: flex;
-            justify-content: center;
-        }
-    </style>
 </head>
-<body class="is-preload">
-    <div class="center">
-        <!-- Header -->
-        <header id="header">
-            <h1>Abdurrahman Kaan Dikeç</h1>
-            <h2>Developer | Engineer | Innovator | Musician</h2>
-            <p>Welcome to my personal website. Explore my projects, skills, and achievements.<br>
-            Check my work on <a href="https://github.com/dikeckaan" target="_blank">GitHub</a>.</p>
-        </header>
-
-        <!-- Contact Form -->
-        <form id="contact-form">
-            <input type="email" name="email" id="email" placeholder="your@email.com" required autocomplete="email">
-
-            <input type="text" name="subject" id="subject" placeholder="Subject" required maxlength="200">
-            <div class="char-counter"><span id="subject-counter">0</span>/200</div>
-
-            <textarea name="message" id="message" placeholder="Your message..." required maxlength="1000"></textarea>
-            <div class="char-counter"><span id="message-counter">0</span>/1000</div>
-
-            <!-- Cloudflare Turnstile CAPTCHA -->
-            <div class="cf-turnstile" data-sitekey="0x4AAAAAACFNCn4BiPfTgn1N" data-callback="onTurnstileSuccess" data-theme="dark"></div>
-
-            <!-- Security Fields -->
-            <input type="hidden" name="formStartTime" id="formStartTime" value="">
-            <input type="hidden" name="formToken" id="formToken" value="">
-            <input type="hidden" name="mouseMovements" id="mouseMovements" value="0">
-            <input type="hidden" name="cf-turnstile-response" id="cf-turnstile-response" value="">
-            <input type="text" name="honeypot" class="honeypot" value="" tabindex="-1" autocomplete="off">
-            <input type="text" name="website" class="honeypot" value="" tabindex="-1" autocomplete="off">
-
-            <button type="submit" id="submit-btn">
-                <span id="btn-text">Send Message</span>
-                <div class="spinner" id="spinner"></div>
-            </button>
-
-            <div class="form-message" id="form-message"></div>
-        </form>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
     </div>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <ul class="icons">
-            <li><a href="https://twitter.com/kaandikec" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="https://instagram.com/kaandikec" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a href="https://github.com/dikeckaan" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-            <li><a href="mailto:site@kaandikec.org" target="_blank" class="icon fa-envelope"><span class="label">Email</span></a></li>
-        </ul>
-        <ul class="copyright">
-            <li>&copy; <script>document.write(new Date().getFullYear());</script> Abdurrahman Kaan Dikeç. All rights reserved.</li>
-            <li>Contact me via <a href="https://t.me/kaandikec" target="_blank">Telegram</a>.</li>
-        </ul>
-    </footer>
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for Projects
+            </div>
+            <h1 class="glitch" data-text="Abdurrahman Kaan Dikeç">Abdurrahman Kaan Dikeç</h1>
+            <p class="tagline">
+                <span class="typewriter">Developer • Engineer • Musician</span>
+            </p>
+            <p class="subtitle">Crafting elegant solutions through code and creativity</p>
 
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Abdurrahman Kaan Dikeç",
-      "jobTitle": "Developer, Engineer",
-      "url": "https://yourwebsite.com/",
-      "sameAs": [
-        "https://twitter.com/kaandikec",
-        "https://instagram.com/kaandikec",
-        "https://github.com/dikeckaan"
-      ]
-    }
-    </script>
+            <div class="social-links">
+                <a href="https://github.com/dikeckaan" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <span class="tooltip">GitHub</span>
+                </a>
+                <a href="https://twitter.com/kaandikec" target="_blank" rel="noopener" aria-label="Twitter" class="social-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                    <span class="tooltip">Twitter</span>
+                </a>
+                <a href="https://instagram.com/kaandikec" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                    <span class="tooltip">Instagram</span>
+                </a>
+                <a href="mailto:site@kaandikec.org" aria-label="Email" class="social-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    <span class="tooltip">Email</span>
+                </a>
+            </div>
+        </section>
 
-    <!-- Scripts -->
-    <script src="assets/js/main.js"></script>
-    <script>
-        // Form Elements
-        const contactForm = document.getElementById('contact-form');
-        const submitBtn = document.getElementById('submit-btn');
-        const btnText = document.getElementById('btn-text');
-        const spinner = document.getElementById('spinner');
-        const formMessage = document.getElementById('form-message');
-        const formStartTimeInput = document.getElementById('formStartTime');
-        const formTokenInput = document.getElementById('formToken');
-        const mouseMovementsInput = document.getElementById('mouseMovements');
-        const subjectInput = document.getElementById('subject');
-        const messageInput = document.getElementById('message');
-        const subjectCounter = document.getElementById('subject-counter');
-        const messageCounter = document.getElementById('message-counter');
+        <!-- About Section -->
+        <section class="about">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <p class="highlight-text">I'm a passionate software developer and engineer with a deep love for music and technology.</p>
+                <p>I specialize in building innovative solutions that blend creativity with cutting-edge technology. From elegant code to seamless user experiences, I bring ideas to life through thoughtful engineering and design.</p>
+                <div class="skills-grid">
+                    <div class="skill-tag">Development</div>
+                    <div class="skill-tag">Engineering</div>
+                    <div class="skill-tag">Problem Solving</div>
+                    <div class="skill-tag">Music</div>
+                </div>
+            </div>
+        </section>
 
-        // Security Variables
-        let mouseMovements = 0;
-        let keyPresses = 0;
-        let formInteractions = 0;
-        let turnstileToken = null;
+        <!-- Contact Form -->
+        <section class="contact">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2>Get In Touch</h2>
+            </div>
+            <p class="section-subtitle">Have a project in mind? Let's talk about it.</p>
 
-        // Cloudflare Turnstile callback
-        window.onTurnstileSuccess = function(token) {
-            turnstileToken = token;
-            document.getElementById('cf-turnstile-response').value = token;
-        };
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="your@email.com" required autocomplete="email">
+                </div>
 
-        // Generate unique form token
-        function generateToken() {
-            return Array.from(crypto.getRandomValues(new Uint8Array(16)))
-                .map(b => b.toString(16).padStart(2, '0')).join('');
-        }
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject" placeholder="What's this about?" required maxlength="200">
+                    <span class="char-count"><span id="subject-count">0</span>/200</span>
+                </div>
 
-        // Initialize form security
-        function initFormSecurity() {
-            formStartTimeInput.value = Date.now();
-            formTokenInput.value = generateToken();
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Tell me more..." required maxlength="1000" rows="5"></textarea>
+                    <span class="char-count"><span id="message-count">0</span>/1000</span>
+                </div>
 
-            // Track mouse movements
-            document.addEventListener('mousemove', () => {
-                mouseMovements++;
-                mouseMovementsInput.value = mouseMovements;
-            });
+                <!-- Cloudflare Turnstile -->
+                <div class="cf-turnstile" data-sitekey="0x4AAAAAACFNCn4BiPfTgn1N" data-callback="onTurnstileSuccess" data-theme="dark"></div>
 
-            // Track keyboard interactions
-            contactForm.addEventListener('keydown', () => {
-                keyPresses++;
-            });
+                <!-- Security Fields -->
+                <input type="hidden" name="formStartTime" id="formStartTime">
+                <input type="hidden" name="formToken" id="formToken">
+                <input type="hidden" name="mouseMovements" id="mouseMovements" value="0">
+                <input type="hidden" name="cf-turnstile-response" id="cf-turnstile-response">
+                <input type="text" name="honeypot" class="honeypot" value="" tabindex="-1" autocomplete="off">
+                <input type="text" name="website" class="honeypot" value="" tabindex="-1" autocomplete="off">
 
-            // Track form field interactions
-            contactForm.addEventListener('focus', () => {
-                formInteractions++;
-            }, true);
-        }
+                <button type="submit" id="submit-btn">
+                    <span id="btn-text">Send Message</span>
+                    <span class="spinner" id="spinner"></span>
+                    <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
 
-        // Character counter
-        function updateCharCounter(input, counter, max) {
-            const count = input.value.length;
-            counter.textContent = count;
-            if (count > max * 0.9) {
-                counter.style.color = '#f44336';
-            } else {
-                counter.style.color = 'rgba(255, 255, 255, 0.5)';
-            }
-        }
+                <div class="form-message" id="form-message"></div>
+            </form>
+        </section>
 
-        subjectInput.addEventListener('input', () => {
-            updateCharCounter(subjectInput, subjectCounter, 200);
-        });
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <p>&copy; <span id="year"></span> Abdurrahman Kaan Dikeç. All rights reserved.</p>
+                <p class="footer-tagline">Built with passion and precision</p>
+            </div>
+        </footer>
+    </div>
 
-        messageInput.addEventListener('input', () => {
-            updateCharCounter(messageInput, messageCounter, 1000);
-        });
-
-        // Show message function
-        function showMessage(message, type) {
-            formMessage.textContent = message;
-            formMessage.className = 'form-message ' + type;
-            formMessage.style.display = 'block';
-
-            setTimeout(() => {
-                formMessage.style.display = 'none';
-            }, 5000);
-        }
-
-        // Validate security
-        function validateSecurity() {
-            const honeypot = document.querySelector('input[name="honeypot"]').value;
-            const website = document.querySelector('input[name="website"]').value;
-
-            // Check Cloudflare Turnstile
-            if (!turnstileToken) {
-                return { valid: false, message: 'Please complete the CAPTCHA verification.' };
-            }
-
-            // Check honeypots
-            if (honeypot || website) {
-                return { valid: false, message: 'Security check failed.' };
-            }
-
-            // Check form fill time (minimum 5 seconds)
-            const formFilledDuration = Date.now() - parseInt(formStartTimeInput.value, 10);
-            if (formFilledDuration < 5000) {
-                return { valid: false, message: 'Please take your time to fill the form.' };
-            }
-
-            // Check for human-like interactions
-            if (mouseMovements < 10) {
-                return { valid: false, message: 'Please interact with the form naturally.' };
-            }
-
-            if (keyPresses < 5) {
-                return { valid: false, message: 'Please type your message.' };
-            }
-
-            if (formInteractions < 2) {
-                return { valid: false, message: 'Please fill all required fields.' };
-            }
-
-            // Check token exists
-            if (!formTokenInput.value || formTokenInput.value.length !== 32) {
-                return { valid: false, message: 'Security token invalid.' };
-            }
-
-            return { valid: true };
-        }
-
-        // Form submission handler
-        contactForm.addEventListener('submit', async function(event) {
-            event.preventDefault();
-
-            // Validate security
-            const securityCheck = validateSecurity();
-            if (!securityCheck.valid) {
-                showMessage(securityCheck.message, 'error');
-                return;
-            }
-
-            // Disable button and show spinner
-            submitBtn.disabled = true;
-            btnText.style.display = 'none';
-            spinner.style.display = 'block';
-
-            try {
-                // Prepare form data
-                const formData = new FormData(contactForm);
-
-                // Send AJAX request
-                const response = await fetch('https://siteform.dikeckaan.workers.dev/', {
-                    method: 'POST',
-                    body: formData,
-                    headers: {
-                        'X-Requested-With': 'XMLHttpRequest',
-                        'X-Form-Token': formTokenInput.value
-                    }
-                });
-
-                if (response.ok) {
-                    showMessage('Message sent successfully!', 'success');
-                    contactForm.reset();
-                    subjectCounter.textContent = '0';
-                    messageCounter.textContent = '0';
-
-                    // Reset security measures
-                    mouseMovements = 0;
-                    keyPresses = 0;
-                    formInteractions = 0;
-                    turnstileToken = null;
-                    initFormSecurity();
-
-                    // Reset Turnstile
-                    if (typeof turnstile !== 'undefined') {
-                        turnstile.reset();
-                    }
-                } else {
-                    const errorText = await response.text();
-                    if (response.status === 429) {
-                        showMessage('Please wait before sending another message.', 'error');
-                    } else if (response.status === 403) {
-                        showMessage('Security validation failed.', 'error');
-                    } else {
-                        showMessage('Failed to send message. Please try again.', 'error');
-                    }
-                }
-            } catch (error) {
-                console.error('Form submission error:', error);
-                showMessage('Network error. Please check your connection.', 'error');
-            } finally {
-                // Re-enable button and hide spinner
-                submitBtn.disabled = false;
-                btnText.style.display = 'inline';
-                spinner.style.display = 'none';
-            }
-        });
-
-        // Initialize on page load
-        initFormSecurity();
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
