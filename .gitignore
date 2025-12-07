@@ -1,6 +1,9 @@
 # Cloudflare Worker (contains sensitive keys)
 worker.js
 
+# Security test reports (contains vulnerability details)
+security-report-*.txt
+
 # Node modules
 node_modules/
 
