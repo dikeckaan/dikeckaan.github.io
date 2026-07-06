@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLESS to Xray Config Converter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .result {
+            margin-top: 30px;
+            display: none;
+        }
+
+        .result.show {
+            display: block;
+        }
+
+        .config-output {
+            background: #f5f5f5;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: monospace;
+            font-size: 12px;
+            max-height: 400px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+
+        .type-badge {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .type-badge.tls {
+            background: #4caf50;
+            color: white;
+        }
+
+        .type-badge.reality {
+            background: #ff9800;
+            color: white;
+        }
+
+        .error {
+            background: #ffebee;
+            color: #c62828;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 15px;
+            display: none;
+        }
+
+        .error.show {
+            display: block;
+        }
+
+        .copy-btn {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .copy-btn:hover {
+            background: #45a049;
+        }
+
+        .info {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #1565c0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔄 VLESS to Xray Config Converter</h1>
+        
+        <div class="info">
+            💡 VLESS linkini yapıştırın. TLS veya Reality otomatik tespit edilecek ve uygun config oluşturulacak.
+        </div>
+
+        <div class="input-group">
+            <label for="vlessLink">VLESS Linki:</label>
+            <textarea id="vlessLink" placeholder="vless://uuid@server:port?..."></textarea>
+        </div>
+
+        <button class="btn" onclick="convertConfig()">🚀 Config Oluştur</button>
+
+        <div class="error" id="error"></div>
+
+        <div class="result" id="result">
+            <div id="typeBadge"></div>
+            <div class="config-output" id="configOutput"></div>
+            <button class="copy-btn" onclick="copyConfig()">📋 Kopyala</button>
+        </div>
+    </div>
+
+    <script>
+        function parseVlessLink(vlessUrl) {
+            try {
+                // vless:// prefix'ini kaldır
+                const url = vlessUrl.trim();
+                if (!url.startsWith('vless://')) {
+                    throw new Error('Geçerli bir VLESS linki değil');
+                }
+
+                // vless:// kısmını kaldır
+                const withoutProtocol = url.substring(8);
+                
+                // @ işaretinden önce UUID, sonra server:port
+                const atIndex = withoutProtocol.indexOf('@');
+                if (atIndex === -1) {
+                    throw new Error('Geçersiz VLESS format');
+                }
+
+                const uuid = withoutProtocol.substring(0, atIndex);
+                
+                // Server ve port ayrıştırması
+                const rest = withoutProtocol.substring(atIndex + 1);
+                const questionIndex = rest.indexOf('?');
+                const hashIndex = rest.indexOf('#');
+                
+                let serverPort;
+                let paramsString = '';
+                
+                if (questionIndex !== -1) {
+                    serverPort = rest.substring(0, questionIndex);
+                    const endIndex = hashIndex !== -1 ? hashIndex : rest.length;
+                    paramsString = rest.substring(questionIndex + 1, endIndex);
+                } else if (hashIndex !== -1) {
+                    serverPort = rest.substring(0, hashIndex);
+                } else {
+                    serverPort = rest;
+                }
+
+                const [address, portStr] = serverPort.split(':');
+                const port = parseInt(portStr) || 443;
+
+                // URL parametrelerini parse et
+                const params = {};
+                if (paramsString) {
+                    paramsString.split('&').forEach(param => {
+                        const [key, value] = param.split('=');
+                        params[decodeURIComponent(key)] = decodeURIComponent(value || '');
+                    });
+                }
+
+                return {
+                    uuid,
+                    address,
+                    port,
+                    params
+                };
+            } catch (error) {
+                throw new Error('VLESS link parse hatası: ' + error.message);
+            }
+        }
+
+        function detectConfigType(params) {
+            // Reality parametrelerini kontrol et
+            if (params.pbk || params.publicKey || params.sid || params.shortId || params.spx || params.spiderX) {
+                return 'reality';
+            }
+            
+            // TLS veya security parametresine bak
+            if (params.security === 'tls' || params.type === 'tls') {
+                return 'tls';
+            }
+            
+            // Reality security parametresi
+            if (params.security === 'reality') {
+                return 'reality';
+            }
+            
+            // Varsayılan TLS
+            return 'tls';
+        }
+
+        function createTLSConfig(vlessData) {
+            return {
+                "log": {
+                    "loglevel": "none"
+                },
+                "inbounds": [
+                    {
+                        "listen": "127.0.0.1",
+                        "port": 10808,
+                        "protocol": "socks",
+                        "settings": {
+                            "udp": true
+                        }
+                    },
+                    {
+                        "listen": "127.0.0.1",
+                        "port": 10809,
+                        "protocol": "http"
+                    }
+                ],
+                "outbounds": [
+                    {
+                        "protocol": "vless",
+                        "settings": {
+                            "vnext": [
+                                {
+                                    "address": vlessData.address,
+                                    "port": vlessData.port,
+                                    "users": [
+                                        {
+                                            "id": vlessData.uuid,
+                                            "encryption": "none",
+                                            "flow": vlessData.params.flow || "xtls-rprx-vision"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "streamSettings": {
+                            "network": vlessData.params.type || "tcp",
+                            "security": "tls",
+                            "tlsSettings": {
+                                "serverName": vlessData.params.sni || vlessData.address,
+                                "allowInsecure": true,
+                                "fingerprint": vlessData.params.fp || "chrome"
+                            }
+                        },
+                        "tag": "proxy"
+                    }
+                ]
+            };
+        }
+
+        function createRealityConfig(vlessData) {
+            return {
+                "log": {
+                    "loglevel": "none"
+                },
+                "inbounds": [
+                    {
+                        "listen": "127.0.0.1",
+                        "port": 10808,
+                        "protocol": "socks",
+                        "settings": {
+                            "udp": true
+                        },
+                        "sniffing": {
+                            "enabled": true,
+                            "destOverride": [
+                                "http",
+                                "tls",
+                                "quic"
+                            ],
+                            "routeOnly": true
+                        }
+                    }
+                ],
+                "outbounds": [
+                    {
+                        "protocol": "vless",
+                        "settings": {
+                            "vnext": [
+                                {
+                                    "address": vlessData.address,
+                                    "port": vlessData.port,
+                                    "users": [
+                                        {
+                                            "id": vlessData.uuid,
+                                            "encryption": "none",
+                                            "flow": vlessData.params.flow || "xtls-rprx-vision"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "streamSettings": {
+                            "network": vlessData.params.type || "tcp",
+                            "security": "reality",
+                            "realitySettings": {
+                                "fingerprint": vlessData.params.fp || "chrome",
+                                "serverName": vlessData.params.sni || vlessData.address,
+                                "publicKey": vlessData.params.pbk || vlessData.params.publicKey || "",
+                                "spiderX": vlessData.params.spx || vlessData.params.spiderX || "",
+                                "shortId": vlessData.params.sid || vlessData.params.shortId || ""
+                            }
+                        },
+                        "tag": "proxy"
+                    }
+                ]
+            };
+        }
+
+        function convertConfig() {
+            const vlessLink = document.getElementById('vlessLink').value.trim();
+            const errorDiv = document.getElementById('error');
+            const resultDiv = document.getElementById('result');
+            const configOutput = document.getElementById('configOutput');
+            const typeBadge = document.getElementById('typeBadge');
+
+            errorDiv.classList.remove('show');
+            resultDiv.classList.remove('show');
+
+            if (!vlessLink) {
+                errorDiv.textContent = '❌ Lütfen bir VLESS linki girin!';
+                errorDiv.classList.add('show');
+                return;
+            }
+
+            try {
+                const vlessData = parseVlessLink(vlessLink);
+                const configType = detectConfigType(vlessData.params);
+                
+                let config;
+                if (configType === 'reality') {
+                    config = createRealityConfig(vlessData);
+                    typeBadge.innerHTML = '<span class="type-badge reality">🔐 Reality Config</span>';
+                } else {
+                    config = createTLSConfig(vlessData);
+                    typeBadge.innerHTML = '<span class="type-badge tls">🔒 TLS Config</span>';
+                }
+
+                configOutput.textContent = JSON.stringify(config, null, 2);
+                resultDiv.classList.add('show');
+
+            } catch (error) {
+                errorDiv.textContent = '❌ ' + error.message;
+                errorDiv.classList.add('show');
+            }
+        }
+
+        function copyConfig() {
+            const configText = document.getElementById('configOutput').textContent;
+            navigator.clipboard.writeText(configText).then(() => {
+                const btn = event.target;
+                const originalText = btn.textContent;
+                btn.textContent = '✅ Kopyalandı!';
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                }, 2000);
+            });
+        }
+
+        // Enter tuşu ile dönüştürme
+        document.getElementById('vlessLink').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                convertConfig();
+            }
+        });
+    </script>
+</body>
+</html>
