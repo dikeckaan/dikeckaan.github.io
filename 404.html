@@ -1,0 +1,39 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Dikecphone</title>
+<style>
+ :root { color-scheme: dark; }
+ body { margin: 0; background: #000; color: #fff; font: 17px/1.5 -apple-system, system-ui, Roboto, sans-serif;
+        min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 32px; box-sizing: border-box; }
+ main { width: 100%; max-width: 380px; text-align: center; }
+ h1 { font-size: 30px; font-weight: 300; margin: 0 0 8px; }
+ p { color: #9a9a9a; margin: 0 0 28px; }
+ .code { font: 600 40px/1.2 ui-monospace, Menlo, monospace; letter-spacing: 8px; margin: 24px 0 6px; }
+ .code + p { margin-bottom: 32px; }
+ a { display: block; padding: 15px; margin: 10px 0; border: 1px solid #333; border-radius: 999px;
+     color: #fff; text-decoration: none; }
+ a.primary { background: #fff; color: #000; border-color: #fff; }
+ #pair { display: none; }
+</style></head><body><main>
+<!-- A Dikecphone modem's pair link, https://kaandikec.com/pair/<code>.
+     With the app installed the phone opens it in the app (Universal Links /
+     App Links, see .well-known); this page is what a phone without the app
+     sees: the code, and where to get the app. Any other missing path is a
+     plain not-found. -->
+<div id="pair">
+  <h1>Dikecphone</h1><p>Bu modeme bağlanmak için</p><div class="code" id="code"></div>
+  <p>Uygulamayı kurun, hesabınızla girin, Modem ekle ekranına bu kodu yazın. Kod on dakika geçerli.</p>
+  <a class="primary" href="https://apps.apple.com/app/id6809062150">iPhone · App Store</a>
+  <a class="primary" href="https://play.google.com/store/apps/details?id=com.kaandikec.dikecphone">Android · Google Play</a>
+</div>
+<div id="missing"><h1>404</h1><p>Sayfa bulunamadı.</p><a href="/">kaandikec.com</a></div>
+<script>
+ var m = location.pathname.match(/^\/pair\/(\d{6})\/?$/);
+ if (m) {
+   document.getElementById("code").textContent = m[1];
+   document.getElementById("pair").style.display = "block";
+   document.getElementById("missing").style.display = "none";
+ }
+</script>
+</main></body></html>
