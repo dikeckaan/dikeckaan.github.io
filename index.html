@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdurrahman Kaan Dikeç - Developer & Engineer</title>
-    <meta name="description" content="Software Developer, Engineer & Musician crafting digital experiences">
+    <meta name="description" content="Software Developer, Engineer & Musician. Linux on ZTE 5G modems, Magisk modules, macOS tools and 150+ open-source repositories.">
     <meta name="author" content="Abdurrahman Kaan Dikeç">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="canonical" href="https://kaandikec.com/">
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/21171681?s=64&v=4">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Abdurrahman Kaan Dikeç">
     <meta property="og:description" content="Software Developer, Engineer & Musician">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kaandikec.com/">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/21171681?v=4">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@kaandikec">
 
     <link rel="stylesheet" href="style.css">
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
@@ -54,10 +61,25 @@
                     <span class="tooltip">Email</span>
                 </a>
             </div>
+
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="https://github.com/sponsors/dikeckaan" target="_blank" rel="noopener" class="btn btn-sponsor">
+                    <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 14.25.345 6.7a4.1 4.1 0 0 1 0-5.8 4.1 4.1 0 0 1 5.8 0L8 2.75 9.855.9a4.1 4.1 0 0 1 5.8 5.8z"/></svg>
+                    Sponsor
+                </a>
+            </div>
+
+            <dl class="hero-stats">
+                <div><dt>Repositories</dt><dd data-stat="repos">—</dd></div>
+                <div><dt>Stars</dt><dd data-stat="stars">—</dd></div>
+                <div><dt>Forks</dt><dd data-stat="forks">—</dd></div>
+                <div><dt>Followers</dt><dd data-stat="followers">—</dd></div>
+            </dl>
         </section>
 
         <!-- About Section -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="section-header">
                 <span class="section-number">01</span>
                 <h2>About Me</h2>
@@ -74,10 +96,120 @@
             </div>
         </section>
 
-        <!-- Contact Form -->
-        <section class="contact">
+        <!-- Featured Projects -->
+        <section class="projects" id="projects">
             <div class="section-header">
                 <span class="section-number">02</span>
+                <h2>Featured Projects</h2>
+            </div>
+            <p class="section-subtitle">My most-starred open-source work, ranked live from GitHub.</p>
+            <div class="featured-grid" id="featured-grid" aria-live="polite">
+                <div class="skeleton spotlight"></div>
+                <div class="skeleton"></div><div class="skeleton"></div>
+                <div class="skeleton"></div><div class="skeleton"></div>
+            </div>
+        </section>
+
+        <!-- All Repositories -->
+        <section class="repos" id="repos">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2>All Repositories</h2>
+            </div>
+            <p class="section-subtitle">Search, filter and sort everything I've published. Press <kbd>/</kbd> to search.</p>
+
+            <div class="repo-toolbar" role="search">
+                <label class="repo-search">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+                    <input id="q" type="search" placeholder="Search name, description or topic…" autocomplete="off" aria-label="Search repositories">
+                </label>
+                <div class="repo-controls">
+                    <div class="segmented" id="type" role="radiogroup" aria-label="Repository type">
+                        <button type="button" data-v="sources" role="radio">Sources</button>
+                        <button type="button" data-v="all" role="radio">All</button>
+                        <button type="button" data-v="forks" role="radio">Forks</button>
+                    </div>
+                    <select id="sort" aria-label="Sort by">
+                        <option value="stars">Most stars</option>
+                        <option value="forks">Most forks</option>
+                        <option value="pushed">Recently updated</option>
+                        <option value="created">Newest</option>
+                        <option value="oldest">Oldest</option>
+                        <option value="name">Name A–Z</option>
+                    </select>
+                    <label class="toggle"><input type="checkbox" id="has-site"> Has website</label>
+                    <div class="segmented" id="view" role="radiogroup" aria-label="Layout">
+                        <button type="button" data-v="grid" role="radio" aria-label="Grid view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></button>
+                        <button type="button" data-v="list" role="radio" aria-label="List view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lang-chips" id="langbar" aria-label="Filter by language"></div>
+
+            <div class="repo-meta">
+                <span id="count" aria-live="polite"></span>
+                <span id="active-filters"></span>
+                <button type="button" class="text-btn" id="clear" hidden>Clear filters</button>
+            </div>
+
+            <div class="repo-grid" id="repo-grid"></div>
+            <p class="repo-empty" id="empty" hidden>No repositories match. <button type="button" class="text-btn" data-clear>Clear the filters</button></p>
+            <button type="button" class="btn btn-ghost more-btn" id="more" hidden>Show more</button>
+        </section>
+
+        <!-- Web Tools -->
+        <section class="tools" id="tools">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2>Web Tools</h2>
+            </div>
+            <p class="section-subtitle">Small utilities that run right in your browser.</p>
+            <div class="tools-grid">
+                <a class="tool-card" href="simplexray.html">
+                    <span class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4 3 8l4 4M3 8h14M17 20l4-4-4-4M21 16H7"/></svg></span>
+                    <h3>VLESS → Xray</h3>
+                    <p>Turn a VLESS share link into a ready-to-run Xray client config.</p>
+                </a>
+                <a class="tool-card" href="https://kaandikec.com/mu300-linux/">
+                    <span class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="m7 9 2 2-2 2M12 13h4M8 20h8"/></svg></span>
+                    <h3>mu300-linux installer</h3>
+                    <p>Put Linux on a ZTE F50 / MU300 / U30 Air from your browser.</p>
+                </a>
+                <a class="tool-card" href="https://kaandikec.com/forza-horizon-6-telemetry-dashboard/">
+                    <span class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.9 19a9 9 0 1 1 14.2 0"/><path d="m12 13 4-5"/><circle cx="12" cy="13" r="1.5"/></svg></span>
+                    <h3>FH6 telemetry</h3>
+                    <p>Live tachometer, 3D car and lap timing for Forza Horizon.</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Support -->
+        <section class="support" id="support">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2>Support My Work</h2>
+            </div>
+            <div class="support-card">
+                <div class="support-text">
+                    <p class="highlight-text">Everything here is a spare-time project, and it stays free.</p>
+                    <p>If one of them saved you a device, some money or an afternoon, sponsoring keeps the next one coming. One-off and monthly both work.</p>
+                    <div class="hero-actions left">
+                        <a href="https://github.com/sponsors/dikeckaan" target="_blank" rel="noopener" class="btn btn-sponsor">
+                            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 14.25.345 6.7a4.1 4.1 0 0 1 0-5.8 4.1 4.1 0 0 1 5.8 0L8 2.75 9.855.9a4.1 4.1 0 0 1 5.8 5.8z"/></svg>
+                            Sponsor on GitHub
+                        </a>
+                        <a href="https://github.com/dikeckaan?tab=repositories&sort=stargazers" target="_blank" rel="noopener" class="btn btn-ghost">★ Star a repo</a>
+                    </div>
+                </div>
+                <div class="support-heart" aria-hidden="true">♥</div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact" id="contact">
+            <div class="section-header">
+                <span class="section-number">06</span>
                 <h2>Get In Touch</h2>
             </div>
             <p class="section-subtitle">Have a project in mind? Let's talk about it.</p>
@@ -127,11 +259,17 @@
         <footer>
             <div class="footer-content">
                 <p>&copy; <span id="year"></span> Abdurrahman Kaan Dikeç. All rights reserved.</p>
-                <p class="footer-tagline">Built with passion and precision</p>
+                <p class="footer-tagline">Built with passion and precision · repo data refreshed daily from GitHub<span id="generated"></span></p>
             </div>
         </footer>
     </div>
 
+    <a class="sponsor-fab" href="https://github.com/sponsors/dikeckaan" target="_blank" rel="noopener" aria-label="Sponsor on GitHub">
+        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 14.25.345 6.7a4.1 4.1 0 0 1 0-5.8 4.1 4.1 0 0 1 5.8 0L8 2.75 9.855.9a4.1 4.1 0 0 1 5.8 5.8z"/></svg>
+        <span>Sponsor</span>
+    </a>
+
     <script src="script.js"></script>
+    <script src="projects.js"></script>
 </body>
 </html>

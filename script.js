@@ -36,11 +36,13 @@ function initFormSecurity() {
     document.getElementById('formStartTime').value = Date.now();
     document.getElementById('formToken').value = generateToken();
 
-    // Track mouse movements
-    document.addEventListener('mousemove', () => {
+    // Track pointer movement (mouse, and touch so phones pass the worker's check too)
+    const onMove = () => {
         mouseMovements++;
         document.getElementById('mouseMovements').value = mouseMovements;
-    });
+    };
+    document.addEventListener('mousemove', onMove);
+    document.addEventListener('touchmove', onMove, { passive: true });
 
     // Track keyboard interactions
     form.addEventListener('keydown', () => {

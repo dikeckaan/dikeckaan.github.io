@@ -55,6 +55,10 @@ dikeckaan.github.io/
 ├── index.html          # Main HTML structure
 ├── style.css           # All styles and animations
 ├── script.js           # Form logic, security, and interactions
+├── projects.js         # Featured projects, stats and the repository explorer
+├── data/repos.json     # Public repositories, refreshed daily
+├── scripts/fetch-repos.mjs           # Builds data/repos.json from the GitHub API
+├── .github/workflows/update-repos.yml  # Runs it every day
 ├── worker.js           # Cloudflare Worker for form handling
 ├── CNAME               # Custom domain configuration
 ├── robots.txt          # Search engine directives
@@ -115,13 +119,31 @@ dikeckaan.github.io/
 - Availability badge with pulsing animation
 - Tagline and subtitle
 - Social media links with tooltips (GitHub, Twitter, Instagram, Email)
+- View Projects and Sponsor buttons
+- Live stats: public repositories, stars, forks, followers
 
 ### 2. About Section
 - Personal introduction with highlighted text
 - Detailed description
 - Interactive skill tags (Development, Engineering, Problem Solving, Music)
 
-### 3. Contact Form
+### 3. Featured Projects
+- Most-starred repositories, with the top one as a spotlight card
+
+### 4. All Repositories
+- Search by name, description or topic (`/` focuses the search)
+- Filter by sources / forks, language, topic and "has website"
+- Sort by stars, forks, last update, newest, oldest or name
+- Grid and list views; filters are kept in the URL, so a filtered view can be shared
+- Only public repositories are listed
+
+### 5. Web Tools
+- Links to the browser tools on this domain
+
+### 6. Support
+- GitHub Sponsors card, plus a floating Sponsor button
+
+### 7. Contact Form
 - Email, subject, and message fields
 - Character counters (200 for subject, 1000 for message)
 - Cloudflare Turnstile CAPTCHA
@@ -129,7 +151,7 @@ dikeckaan.github.io/
 - Success/error message display
 - Animated submit button with arrow
 
-### 4. Footer
+### 8. Footer
 - Copyright information with dynamic year
 - Tagline: "Built with passion and precision"
 
@@ -204,7 +226,13 @@ The contact form is processed by a Cloudflare Worker (`worker.js`) that:
 
 ## 🔄 Version History
 
-### v2.0.0 - Modern Redesign (Current)
+### v2.1.0 - Projects (Current)
+- Featured projects, repository explorer and live GitHub stats
+- GitHub Sponsors button and support section
+- Daily repo data refresh via GitHub Actions
+- Touch movement counts toward the form's interaction check, so phones can send messages
+
+### v2.0.0 - Modern Redesign
 - Complete UI/UX overhaul
 - Animated gradient backgrounds
 - Enhanced security features
