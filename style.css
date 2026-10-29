@@ -627,6 +627,10 @@ footer {
 }
 
 /* Utilities */
+a.hero-badge {
+    text-decoration: none;
+}
+
 [hidden] {
     display: none !important;
 }

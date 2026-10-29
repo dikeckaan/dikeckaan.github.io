@@ -22,11 +22,18 @@ for (let page = 1; ; page++) {
   if (batch.length < 100) break;
 }
 
+// Stand-ins until these repos get a description on GitHub.
+const BLURBS = {
+  'MacOS-Workflow-VNC': 'A free macOS desktop over VNC in about five minutes, running on GitHub Actions runners with an ngrok tunnel.',
+  'OpenEUICC-5ber': 'OpenEUICC build with 5ber eSIM support: a free, open-source Local Profile Assistant for Android.',
+  'flutter-sni-bughost-checker': 'Flutter app that checks a list of hosts for working HTTPS / SNI and keeps the ones that pass.',
+};
+
 const slim = repos
   .filter((r) => !r.private)
   .map((r) => ({
     name: r.name,
-    description: r.description || '',
+    description: r.description || BLURBS[r.name] || '',
     url: r.html_url,
     homepage: r.homepage || '',
     language: r.language || '',

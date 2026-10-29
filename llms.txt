@@ -1,0 +1,38 @@
+# Kaan Dikeç
+
+> Abdurrahman Kaan Dikeç (also written Kaan Dikeç or Kaan Dikec; GitHub: dikeckaan) is a computer engineer, developer and musician from Istanbul, Türkiye. Most of his work is close to the hardware: he created mu300-linux, which runs a full Ubuntu or OpenWrt next to Android on the ZTE F50, MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620), together with a flashing toolkit, a VPN module and a family of Magisk modules for those devices. He also builds native macOS apps (easy-vphone), Hackintosh EFIs, a Forza Horizon telemetry dashboard and networking / VPN tools. Almost all of it is open source on GitHub.
+
+Numbers as of 2026-10-29: 98 original public repositories (165 including forks), 917 stars and 395 forks on his own repositories, 87 GitHub followers.
+
+## Most-starred projects
+
+- [mu300-linux](https://github.com/dikeckaan/mu300-linux): Linux (Ubuntu 24.04/26.04 or OpenWrt) next to Android on the ZTE F50 / MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620): installer, vendor 5.4 and mainline 6.18 / 7.2 kernels, 5G modem, Wi-Fi, battery, LEDs, NFC, findings (website: https://kaandikec.com/mu300-linux/) (725 stars)
+- [zte-f50-toolkit](https://github.com/dikeckaan/zte-f50-toolkit): ZTE F50 (5G MiFi) flashing toolkit — B09 downgrade, root, BL unlock, IMEI patch. Built on a custom spd_dump fork. (45 stars)
+- [MacOS-Workflow-VNC](https://github.com/dikeckaan/MacOS-Workflow-VNC): A free macOS desktop over VNC in about five minutes, running on GitHub Actions runners with an ngrok tunnel. (16 stars)
+- [macjaro](https://github.com/dikeckaan/macjaro): MacOS theme for Manjaro Gnome or any Arch based Gnome (15 stars)
+- [easy-vphone](https://github.com/dikeckaan/easy-vphone): Native macOS GUI for vphone-cli with VM management and an integrated IPA library (11 stars)
+- [mu300-linux-vpn](https://github.com/dikeckaan/mu300-linux-vpn): VPN toolkit for MU300 Linux (ZTE F50 / U30 Air): one command for Xray, sing-box, mihomo, WireGuard and OpenVPN profiles, as a module for Ubuntu and OpenWrt (11 stars)
+- [f50-magisk-modules](https://github.com/dikeckaan/f50-magisk-modules): Index of Magisk modules for ZTE F50 (rooted Android, Unisoc UMS9620). Each module auto-updates via updateJson; statusbot has /update command. (6 stars)
+- [mf286r-telnet-openwrt-exploit](https://github.com/dikeckaan/mf286r-telnet-openwrt-exploit): This guide provides step-by-step instructions to enable Telnet access on the ZTE MF286R router with stock firmware. It also includes advanced options for flashing OpenWRT firmware and recovering the router via a serial connection. Proceed with caution, as some actions may result in bricking the device. (5 stars)
+- [internetmerge](https://github.com/dikeckaan/internetmerge): Bond multiple network links into faster total internet — cross-platform, Mac-first (Connectify Dispatcher style) (5 stars)
+- [OpenEUICC-5ber](https://github.com/dikeckaan/OpenEUICC-5ber): OpenEUICC build with 5ber eSIM support: a free, open-source Local Profile Assistant for Android. (5 stars)
+- [magisk-zte-f50-ims-voice-fix](https://github.com/dikeckaan/magisk-zte-f50-ims-voice-fix): Magisk overlay for ZTE F50 IMS apk — patches the PhoneStateMonitor SCREEN_OFF handler to stop call drops on screen lock. UNDER DEVELOPMENT: root cause not yet confirmed. (4 stars)
+- [magisk-zte-f50-statusbot](https://github.com/dikeckaan/magisk-zte-f50-statusbot): Telegram bot for ZTE F50 (rooted Android): status, AT, shell, ZTE perf, IMEI/SMS, tailscale toggle, speedtest, /update via GitHub (4 stars)
+
+## Pages
+
+- [Home](https://kaandikec.com/): about, featured projects, searchable repository list, contact form
+- [All projects](https://kaandikec.com/projects.html): every original repository, grouped by topic
+- [Full text for LLMs](https://kaandikec.com/llms-full.txt): every repository with language, stars, topics and dates
+- [VLESS to Xray converter](https://kaandikec.com/simplexray.html): turns a VLESS share link into an Xray client config
+- [mu300-linux web installer](https://kaandikec.com/mu300-linux/)
+- [Forza Horizon 6 telemetry dashboard](https://kaandikec.com/forza-horizon-6-telemetry-dashboard/)
+
+## Contact
+
+- GitHub: https://github.com/dikeckaan
+- X / Twitter: https://twitter.com/kaandikec
+- Instagram: https://instagram.com/kaandikec
+- Telegram: https://t.me/kaandikec
+- GitHub Sponsors: https://github.com/sponsors/dikeckaan
+- Email: site@kaandikec.org

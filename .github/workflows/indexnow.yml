@@ -1,0 +1,18 @@
+name: IndexNow
+
+# Pushes made by the "Update repo list" workflow don't trigger this (GITHUB_TOKEN
+# pushes never start other workflows); that workflow pings IndexNow itself.
+on:
+  push:
+    branches: [master]
+    paths: ['**.html', 'llms*.txt', 'sitemap.xml']
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          sleep 90  # let GitHub Pages publish first
+          .github/indexnow.sh

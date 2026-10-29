@@ -56,9 +56,15 @@ dikeckaan.github.io/
 ├── style.css           # All styles and animations
 ├── script.js           # Form logic, security, and interactions
 ├── projects.js         # Featured projects, stats and the repository explorer
+├── projects.html       # Every project on one static page (generated)
 ├── data/repos.json     # Public repositories, refreshed daily
 ├── scripts/fetch-repos.mjs           # Builds data/repos.json from the GitHub API
-├── .github/workflows/update-repos.yml  # Runs it every day
+├── scripts/build-site.mjs            # Pre-renders index.html, writes projects.html, llms*.txt, sitemap.xml
+├── .github/workflows/update-repos.yml  # Runs both every day, then pings IndexNow
+├── .github/workflows/indexnow.yml      # Pings IndexNow after manual pushes
+├── llms.txt / llms-full.txt          # Plain-text summaries for AI assistants (generated)
+├── robots.txt          # Allows all search engines and AI crawlers
+├── site.webmanifest, humans.txt, images/og.png
 ├── worker.js           # Cloudflare Worker for form handling
 ├── CNAME               # Custom domain configuration
 ├── robots.txt          # Search engine directives
@@ -109,6 +115,18 @@ dikeckaan.github.io/
 - Intersection Observer API - Scroll animations
 - Fetch API - Form submissions
 - Web Crypto API - Token generation
+
+---
+
+## 🔎 SEO & AI indexing
+
+- **No JavaScript needed to read the site:** stats, featured projects and the first page of repositories are pre-rendered into `index.html`; `projects.html` lists every project statically. Most AI crawlers (GPTBot, ClaudeBot, PerplexityBot…) don't run JavaScript.
+- **Structured data:** schema.org JSON-LD for `Person`, `WebSite`, `ProfilePage` and an `ItemList` of `SoftwareSourceCode`; `CollectionPage` on `projects.html`.
+- **llms.txt:** `/llms.txt` and `/llms-full.txt` follow [llmstxt.org](https://llmstxt.org).
+- **robots.txt:** every search engine and AI crawler is explicitly allowed.
+- **Sharing:** full Open Graph / Twitter tags with a 1200×630 card (`images/og.png`).
+- **IndexNow:** new content is pushed to Bing, Yandex, Seznam, Naver and Yep right after each change.
+- Regenerate locally with `node scripts/build-site.mjs`. Edit content outside the `<!-- …:START/END -->` markers; what's inside them is overwritten.
 
 ---
 

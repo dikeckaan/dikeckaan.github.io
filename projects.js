@@ -6,13 +6,6 @@
     const PAGE = 24;
     const FEATURED = 5;
 
-    // For repos that have no GitHub description yet.
-    const BLURBS = {
-        'MacOS-Workflow-VNC': 'A free macOS desktop over VNC in about five minutes, running on GitHub Actions runners with an ngrok tunnel.',
-        'OpenEUICC-5ber': 'OpenEUICC build with 5ber eSIM support: a free, open-source Local Profile Assistant for Android.',
-        'flutter-sni-bughost-checker': 'Flutter app that checks a list of hosts for working HTTPS / SNI and keeps the ones that pass.',
-    };
-
     // GitHub linguist colors for the languages that appear here.
     const COLORS = {
         Shell: '#89e051', Python: '#3572A5', C: '#555555', 'C++': '#f34b7d', 'C#': '#178600',
@@ -46,7 +39,7 @@
         }
     }
 
-    function describe(r) { return r.description || BLURBS[r.name] || ''; }
+    function describe(r) { return r.description || ''; }
 
     function langMeta(r) {
         if (!r.language) return '';

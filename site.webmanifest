@@ -1,0 +1,13 @@
+{
+  "name": "Kaan Dikeç — Developer & Engineer",
+  "short_name": "Kaan Dikeç",
+  "description": "Linux on ZTE 5G modems, Magisk modules, native macOS tools and 150+ open-source repositories.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    { "src": "https://avatars.githubusercontent.com/u/21171681?s=192&v=4", "sizes": "192x192", "type": "image/jpeg" },
+    { "src": "https://avatars.githubusercontent.com/u/21171681?s=512&v=4", "sizes": "512x512", "type": "image/jpeg" }
+  ]
+}

@@ -1,0 +1,745 @@
+# Kaan Dikeç
+
+> Abdurrahman Kaan Dikeç (also written Kaan Dikeç or Kaan Dikec; GitHub: dikeckaan) is a computer engineer, developer and musician from Istanbul, Türkiye. Most of his work is close to the hardware: he created mu300-linux, which runs a full Ubuntu or OpenWrt next to Android on the ZTE F50, MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620), together with a flashing toolkit, a VPN module and a family of Magisk modules for those devices. He also builds native macOS apps (easy-vphone), Hackintosh EFIs, a Forza Horizon telemetry dashboard and networking / VPN tools. Almost all of it is open source on GitHub.
+
+Numbers as of 2026-10-29: 98 original public repositories (165 including forks), 917 stars and 395 forks on his own repositories, 87 GitHub followers.
+
+## Most-starred projects
+
+- [mu300-linux](https://github.com/dikeckaan/mu300-linux): Linux (Ubuntu 24.04/26.04 or OpenWrt) next to Android on the ZTE F50 / MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620): installer, vendor 5.4 and mainline 6.18 / 7.2 kernels, 5G modem, Wi-Fi, battery, LEDs, NFC, findings (website: https://kaandikec.com/mu300-linux/) (725 stars)
+- [zte-f50-toolkit](https://github.com/dikeckaan/zte-f50-toolkit): ZTE F50 (5G MiFi) flashing toolkit — B09 downgrade, root, BL unlock, IMEI patch. Built on a custom spd_dump fork. (45 stars)
+- [MacOS-Workflow-VNC](https://github.com/dikeckaan/MacOS-Workflow-VNC): A free macOS desktop over VNC in about five minutes, running on GitHub Actions runners with an ngrok tunnel. (16 stars)
+- [macjaro](https://github.com/dikeckaan/macjaro): MacOS theme for Manjaro Gnome or any Arch based Gnome (15 stars)
+- [easy-vphone](https://github.com/dikeckaan/easy-vphone): Native macOS GUI for vphone-cli with VM management and an integrated IPA library (11 stars)
+- [mu300-linux-vpn](https://github.com/dikeckaan/mu300-linux-vpn): VPN toolkit for MU300 Linux (ZTE F50 / U30 Air): one command for Xray, sing-box, mihomo, WireGuard and OpenVPN profiles, as a module for Ubuntu and OpenWrt (11 stars)
+- [f50-magisk-modules](https://github.com/dikeckaan/f50-magisk-modules): Index of Magisk modules for ZTE F50 (rooted Android, Unisoc UMS9620). Each module auto-updates via updateJson; statusbot has /update command. (6 stars)
+- [mf286r-telnet-openwrt-exploit](https://github.com/dikeckaan/mf286r-telnet-openwrt-exploit): This guide provides step-by-step instructions to enable Telnet access on the ZTE MF286R router with stock firmware. It also includes advanced options for flashing OpenWRT firmware and recovering the router via a serial connection. Proceed with caution, as some actions may result in bricking the device. (5 stars)
+- [internetmerge](https://github.com/dikeckaan/internetmerge): Bond multiple network links into faster total internet — cross-platform, Mac-first (Connectify Dispatcher style) (5 stars)
+- [OpenEUICC-5ber](https://github.com/dikeckaan/OpenEUICC-5ber): OpenEUICC build with 5ber eSIM support: a free, open-source Local Profile Assistant for Android. (5 stars)
+- [magisk-zte-f50-ims-voice-fix](https://github.com/dikeckaan/magisk-zte-f50-ims-voice-fix): Magisk overlay for ZTE F50 IMS apk — patches the PhoneStateMonitor SCREEN_OFF handler to stop call drops on screen lock. UNDER DEVELOPMENT: root cause not yet confirmed. (4 stars)
+- [magisk-zte-f50-statusbot](https://github.com/dikeckaan/magisk-zte-f50-statusbot): Telegram bot for ZTE F50 (rooted Android): status, AT, shell, ZTE perf, IMEI/SMS, tailscale toggle, speedtest, /update via GitHub (4 stars)
+
+## Pages
+
+- [Home](https://kaandikec.com/): about, featured projects, searchable repository list, contact form
+- [All projects](https://kaandikec.com/projects.html): every original repository, grouped by topic
+- [Full text for LLMs](https://kaandikec.com/llms-full.txt): every repository with language, stars, topics and dates
+- [VLESS to Xray converter](https://kaandikec.com/simplexray.html): turns a VLESS share link into an Xray client config
+- [mu300-linux web installer](https://kaandikec.com/mu300-linux/)
+- [Forza Horizon 6 telemetry dashboard](https://kaandikec.com/forza-horizon-6-telemetry-dashboard/)
+
+## Contact
+
+- GitHub: https://github.com/dikeckaan
+- X / Twitter: https://twitter.com/kaandikec
+- Instagram: https://instagram.com/kaandikec
+- Telegram: https://t.me/kaandikec
+- GitHub Sponsors: https://github.com/sponsors/dikeckaan
+- Email: site@kaandikec.org
+
+## Every original repository
+
+### ZTE F50 / MU300 / U30 and 5G modems
+
+#### mu300-linux
+- URL: https://github.com/dikeckaan/mu300-linux
+- Website: https://kaandikec.com/mu300-linux/
+- Description: Linux (Ubuntu 24.04/26.04 or OpenWrt) next to Android on the ZTE F50 / MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620): installer, vendor 5.4 and mainline 6.18 / 7.2 kernels, 5G modem, Wi-Fi, battery, LEDs, NFC, findings
+- Language: C · Stars: 725 · Forks: 114
+- Topics: 5g, embedded-linux, linux, linux-kernel, openwrt, ubuntu, unisoc, zte
+- Created: 2026-09-16 · Last push: 2026-10-29
+
+#### zte-f50-toolkit
+- URL: https://github.com/dikeckaan/zte-f50-toolkit
+- Description: ZTE F50 (5G MiFi) flashing toolkit — B09 downgrade, root, BL unlock, IMEI patch. Built on a custom spd_dump fork.
+- Language: C · Stars: 45 · Forks: 12
+- Topics: none
+- Created: 2026-05-21 · Last push: 2026-09-12
+
+#### mu300-linux-vpn
+- URL: https://github.com/dikeckaan/mu300-linux-vpn
+- Description: VPN toolkit for MU300 Linux (ZTE F50 / U30 Air): one command for Xray, sing-box, mihomo, WireGuard and OpenVPN profiles, as a module for Ubuntu and OpenWrt
+- Language: Python · Stars: 11 · Forks: 2
+- Topics: none
+- Created: 2026-10-09 · Last push: 2026-10-18
+
+#### f50-magisk-modules
+- URL: https://github.com/dikeckaan/f50-magisk-modules
+- Description: Index of Magisk modules for ZTE F50 (rooted Android, Unisoc UMS9620). Each module auto-updates via updateJson; statusbot has /update command.
+- Language: n/a · Stars: 6 · Forks: 1 · License: GPL-3.0
+- Topics: none
+- Created: 2026-05-18 · Last push: 2026-06-12
+
+#### mf286r-telnet-openwrt-exploit
+- URL: https://github.com/dikeckaan/mf286r-telnet-openwrt-exploit
+- Description: This guide provides step-by-step instructions to enable Telnet access on the ZTE MF286R router with stock firmware. It also includes advanced options for flashing OpenWRT firmware and recovering the router via a serial connection. Proceed with caution, as some actions may result in bricking the device.
+- Language: PowerShell · Stars: 5 · Forks: 2
+- Topics: firmware-update, networking-tools, openwrt-flashing, router-exploit, serial-recovery, telnet-enable, tftp64, zte-mf286r
+- Created: 2024-11-23 · Last push: 2024-11-23
+
+#### OpenEUICC-5ber
+- URL: https://github.com/dikeckaan/OpenEUICC-5ber
+- Description: OpenEUICC build with 5ber eSIM support: a free, open-source Local Profile Assistant for Android.
+- Language: Kotlin · Stars: 5 · Forks: 1 · License: GPL-3.0
+- Topics: none
+- Created: 2025-01-19 · Last push: 2025-01-19
+
+#### magisk-zte-f50-ims-voice-fix
+- URL: https://github.com/dikeckaan/magisk-zte-f50-ims-voice-fix
+- Description: Magisk overlay for ZTE F50 IMS apk — patches the PhoneStateMonitor SCREEN_OFF handler to stop call drops on screen lock. UNDER DEVELOPMENT: root cause not yet confirmed.
+- Language: Shell · Stars: 4 · Forks: 1 · License: GPL-3.0
+- Topics: none
+- Created: 2026-05-19 · Last push: 2026-05-20
+
+#### magisk-zte-f50-statusbot
+- URL: https://github.com/dikeckaan/magisk-zte-f50-statusbot
+- Description: Telegram bot for ZTE F50 (rooted Android): status, AT, shell, ZTE perf, IMEI/SMS, tailscale toggle, speedtest, /update via GitHub
+- Language: Shell · Stars: 4 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2026-05-18 · Last push: 2026-06-12
+
+#### magisk-zte-f50-lite-mem
+- URL: https://github.com/dikeckaan/magisk-zte-f50-lite-mem
+- Description: zram + debloat memory relief for the low-RAM ZTE F50
+- Language: Shell · Stars: 4 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2026-06-12 · Last push: 2026-06-12
+
+#### dikec-control-panel
+- URL: https://github.com/dikeckaan/dikec-control-panel
+- Description: ZTE F50 için xray tabanlı VPN + web panel + Telegram bot + SMS merkezi (tek ortak backend)
+- Language: Shell · Stars: 3 · Forks: 0
+- Topics: android, magisk, sms, telegram-bot, vpn, xray, zte-f50
+- Created: 2026-06-26 · Last push: 2026-07-04
+
+#### magisk-zte-f50-sip-server
+- URL: https://github.com/dikeckaan/magisk-zte-f50-sip-server
+- Description: Embedded UDP/5060 SIP server for ZTE F50 (Magisk module). Static Go binary, pairs with the com.f50.sip F50SipBridge Android app. UNDER DEVELOPMENT — soft-deps on ims-voice-fix.
+- Language: Shell · Stars: 2 · Forks: 2 · License: GPL-3.0
+- Topics: none
+- Created: 2026-05-19 · Last push: 2026-05-20
+
+#### zte-ums9620-kernel-5.4.254
+- URL: https://github.com/dikeckaan/zte-ums9620-kernel-5.4.254
+- Description: ZTE UMS9620 (Unisoc T760) Linux 5.4.254 kernel source from ZTE's GPL release (U30 Air), used to build a custom kernel for the ZTE F50/MU300. Mirror of Enceka/android_kernel_zte_ums9620_mifi_u30air.
+- Language: C · Stars: 2 · Forks: 1
+- Topics: none
+- Created: 2026-09-16 · Last push: 2026-09-16
+
+#### zte-u30-pro-launcher
+- URL: https://github.com/dikeckaan/zte-u30-pro-launcher
+- Description: ZTE MU5358 (U30 Pro) UFI router icin ozel launcher + Magisk modulu — 240x240 yuvarlak dokunmatik ekran, Kotlin/Canvas, Gradle'siz
+- Language: Kotlin · Stars: 2 · Forks: 0
+- Topics: none
+- Created: 2026-09-08 · Last push: 2026-10-25
+
+#### forza-horizon-6-telemetry-dashboard
+- URL: https://github.com/dikeckaan/forza-horizon-6-telemetry-dashboard
+- Website: https://kaandikec.com/forza-horizon-6-telemetry-dashboard/
+- Description: Free real-time Forza Horizon 6 telemetry dashboard: tachometer, live 3D car with real models, track map, charts, lap & sprint timing, recording/replay. Windows, macOS, Linux, Android, iOS, iPad.
+- Language: TypeScript · Stars: 2 · Forks: 0
+- Topics: android, capacitor, cross-platform, dashboard, data-out, electron, fh6, forza, forza-horizon, forza-horizon-5, forza-horizon-6, ios, lap-timer, racing, react, sim-racing, telemetry, telemetry-dashboard, threejs, udp
+- Created: 2026-09-27 · Last push: 2026-09-27
+
+#### u30p-launcher
+- URL: https://github.com/dikeckaan/u30p-launcher
+- Description: Zero-dependency native launcher for the ZTE MU5358 (U30 Pro) round 240x240 screen. No Gradle, no AndroidX, 48 KB APK.
+- Language: Kotlin · Stars: 2 · Forks: 0
+- Topics: none
+- Created: 2026-08-02 · Last push: 2026-08-04
+
+#### u30prov2ray
+- URL: https://github.com/dikeckaan/u30prov2ray
+- Description: v2ray client for a 240x240 round-screen Android watch (MU5358). Patched Xray-core keeps allowInsecure working. GPL-3.0, derived from v2rayNG.
+- Language: Kotlin · Stars: 2 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2026-08-02 · Last push: 2026-08-02
+
+#### Kindle-Epub-Manager
+- URL: https://github.com/dikeckaan/Kindle-Epub-Manager
+- Description: Simplify your EPUB management: Search, open, and send books to Kindle with ease.
+- Language: Python · Stars: 2 · Forks: 0 · License: MIT
+- Topics: none
+- Created: 2023-11-13 · Last push: 2023-11-14
+
+#### magisk-zte-f50-sip-bridge-app
+- URL: https://github.com/dikeckaan/magisk-zte-f50-sip-bridge-app
+- Description: F50SipBridge — the on-device Android app (com.f50.sip) that pairs with magisk-zte-f50-sip-server: holds the default SMS role, registers to the local sipserver as 'server', observes cellular calls via TelephonyCallback, and (in progress) provides a WebSocket audio bridge for two-way SIP-cellular voice.
+- Language: Java · Stars: 1 · Forks: 2
+- Topics: none
+- Created: 2026-05-20 · Last push: 2026-05-20
+
+#### mf910v-vless-setup
+- URL: https://github.com/dikeckaan/mf910v-vless-setup
+- Description: (none)
+- Language: Batchfile · Stars: 1 · Forks: 2
+- Topics: none
+- Created: 2024-12-02 · Last push: 2025-05-19
+
+#### mu300-linux-mirror
+- URL: https://github.com/dikeckaan/mu300-linux-mirror
+- Description: Release files of dikeckaan/mu300-linux in parts, for the web installer (written by its release workflow; nothing to see here: use the main repository)
+- Language: n/a · Stars: 1 · Forks: 1
+- Topics: none
+- Created: 2026-10-13 · Last push: 2026-10-29
+
+#### magisk-zte-f50-cloudflared-tunnel
+- URL: https://github.com/dikeckaan/magisk-zte-f50-cloudflared-tunnel
+- Description: Cloudflare Tunnel (cloudflared) daemon with supervisor + health check for ZTE F50
+- Language: Shell · Stars: 1 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2026-05-18 · Last push: 2026-06-12
+
+#### magisk-zte-f50-bin-utils
+- URL: https://github.com/dikeckaan/magisk-zte-f50-bin-utils
+- Description: Static aarch64 binaries (curl/wget/jq/sendat/busybox) for ZTE F50 Magisk modules
+- Language: Shell · Stars: 1 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2026-05-18 · Last push: 2026-06-12
+
+#### magisk-zte-f50-cell-tools
+- URL: https://github.com/dikeckaan/magisk-zte-f50-cell-tools
+- Description: Cellular intelligence Magisk module for ZTE F50 — periodic AT command poller, cell tower DB, IMSI catcher anomaly detection. Powers statusbot /spectrum, /imsi_watch, /locate.
+- Language: Shell · Stars: 1 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2026-05-19 · Last push: 2026-06-12
+
+#### magisk-zte-f50-sms-cmd
+- URL: https://github.com/dikeckaan/magisk-zte-f50-sms-cmd
+- Description: SMS-based offline backup command channel for the ZTE F50 / Telegram statusbot. When the internet is down, an authorised phone number can text the device a short command and get a reply by SMS.
+- Language: Shell · Stars: 1 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2026-05-19 · Last push: 2026-05-19
+
+#### magisk-zte-f50-vpn-gateway
+- URL: https://github.com/dikeckaan/magisk-zte-f50-vpn-gateway
+- Description: F50 fork of Kr328/vpn-gateway — Magisk module that routes LAN through tun0, plus a Tailscale-aware exception so replies to Tailscale peers don't get swallowed by the VPN tunnel.
+- Language: Shell · Stars: 0 · Forks: 1 · License: GPL-3.0
+- Topics: none
+- Created: 2026-05-20 · Last push: 2026-05-20
+
+#### mu300-audio
+- URL: https://github.com/dikeckaan/mu300-audio
+- Description: Call audio for the ZTE F50 / U30 Air on mu300-linux's 5.4 kernel: prebuilt Unisoc audio drivers, installer, Bluetooth headset helper (firmware not included)
+- Language: C · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2026-10-18 · Last push: 2026-10-29
+
+#### mu300-audio-firmware
+- URL: https://github.com/dikeckaan/mu300-audio-firmware
+- Description: (none)
+- Language: n/a · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2026-10-18 · Last push: 2026-10-18
+
+#### u30p-boot-video
+- URL: https://github.com/dikeckaan/u30p-boot-video
+- Description: Magisk module: custom boot video for ZTE U30 Pro (auto-updating via GitHub releases)
+- Language: HTML · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2026-10-14 · Last push: 2026-10-17
+
+#### magisk-zte-f50-wireless-adb-keeper
+- URL: https://github.com/dikeckaan/magisk-zte-f50-wireless-adb-keeper
+- Description: Forces wireless ADB on port 55555 every boot (avoids UFI conflict) — ZTE F50 Magisk module
+- Language: Shell · Stars: 0 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2026-05-18 · Last push: 2026-08-04
+
+#### magisk-zte-f50-webview-provider
+- URL: https://github.com/dikeckaan/magisk-zte-f50-webview-provider
+- Description: Google WebView system provider for the ZTE F50 (stock device has no usable WebView)
+- Language: Shell · Stars: 0 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2026-06-12 · Last push: 2026-06-12
+
+#### magisk-zte-f50-traffic-stats
+- URL: https://github.com/dikeckaan/magisk-zte-f50-traffic-stats
+- Description: Pure-shell per-interface traffic accumulator (vnstat-lite) for ZTE F50 Magisk. Tracks cellular data usage day-by-day.
+- Language: Shell · Stars: 0 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2026-05-19 · Last push: 2026-06-12
+
+#### magisk-zte-f50-tailscale-control
+- URL: https://github.com/dikeckaan/magisk-zte-f50-tailscale-control
+- Description: Tailscale 1.98.2 (arm64) Magisk module: toggle from statusbot, adaptive routing, doesn't touch existing VPN
+- Language: Shell · Stars: 0 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2026-05-18 · Last push: 2026-06-12
+
+#### magisk-zte-f50-dropbear-ssh
+- URL: https://github.com/dikeckaan/magisk-zte-f50-dropbear-ssh
+- Description: Dropbear SSH server (port 22222, key-only auth) for ZTE F50 Magisk
+- Language: Shell · Stars: 0 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2026-05-18 · Last push: 2026-06-12
+
+#### magisk-zte-f50-adguardhome
+- URL: https://github.com/dikeckaan/magisk-zte-f50-adguardhome
+- Description: AdGuard Home (DNS ad-blocker) as a Magisk module for rooted Android (ZTE F50). Transparent hotspot-client DNS filtering on port 5353 via iptables NAT; web UI on port 3000.
+- Language: Shell · Stars: 0 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2026-05-19 · Last push: 2026-06-12
+
+#### magisk-zte-f50-hotspot-region
+- URL: https://github.com/dikeckaan/magisk-zte-f50-hotspot-region
+- Description: Change the ZTE F50 hotspot WiFi regulatory region (country code) at runtime — ADB + statusbot /region
+- Language: Shell · Stars: 0 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2026-06-12 · Last push: 2026-06-12
+
+#### magisk-zte-f50-mitm-lab
+- URL: https://github.com/dikeckaan/magisk-zte-f50-mitm-lab
+- Description: Transparent HTTPS MITM Magisk module for ZTE F50. Custom Go binary; default DISABLED; install with care.
+- Language: Shell · Stars: 0 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2026-05-19 · Last push: 2026-05-19
+
+#### magisk-zte-f50-tor-relay
+- URL: https://github.com/dikeckaan/magisk-zte-f50-tor-relay
+- Description: Tor 0.4.9.8 bridge node Magisk module for ZTE F50 — bundled OpenSSL/libevent, VPN-aware routing, bandwidth-capped.
+- Language: Shell · Stars: 0 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2026-05-19 · Last push: 2026-05-19
+
+#### eSim-Generator
+- URL: https://github.com/dikeckaan/eSim-Generator
+- Description: (none)
+- Language: n/a · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2026-01-07 · Last push: 2026-01-07
+
+### macOS, iOS and Hackintosh
+
+#### MacOS-Workflow-VNC
+- URL: https://github.com/dikeckaan/MacOS-Workflow-VNC
+- Description: A free macOS desktop over VNC in about five minutes, running on GitHub Actions runners with an ngrok tunnel.
+- Language: Shell · Stars: 16 · Forks: 190 · License: Apache-2.0
+- Topics: none
+- Created: 2021-05-26 · Last push: 2026-03-30
+
+#### macjaro
+- URL: https://github.com/dikeckaan/macjaro
+- Description: MacOS theme for Manjaro Gnome or any Arch based Gnome
+- Language: CSS · Stars: 15 · Forks: 2 · License: GPL-3.0
+- Topics: none
+- Created: 2020-03-13 · Last push: 2020-03-14
+
+#### easy-vphone
+- URL: https://github.com/dikeckaan/easy-vphone
+- Description: Native macOS GUI for vphone-cli with VM management and an integrated IPA library
+- Language: Swift · Stars: 11 · Forks: 2
+- Topics: none
+- Created: 2026-09-16 · Last push: 2026-10-29
+
+#### internetmerge
+- URL: https://github.com/dikeckaan/internetmerge
+- Description: Bond multiple network links into faster total internet — cross-platform, Mac-first (Connectify Dispatcher style)
+- Language: Go · Stars: 5 · Forks: 1
+- Topics: none
+- Created: 2026-05-30 · Last push: 2026-06-09
+
+#### z590-tomahawk-wifi-hackintosh-efi
+- URL: https://github.com/dikeckaan/z590-tomahawk-wifi-hackintosh-efi
+- Description: MSI MAG Z590 TOMAHAWK WIFI Hackintosh EFI
+- Language: n/a · Stars: 3 · Forks: 0
+- Topics: none
+- Created: 2022-04-23 · Last push: 2022-07-03
+
+#### Opencore-for-Msi-B450-Tomahawk-Max-Ryzen-5-3600
+- URL: https://github.com/dikeckaan/Opencore-for-Msi-B450-Tomahawk-Max-Ryzen-5-3600
+- Description: It should work most of ryzentosh configs
+- Language: C · Stars: 2 · Forks: 0
+- Topics: none
+- Created: 2022-02-13 · Last push: 2022-03-30
+
+#### Opencore-0.6.6-Msi-B450-Tomahawk-MAX
+- URL: https://github.com/dikeckaan/Opencore-0.6.6-Msi-B450-Tomahawk-MAX
+- Description: (none)
+- Language: n/a · Stars: 1 · Forks: 0
+- Topics: none
+- Created: 2021-02-03 · Last push: 2021-02-03
+
+#### homebrew-easy-vphone
+- URL: https://github.com/dikeckaan/homebrew-easy-vphone
+- Description: Homebrew tap for easy-vphone
+- Language: Ruby · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2026-09-16 · Last push: 2026-09-22
+
+### Android
+
+#### Sienna-GSI-Automation
+- URL: https://github.com/dikeckaan/Sienna-GSI-Automation
+- Description: (none)
+- Language: Shell · Stars: 3 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2020-07-03 · Last push: 2022-03-23
+
+#### Android-Full-Partition-Backup
+- URL: https://github.com/dikeckaan/Android-Full-Partition-Backup
+- Description: (none)
+- Language: Batchfile · Stars: 2 · Forks: 2
+- Topics: none
+- Created: 2024-02-16 · Last push: 2024-02-16
+
+#### GSI-TO-FTP
+- URL: https://github.com/dikeckaan/GSI-TO-FTP
+- Description: Gsi To Ftp
+- Language: n/a · Stars: 2 · Forks: 0 · License: Apache-2.0
+- Topics: none
+- Created: 2020-09-12 · Last push: 2020-09-15
+
+### Networking, VPN and servers
+
+#### Windows-RDP-ACTIONS_BACKUP
+- URL: https://github.com/dikeckaan/Windows-RDP-ACTIONS_BACKUP
+- Description: (none)
+- Language: PowerShell · Stars: 3 · Forks: 49 · License: AGPL-3.0
+- Topics: none
+- Created: 2021-05-25 · Last push: 2021-08-01
+
+#### flutter-sni-bughost-checker
+- URL: https://github.com/dikeckaan/flutter-sni-bughost-checker
+- Description: Flutter app that checks a list of hosts for working HTTPS / SNI and keeps the ones that pass.
+- Language: C++ · Stars: 3 · Forks: 2
+- Topics: none
+- Created: 2024-11-03 · Last push: 2025-05-10
+
+#### clawdbot-cloudflare-worker-ai
+- URL: https://github.com/dikeckaan/clawdbot-cloudflare-worker-ai
+- Description: (none)
+- Language: TypeScript · Stars: 2 · Forks: 0
+- Topics: none
+- Created: 2026-01-25 · Last push: 2026-02-02
+
+#### bektasotokurtarma
+- URL: https://github.com/dikeckaan/bektasotokurtarma
+- Description: Bektaş Oto Kurtarma — cekici.online. İstanbul Anadolu Yakası 7/24 oto çekici. Cloudflare Workers üzerinde statik site, build sırasında 116 SEO sayfası üretilir.
+- Language: JavaScript · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2026-08-30 · Last push: 2026-10-27
+
+#### urlforge
+- URL: https://github.com/dikeckaan/urlforge
+- Website: https://kaandikec.com/urlforge/
+- Description: Offline, single-file URL and encoding workbench for API developers — percent-encoding, query editing, batch conversion, curl/OAuth snippets. EN/TR.
+- Language: HTML · Stars: 0 · Forks: 0 · License: MIT
+- Topics: none
+- Created: 2026-09-21 · Last push: 2026-09-21
+
+#### DikecVPN
+- URL: https://github.com/dikeckaan/DikecVPN
+- Description: (none)
+- Language: n/a · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2026-08-26 · Last push: 2026-08-27
+
+#### cloudflare-llm
+- URL: https://github.com/dikeckaan/cloudflare-llm
+- Description: (none)
+- Language: Vue · Stars: 0 · Forks: 0 · License: MIT
+- Topics: none
+- Created: 2024-12-19 · Last push: 2024-12-19
+
+### More projects
+
+#### pi5-fan-control-web
+- URL: https://github.com/dikeckaan/pi5-fan-control-web
+- Description: (none)
+- Language: Python · Stars: 2 · Forks: 0
+- Topics: none
+- Created: 2025-04-06 · Last push: 2026-10-17
+
+#### keyflow-gallery
+- URL: https://github.com/dikeckaan/keyflow-gallery
+- Description: Hazır KeyFlow akışları — pull request ile katkıya açık
+- Language: Python · Stars: 1 · Forks: 1
+- Topics: none
+- Created: 2026-08-29 · Last push: 2026-08-29
+
+#### flutter-on-gh-pages
+- URL: https://github.com/dikeckaan/flutter-on-gh-pages
+- Description: (none)
+- Language: Dart · Stars: 1 · Forks: 1
+- Topics: none
+- Created: 2025-12-07 · Last push: 2025-12-07
+
+#### dikeckaan
+- URL: https://github.com/dikeckaan/dikeckaan
+- Description: (none)
+- Language: JavaScript · Stars: 1 · Forks: 0
+- Topics: none
+- Created: 2020-10-24 · Last push: 2026-10-29
+
+#### dikeckaan.github.io
+- URL: https://github.com/dikeckaan/dikeckaan.github.io
+- Description: my web site
+- Language: HTML · Stars: 1 · Forks: 0
+- Topics: none
+- Created: 2019-06-23 · Last push: 2026-10-29
+
+#### kindle-apps
+- URL: https://github.com/dikeckaan/kindle-apps
+- Description: Kindle (kindlehf) için e-ink dostu Türkçe uygulamalar: 2048, satranç, Wordle, hava durumu ve daha fazlası
+- Language: C · Stars: 1 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2026-10-18 · Last push: 2026-10-24
+
+#### Docker-NAS-Container-Creator
+- URL: https://github.com/dikeckaan/Docker-NAS-Container-Creator
+- Description: Docker nas setup command generator
+- Language: JavaScript · Stars: 1 · Forks: 0 · License: Apache-2.0
+- Topics: none
+- Created: 2024-11-29 · Last push: 2026-08-29
+
+#### Telegram-Bot-Chat
+- URL: https://github.com/dikeckaan/Telegram-Bot-Chat
+- Description: Telegram chat bot for premium users
+- Language: Python · Stars: 1 · Forks: 0 · License: MIT
+- Topics: none
+- Created: 2024-09-11 · Last push: 2024-09-11
+
+#### Chroot-Manager
+- URL: https://github.com/dikeckaan/Chroot-Manager
+- Description: Easy way to get cross architecture shell
+- Language: Shell · Stars: 1 · Forks: 0 · License: MIT
+- Topics: ampere-a1, ampere-altra, arm, compile, cross, cross-compile, linux, oracle, raspberry, x64
+- Created: 2023-02-27 · Last push: 2023-08-12
+
+#### pi-pico-mousejiggler
+- URL: https://github.com/dikeckaan/pi-pico-mousejiggler
+- Description: (none)
+- Language: Python · Stars: 1 · Forks: 0
+- Topics: none
+- Created: 2022-06-21 · Last push: 2022-06-22
+
+#### pi-overclock-checker
+- URL: https://github.com/dikeckaan/pi-overclock-checker
+- Description: Raspberry pi cpu overload shower
+- Language: Python · Stars: 1 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2019-04-03 · Last push: 2022-01-01
+
+#### C-ile-os-tespiti
+- URL: https://github.com/dikeckaan/C-ile-os-tespiti
+- Description: (none)
+- Language: C · Stars: 1 · Forks: 0
+- Topics: none
+- Created: 2018-01-08 · Last push: 2021-08-14
+
+#### Licenser-GUI
+- URL: https://github.com/dikeckaan/Licenser-GUI
+- Description: C# Prank licence tool
+- Language: C# · Stars: 1 · Forks: 0
+- Topics: none
+- Created: 2021-05-07 · Last push: 2021-05-07
+
+#### my-mc-world
+- URL: https://github.com/dikeckaan/my-mc-world
+- Description: My test server of MC
+- Language: Shell · Stars: 1 · Forks: 0
+- Topics: none
+- Created: 2020-11-13 · Last push: 2020-12-07
+
+#### PATTY
+- URL: https://github.com/dikeckaan/PATTY
+- Description: Kayip hayvan bulma servisi
+- Language: n/a · Stars: 1 · Forks: 0
+- Topics: none
+- Created: 2018-11-10 · Last push: 2018-11-10
+
+#### photo-search
+- URL: https://github.com/dikeckaan/photo-search
+- Description: (none)
+- Language: JavaScript · Stars: 0 · Forks: 1
+- Topics: none
+- Created: 2025-12-08 · Last push: 2025-12-08
+
+#### blobsaver-automation
+- URL: https://github.com/dikeckaan/blobsaver-automation
+- Description: (none)
+- Language: n/a · Stars: 0 · Forks: 1
+- Topics: none
+- Created: 2025-08-02 · Last push: 2025-08-12
+
+#### deneme
+- URL: https://github.com/dikeckaan/deneme
+- Description: (none)
+- Language: n/a · Stars: 0 · Forks: 1
+- Topics: none
+- Created: 2020-10-31 · Last push: 2020-11-01
+
+#### .github
+- URL: https://github.com/dikeckaan/.github
+- Description: (none)
+- Language: n/a · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2026-10-29 · Last push: 2026-10-29
+
+#### fnb58-web
+- URL: https://github.com/dikeckaan/fnb58-web
+- Description: FNIRSI FNB58 USB test cihazı için tarayıcı tabanlı PC aracı (WebHID)
+- Language: TypeScript · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2026-10-12 · Last push: 2026-10-12
+
+#### swagger-dark-ui
+- URL: https://github.com/dikeckaan/swagger-dark-ui
+- Website: https://oasforge.dev
+- Description: Dark-themed Swagger UI showcase — every OpenAPI 3.1 feature, live on GitHub Pages
+- Language: JavaScript · Stars: 0 · Forks: 0
+- Topics: api-documentation, openapi, openapi3, openapi3-1, openapi3-validation, openapi30, openapi31, openapi32, swagger
+- Created: 2026-07-08 · Last push: 2026-10-09
+
+#### claude-system-promt
+- URL: https://github.com/dikeckaan/claude-system-promt
+- Description: Claude Code mod: show, export and edit the system prompt with /system-promt
+- Language: TypeScript · Stars: 0 · Forks: 0 · License: MIT
+- Topics: none
+- Created: 2026-10-03 · Last push: 2026-10-03
+
+#### openapi-mcp
+- URL: https://github.com/dikeckaan/openapi-mcp
+- Description: (none)
+- Language: HTML · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2026-09-30 · Last push: 2026-09-30
+
+#### jwtforge
+- URL: https://github.com/dikeckaan/jwtforge
+- Description: (none)
+- Language: HTML · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2026-09-10 · Last push: 2026-09-11
+
+#### ApigeeRateLimitCalculator
+- URL: https://github.com/dikeckaan/ApigeeRateLimitCalculator
+- Description: (none)
+- Language: HTML · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2026-09-09 · Last push: 2026-09-09
+
+#### orbyt-legal
+- URL: https://github.com/dikeckaan/orbyt-legal
+- Description: ORBYT: Galaxy Drift — privacy policy and legal pages
+- Language: HTML · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2026-08-27 · Last push: 2026-08-27
+
+#### chirp-web
+- URL: https://github.com/dikeckaan/chirp-web
+- Description: Browser-native CHIRP — Pyodide + WebSerial. Sıfır kurulumlu radyo programlama.
+- Language: TypeScript · Stars: 0 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2026-05-27 · Last push: 2026-05-30
+
+#### turk-role-exporter
+- URL: https://github.com/dikeckaan/turk-role-exporter
+- Description: (none)
+- Language: JavaScript · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2026-03-16 · Last push: 2026-04-25
+
+#### rtl-sdr-web-control
+- URL: https://github.com/dikeckaan/rtl-sdr-web-control
+- Description: (none)
+- Language: Python · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2026-03-24 · Last push: 2026-04-05
+
+#### x2.email
+- URL: https://github.com/dikeckaan/x2.email
+- Website: https://x2email-wine.vercel.app
+- Description: (none)
+- Language: TypeScript · Stars: 0 · Forks: 0 · License: MIT
+- Topics: none
+- Created: 2025-12-31 · Last push: 2025-12-31
+
+#### java-springboot-kutuphane-uygulamasi
+- URL: https://github.com/dikeckaan/java-springboot-kutuphane-uygulamasi
+- Description: %100 ai ile yazılmıştır, claude code ile deneme olarak tasarlandı
+- Language: Java · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2025-11-21 · Last push: 2025-11-21
+
+#### raspberry-pi-imager-cli
+- URL: https://github.com/dikeckaan/raspberry-pi-imager-cli
+- Description: raspberry pi nvme ssd os installer without gui
+- Language: Shell · Stars: 0 · Forks: 0 · License: Apache-2.0
+- Topics: none
+- Created: 2024-11-25 · Last push: 2024-11-25
+
+#### no-semicolon
+- URL: https://github.com/dikeckaan/no-semicolon
+- Description: if you want to write code with no semicolon c/c++ use this method
+- Language: C++ · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2018-03-24 · Last push: 2020-10-05
+
+#### xoxarcade
+- URL: https://github.com/dikeckaan/xoxarcade
+- Description: (none)
+- Language: Java · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2019-09-11 · Last push: 2019-09-11
+
+#### silbeni
+- URL: https://github.com/dikeckaan/silbeni
+- Description: aglar
+- Language: Shell · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2019-05-17 · Last push: 2019-05-17
+
+#### BSOD
+- URL: https://github.com/dikeckaan/BSOD
+- Description: Get blue screen of Windows
+- Language: C++ · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2018-04-22 · Last push: 2018-04-22
+
+#### blog-kodlari
+- URL: https://github.com/dikeckaan/blog-kodlari
+- Description: (none)
+- Language: n/a · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2018-04-07 · Last push: 2018-04-07
+
+#### KAANDIKEC
+- URL: https://github.com/dikeckaan/KAANDIKEC
+- Description: sac
+- Language: Java · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2018-01-28 · Last push: 2018-01-28
+
+#### test
+- URL: https://github.com/dikeckaan/test
+- Description: deneme
+- Language: n/a · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2018-01-28 · Last push: 2018-01-28
+
+#### metin-ters-cevirici
+- URL: https://github.com/dikeckaan/metin-ters-cevirici
+- Description: (none)
+- Language: C++ · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2018-01-08 · Last push: 2018-01-08
+
+#### Not-Hesaplayici
+- URL: https://github.com/dikeckaan/Not-Hesaplayici
+- Description: (none)
+- Language: C++ · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2018-01-08 · Last push: 2018-01-08
+
+#### robotek
+- URL: https://github.com/dikeckaan/robotek
+- Description: (none)
+- Language: n/a · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2017-10-29 · Last push: 2017-10-29
+
+## Forks
+
+Repositories forked from other projects (not his own work): Magisk, warp-bot, suresim, balong-usbdload, docker-ubuntu_22-04-novnc-chromium, FastbootEnhance, remix, GenSMBIOS, callsmusic, OpenCore-Install-Guide, jekyll, jekyll-now, Android-SmartWebView, py-kms, idm-trial-reset, openapi.tools, awesome-rest, awesome-api-devtools, linphone-android, v2rayNG, neko-actions, system-prompts-and-models-of-ai-tools, aria2-service, gibMacOS-CI, lsposed-api, SpoofDPI-Turkiye, cf-workers-ai-ollama-api, vless-cf, Port-Windows-11-Xiaomi-Pad-5, woa-helper, myinstantsbot, MU-sm8150pkg, Provision, wireguard-install, WSL-Manager, FocalTechTouch, Infinite-Storage-Glitch, otherflix.github.io, cloverplay, rdpwin, reverse-rdp-windows-github-actions, rake-compiler, GSI-Automation, twrp_device_xiaomi_tissot, GnomeTweaks, instabot.py, Pi-Hole-PiVPN-on-Google-Compute-Engine-Free-Tier-with-Full-Tunnel-and-Split-Tunnel-OpenVPN-Configs, WOA-Deployer-Rpi, virtualhost, WebView-Android-Sample, GUI-for-GoodbyeDPI, vlmcsd, LTSC-Add-MicrosoftStore, kodlama-pratikleri, android, suruiha, Wallhaven-Downloader, P4wnP1, python, python-istihza, jetson-inference, AfterFromManjaro, ag2-centos, poisontap, Google-DDNS, bash-guide, RaspberryWebPanel.

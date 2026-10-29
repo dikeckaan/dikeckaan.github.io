@@ -1,0 +1,11 @@
+/* TEAM */
+Developer: Abdurrahman Kaan Dikeç
+Site: https://kaandikec.com
+GitHub: https://github.com/dikeckaan
+Twitter: @kaandikec
+Telegram: https://t.me/kaandikec
+Location: Istanbul, Türkiye
+
+/* SITE */
+Standards: HTML5, CSS3, schema.org JSON-LD, llms.txt
+Software: vanilla HTML/CSS/JS, GitHub Pages, GitHub Actions, Cloudflare Workers

@@ -53,7 +53,7 @@
   },
   {
    "name": "MacOS-Workflow-VNC",
-   "description": "",
+   "description": "A free macOS desktop over VNC in about five minutes, running on GitHub Actions runners with an ngrok tunnel.",
    "url": "https://github.com/dikeckaan/MacOS-Workflow-VNC",
    "homepage": "",
    "language": "Shell",
@@ -149,7 +149,7 @@
   },
   {
    "name": "OpenEUICC-5ber",
-   "description": "",
+   "description": "OpenEUICC build with 5ber eSIM support: a free, open-source Local Profile Assistant for Android.",
    "url": "https://github.com/dikeckaan/OpenEUICC-5ber",
    "homepage": "",
    "language": "Kotlin",
@@ -262,7 +262,7 @@
   },
   {
    "name": "flutter-sni-bughost-checker",
-   "description": "",
+   "description": "Flutter app that checks a list of hosts for working HTTPS / SNI and keeps the ones that pass.",
    "url": "https://github.com/dikeckaan/flutter-sni-bughost-checker",
    "homepage": "",
    "language": "C++",
