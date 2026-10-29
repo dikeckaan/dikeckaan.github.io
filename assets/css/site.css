@@ -83,6 +83,7 @@ kbd {
     background: var(--surface);
 }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+[hidden] { display: none !important; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .muted { color: var(--muted); }
 .wrap { width: 100%; max-width: 1160px; margin: 0 auto; padding: 0 20px; }

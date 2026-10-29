@@ -239,8 +239,10 @@
         $('#count').textContent = `${nf.format(list.length)} ${list.length === 1 ? 'repository' : 'repositories'}`;
         $('#empty').hidden = list.length > 0;
         const more = $('#more');
-        more.hidden = list.length <= shown;
-        more.textContent = `Show more (${nf.format(list.length - shown)} left)`;
+        const left = list.length - shown;
+        more.hidden = left <= 0;
+        if (left > PAGE) more.innerHTML = `Show ${PAGE} more <span class="muted">· ${nf.format(left)} left</span>`;
+        else if (left > 0) more.textContent = `Show the last ${nf.format(left)}`;
 
         const pills = [];
         if (state.q) pills.push(['q', `“${state.q}”`]);
