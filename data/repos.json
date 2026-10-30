@@ -1,13 +1,13 @@
 {
- "generated": "2026-10-29T22:39:52.096Z",
+ "generated": "2026-10-30T10:00:32.508Z",
  "user": {
   "login": "dikeckaan",
   "name": "KAAN DIKEC",
   "bio": "Computer Engineer, linux lover. Developer",
   "avatar": "https://avatars.githubusercontent.com/u/21171681?v=4",
   "location": "Turkey/Istanbul",
-  "followers": 87,
-  "public_repos": 165
+  "followers": 86,
+  "public_repos": 166
  },
  "repos": [
   {
@@ -16,9 +16,9 @@
    "url": "https://github.com/dikeckaan/mu300-linux",
    "homepage": "https://kaandikec.com/mu300-linux/",
    "language": "C",
-   "stars": 725,
-   "forks": 114,
-   "issues": 12,
+   "stars": 730,
+   "forks": 117,
+   "issues": 15,
    "fork": false,
    "archived": false,
    "topics": [
@@ -97,7 +97,7 @@
    "topics": [],
    "license": "",
    "created": "2026-09-16T06:34:56Z",
-   "pushed": "2026-10-29T21:56:41Z"
+   "pushed": "2026-10-30T09:56:52Z"
   },
   {
    "name": "mu300-linux-vpn",
@@ -130,6 +130,22 @@
    "license": "GPL-3.0",
    "created": "2026-05-18T21:35:36Z",
    "pushed": "2026-06-12T21:59:33Z"
+  },
+  {
+   "name": "magisk-zte-f50-statusbot",
+   "description": "Telegram bot for ZTE F50 (rooted Android): status, AT, shell, ZTE perf, IMEI/SMS, tailscale toggle, speedtest, /update via GitHub",
+   "url": "https://github.com/dikeckaan/magisk-zte-f50-statusbot",
+   "homepage": "",
+   "language": "Shell",
+   "stars": 5,
+   "forks": 0,
+   "issues": 0,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "GPL-3.0",
+   "created": "2026-05-18T21:33:34Z",
+   "pushed": "2026-06-12T21:47:41Z"
   },
   {
    "name": "internetmerge",
@@ -187,22 +203,6 @@
    "license": "",
    "created": "2024-11-23T08:49:32Z",
    "pushed": "2024-11-23T08:55:57Z"
-  },
-  {
-   "name": "magisk-zte-f50-statusbot",
-   "description": "Telegram bot for ZTE F50 (rooted Android): status, AT, shell, ZTE perf, IMEI/SMS, tailscale toggle, speedtest, /update via GitHub",
-   "url": "https://github.com/dikeckaan/magisk-zte-f50-statusbot",
-   "homepage": "",
-   "language": "Shell",
-   "stars": 4,
-   "forks": 0,
-   "issues": 0,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "GPL-3.0",
-   "created": "2026-05-18T21:33:34Z",
-   "pushed": "2026-06-12T21:47:41Z"
   },
   {
    "name": "magisk-zte-f50-lite-mem",
@@ -570,22 +570,6 @@
    "pushed": "2020-09-15T08:44:04Z"
   },
   {
-   "name": "dikeckaan",
-   "description": "",
-   "url": "https://github.com/dikeckaan/dikeckaan",
-   "homepage": "",
-   "language": "JavaScript",
-   "stars": 1,
-   "forks": 0,
-   "issues": 0,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "",
-   "created": "2020-10-24T21:55:41Z",
-   "pushed": "2026-10-29T22:39:42Z"
-  },
-  {
    "name": "dikeckaan.github.io",
    "description": "my web site",
    "url": "https://github.com/dikeckaan/dikeckaan.github.io",
@@ -593,13 +577,45 @@
    "language": "HTML",
    "stars": 1,
    "forks": 0,
-   "issues": 0,
+   "issues": 1,
    "fork": false,
    "archived": false,
    "topics": [],
    "license": "",
    "created": "2019-06-23T07:23:06Z",
-   "pushed": "2026-10-29T22:39:27Z"
+   "pushed": "2026-10-30T06:07:53Z"
+  },
+  {
+   "name": "dikeckaan",
+   "description": "",
+   "url": "https://github.com/dikeckaan/dikeckaan",
+   "homepage": "",
+   "language": "JavaScript",
+   "stars": 1,
+   "forks": 0,
+   "issues": 1,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "",
+   "created": "2020-10-24T21:55:41Z",
+   "pushed": "2026-10-29T22:47:39Z"
+  },
+  {
+   "name": "mu300-audio",
+   "description": "Call audio for the ZTE F50 / U30 Air on mu300-linux's 5.4 kernel: prebuilt Unisoc audio drivers, installer, Bluetooth headset helper (firmware not included)",
+   "url": "https://github.com/dikeckaan/mu300-audio",
+   "homepage": "",
+   "language": "C",
+   "stars": 1,
+   "forks": 2,
+   "issues": 0,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "",
+   "created": "2026-10-18T08:16:50Z",
+   "pushed": "2026-10-29T07:13:44Z"
   },
   {
    "name": "mu300-linux-mirror",
@@ -1141,6 +1157,29 @@
    "pushed": "2016-09-06T04:01:29Z"
   },
   {
+   "name": "mu5358-linux",
+   "description": "OpenWrt on the ZTE U30 Pro (MU5358, UMS9632) 5G hotspot, next to Android, with its round screen as a control panel",
+   "url": "https://github.com/dikeckaan/mu5358-linux",
+   "homepage": "https://kaandikec.com/mu5358-linux/",
+   "language": "C",
+   "stars": 0,
+   "forks": 0,
+   "issues": 1,
+   "fork": false,
+   "archived": false,
+   "topics": [
+    "5g-hotspot",
+    "openwrt",
+    "u30-pro",
+    "ums9632",
+    "unisoc",
+    "zte"
+   ],
+   "license": "",
+   "created": "2026-10-30T04:22:30Z",
+   "pushed": "2026-10-30T04:23:09Z"
+  },
+  {
    "name": ".github",
    "description": "",
    "url": "https://github.com/dikeckaan/.github",
@@ -1155,22 +1194,6 @@
    "license": "",
    "created": "2026-10-29T22:15:03Z",
    "pushed": "2026-10-29T22:22:53Z"
-  },
-  {
-   "name": "mu300-audio",
-   "description": "Call audio for the ZTE F50 / U30 Air on mu300-linux's 5.4 kernel: prebuilt Unisoc audio drivers, installer, Bluetooth headset helper (firmware not included)",
-   "url": "https://github.com/dikeckaan/mu300-audio",
-   "homepage": "",
-   "language": "C",
-   "stars": 0,
-   "forks": 0,
-   "issues": 0,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "",
-   "created": "2026-10-18T08:16:50Z",
-   "pushed": "2026-10-29T07:13:44Z"
   },
   {
    "name": "bektasotokurtarma",
