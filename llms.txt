@@ -35,4 +35,4 @@ Numbers as of 2026-10-29: 98 original public repositories (165 including forks),
 - Instagram: https://instagram.com/kaandikec
 - Telegram: https://t.me/kaandikec
 - GitHub Sponsors: https://github.com/sponsors/dikeckaan
-- Email: site@kaandikec.org
+- Email: site@kaandikec.com
