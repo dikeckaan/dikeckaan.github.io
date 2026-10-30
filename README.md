@@ -352,7 +352,7 @@ This project is open source and available under the [MIT License](LICENSE).
 - GitHub: [@dikeckaan](https://github.com/dikeckaan)
 - Twitter: [@kaandikec](https://twitter.com/kaandikec)
 - Instagram: [@kaandikec](https://instagram.com/kaandikec)
-- Email: site@kaandikec.com
+- Contact: the form at [kaandikec.com/#contact](https://kaandikec.com/#contact)
 
 ---
 

@@ -30,9 +30,10 @@ Numbers as of 2026-10-29: 98 original public repositories (165 including forks),
 
 ## Contact
 
+The best way to reach him is the contact form at https://kaandikec.com/#contact (he doesn't publish an email address).
+
 - GitHub: https://github.com/dikeckaan
 - X / Twitter: https://twitter.com/kaandikec
 - Instagram: https://instagram.com/kaandikec
 - Telegram: https://t.me/kaandikec
 - GitHub Sponsors: https://github.com/sponsors/dikeckaan
-- Email: site@kaandikec.com

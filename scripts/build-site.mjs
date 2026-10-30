@@ -117,7 +117,8 @@ function jsonLd() {
     description: 'Computer engineer from Istanbul building mu300-linux (Linux on the ZTE F50 / MU300 / U30 Air 5G hotspots), Magisk modules for rooted Android and native macOS tools.',
     url: `${SITE}/`,
     image: 'https://avatars.githubusercontent.com/u/21171681?s=460&v=4',
-    email: 'mailto:site@kaandikec.com',
+    // No public email address: messages go through the contact form.
+    contactPoint: { '@type': 'ContactPoint', contactType: 'personal', url: `${SITE}/#contact`, availableLanguage: ['English', 'Turkish'] },
     address: { '@type': 'PostalAddress', addressLocality: 'Istanbul', addressCountry: 'TR' },
     nationality: { '@type': 'Country', name: 'Türkiye' },
     knowsAbout: ['Embedded Linux', 'Linux kernel', 'OpenWrt', 'Ubuntu', 'Android', 'Magisk', 'ZTE F50', 'ZTE MU300', 'ZTE U30 Air', 'Unisoc UMS9620', '5G modems', 'macOS', 'Swift', 'Hackintosh', 'VPN', 'Xray', 'WireGuard', 'Networking', 'Shell scripting', 'Python', 'Kotlin', 'TypeScript', 'Music'],
@@ -312,8 +313,9 @@ ${own.filter((r) => !r.archived).sort(byStars).slice(0, 12).map((r) => `${line(r
 
 ## Contact
 
+The best way to reach him is the contact form at ${SITE}/#contact (he doesn't publish an email address).
+
 ${Object.entries(SOCIAL).map(([k, v]) => `- ${k}: ${v}`).join('\n')}
-- Email: site@kaandikec.com
 `;
 await writeFile(new URL('llms.txt', ROOT), llms);
 
