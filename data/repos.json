@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T10:00:32.508Z",
+ "generated": "2026-10-31T09:38:55.680Z",
  "user": {
   "login": "dikeckaan",
   "name": "KAAN DIKEC",
@@ -7,7 +7,7 @@
   "avatar": "https://avatars.githubusercontent.com/u/21171681?v=4",
   "location": "Turkey/Istanbul",
   "followers": 86,
-  "public_repos": 166
+  "public_repos": 165
  },
  "repos": [
   {
@@ -16,9 +16,9 @@
    "url": "https://github.com/dikeckaan/mu300-linux",
    "homepage": "https://kaandikec.com/mu300-linux/",
    "language": "C",
-   "stars": 730,
-   "forks": 117,
-   "issues": 15,
+   "stars": 742,
+   "forks": 119,
+   "issues": 18,
    "fork": false,
    "archived": false,
    "topics": [
@@ -33,7 +33,7 @@
    ],
    "license": "",
    "created": "2026-09-16T18:51:14Z",
-   "pushed": "2026-10-29T15:55:45Z"
+   "pushed": "2026-10-31T01:06:41Z"
   },
   {
    "name": "zte-f50-toolkit",
@@ -41,7 +41,7 @@
    "url": "https://github.com/dikeckaan/zte-f50-toolkit",
    "homepage": "",
    "language": "C",
-   "stars": 45,
+   "stars": 46,
    "forks": 12,
    "issues": 1,
    "fork": false,
@@ -97,7 +97,7 @@
    "topics": [],
    "license": "",
    "created": "2026-09-16T06:34:56Z",
-   "pushed": "2026-10-30T09:56:52Z"
+   "pushed": "2026-10-31T05:53:13Z"
   },
   {
    "name": "mu300-linux-vpn",
@@ -132,6 +132,22 @@
    "pushed": "2026-06-12T21:59:33Z"
   },
   {
+   "name": "internetmerge",
+   "description": "Bond multiple network links into faster total internet — cross-platform, Mac-first (Connectify Dispatcher style)",
+   "url": "https://github.com/dikeckaan/internetmerge",
+   "homepage": "",
+   "language": "Go",
+   "stars": 6,
+   "forks": 1,
+   "issues": 2,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "",
+   "created": "2026-05-30T10:24:33Z",
+   "pushed": "2026-06-09T20:24:20Z"
+  },
+  {
    "name": "magisk-zte-f50-statusbot",
    "description": "Telegram bot for ZTE F50 (rooted Android): status, AT, shell, ZTE perf, IMEI/SMS, tailscale toggle, speedtest, /update via GitHub",
    "url": "https://github.com/dikeckaan/magisk-zte-f50-statusbot",
@@ -146,22 +162,6 @@
    "license": "GPL-3.0",
    "created": "2026-05-18T21:33:34Z",
    "pushed": "2026-06-12T21:47:41Z"
-  },
-  {
-   "name": "internetmerge",
-   "description": "Bond multiple network links into faster total internet — cross-platform, Mac-first (Connectify Dispatcher style)",
-   "url": "https://github.com/dikeckaan/internetmerge",
-   "homepage": "",
-   "language": "Go",
-   "stars": 5,
-   "forks": 1,
-   "issues": 2,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "",
-   "created": "2026-05-30T10:24:33Z",
-   "pushed": "2026-06-09T20:24:20Z"
   },
   {
    "name": "OpenEUICC-5ber",
@@ -570,20 +570,20 @@
    "pushed": "2020-09-15T08:44:04Z"
   },
   {
-   "name": "dikeckaan.github.io",
-   "description": "my web site",
-   "url": "https://github.com/dikeckaan/dikeckaan.github.io",
+   "name": "mu300-linux-mirror",
+   "description": "Release files of dikeckaan/mu300-linux in parts, for the web installer (written by its release workflow; nothing to see here: use the main repository)",
+   "url": "https://github.com/dikeckaan/mu300-linux-mirror",
    "homepage": "",
-   "language": "HTML",
+   "language": "",
    "stars": 1,
-   "forks": 0,
-   "issues": 1,
+   "forks": 1,
+   "issues": 0,
    "fork": false,
    "archived": false,
    "topics": [],
    "license": "",
-   "created": "2019-06-23T07:23:06Z",
-   "pushed": "2026-10-30T06:07:53Z"
+   "created": "2026-10-13T10:50:43Z",
+   "pushed": "2026-10-30T12:59:29Z"
   },
   {
    "name": "dikeckaan",
@@ -599,39 +599,23 @@
    "topics": [],
    "license": "",
    "created": "2020-10-24T21:55:41Z",
-   "pushed": "2026-10-29T22:47:39Z"
+   "pushed": "2026-10-30T10:55:11Z"
   },
   {
-   "name": "mu300-audio",
-   "description": "Call audio for the ZTE F50 / U30 Air on mu300-linux's 5.4 kernel: prebuilt Unisoc audio drivers, installer, Bluetooth headset helper (firmware not included)",
-   "url": "https://github.com/dikeckaan/mu300-audio",
+   "name": "dikeckaan.github.io",
+   "description": "my web site",
+   "url": "https://github.com/dikeckaan/dikeckaan.github.io",
    "homepage": "",
-   "language": "C",
+   "language": "HTML",
    "stars": 1,
-   "forks": 2,
-   "issues": 0,
+   "forks": 0,
+   "issues": 1,
    "fork": false,
    "archived": false,
    "topics": [],
    "license": "",
-   "created": "2026-10-18T08:16:50Z",
-   "pushed": "2026-10-29T07:13:44Z"
-  },
-  {
-   "name": "mu300-linux-mirror",
-   "description": "Release files of dikeckaan/mu300-linux in parts, for the web installer (written by its release workflow; nothing to see here: use the main repository)",
-   "url": "https://github.com/dikeckaan/mu300-linux-mirror",
-   "homepage": "",
-   "language": "",
-   "stars": 1,
-   "forks": 1,
-   "issues": 0,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "",
-   "created": "2026-10-13T10:50:43Z",
-   "pushed": "2026-10-29T05:26:58Z"
+   "created": "2019-06-23T07:23:06Z",
+   "pushed": "2026-10-30T10:00:33Z"
   },
   {
    "name": "kindle-apps",
@@ -1177,7 +1161,7 @@
    ],
    "license": "",
    "created": "2026-10-30T04:22:30Z",
-   "pushed": "2026-10-30T04:23:09Z"
+   "pushed": "2026-10-30T21:50:15Z"
   },
   {
    "name": ".github",

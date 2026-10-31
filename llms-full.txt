@@ -2,19 +2,19 @@
 
 > Abdurrahman Kaan Dikeç (also written Kaan Dikeç or Kaan Dikec; GitHub: dikeckaan) is a computer engineer, developer and musician from Istanbul, Türkiye. Most of his work is close to the hardware: he created mu300-linux, which runs a full Ubuntu or OpenWrt next to Android on the ZTE F50, MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620), together with a flashing toolkit, a VPN module and a family of Magisk modules for those devices. He also builds native macOS apps (easy-vphone), Hackintosh EFIs, a Forza Horizon telemetry dashboard and networking / VPN tools. Almost all of it is open source on GitHub.
 
-Numbers as of 2026-10-30: 99 original public repositories (166 including forks), 924 stars and 400 forks on his own repositories, 86 GitHub followers.
+Numbers as of 2026-10-31: 98 original public repositories (165 including forks), 937 stars and 400 forks on his own repositories, 86 GitHub followers.
 
 ## Most-starred projects
 
-- [mu300-linux](https://github.com/dikeckaan/mu300-linux): Linux (Ubuntu 24.04/26.04 or OpenWrt) next to Android on the ZTE F50 / MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620): installer, vendor 5.4 and mainline 6.18 / 7.2 kernels, 5G modem, Wi-Fi, battery, LEDs, NFC, findings (website: https://kaandikec.com/mu300-linux/) (730 stars)
-- [zte-f50-toolkit](https://github.com/dikeckaan/zte-f50-toolkit): ZTE F50 (5G MiFi) flashing toolkit — B09 downgrade, root, BL unlock, IMEI patch. Built on a custom spd_dump fork. (45 stars)
+- [mu300-linux](https://github.com/dikeckaan/mu300-linux): Linux (Ubuntu 24.04/26.04 or OpenWrt) next to Android on the ZTE F50 / MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620): installer, vendor 5.4 and mainline 6.18 / 7.2 kernels, 5G modem, Wi-Fi, battery, LEDs, NFC, findings (website: https://kaandikec.com/mu300-linux/) (742 stars)
+- [zte-f50-toolkit](https://github.com/dikeckaan/zte-f50-toolkit): ZTE F50 (5G MiFi) flashing toolkit — B09 downgrade, root, BL unlock, IMEI patch. Built on a custom spd_dump fork. (46 stars)
 - [MacOS-Workflow-VNC](https://github.com/dikeckaan/MacOS-Workflow-VNC): A free macOS desktop over VNC in about five minutes, running on GitHub Actions runners with an ngrok tunnel. (16 stars)
 - [macjaro](https://github.com/dikeckaan/macjaro): MacOS theme for Manjaro Gnome or any Arch based Gnome (15 stars)
 - [easy-vphone](https://github.com/dikeckaan/easy-vphone): Native macOS GUI for vphone-cli with VM management and an integrated IPA library (11 stars)
 - [mu300-linux-vpn](https://github.com/dikeckaan/mu300-linux-vpn): VPN toolkit for MU300 Linux (ZTE F50 / U30 Air): one command for Xray, sing-box, mihomo, WireGuard and OpenVPN profiles, as a module for Ubuntu and OpenWrt (11 stars)
 - [f50-magisk-modules](https://github.com/dikeckaan/f50-magisk-modules): Index of Magisk modules for ZTE F50 (rooted Android, Unisoc UMS9620). Each module auto-updates via updateJson; statusbot has /update command. (6 stars)
+- [internetmerge](https://github.com/dikeckaan/internetmerge): Bond multiple network links into faster total internet — cross-platform, Mac-first (Connectify Dispatcher style) (6 stars)
 - [mf286r-telnet-openwrt-exploit](https://github.com/dikeckaan/mf286r-telnet-openwrt-exploit): This guide provides step-by-step instructions to enable Telnet access on the ZTE MF286R router with stock firmware. It also includes advanced options for flashing OpenWRT firmware and recovering the router via a serial connection. Proceed with caution, as some actions may result in bricking the device. (5 stars)
-- [internetmerge](https://github.com/dikeckaan/internetmerge): Bond multiple network links into faster total internet — cross-platform, Mac-first (Connectify Dispatcher style) (5 stars)
 - [OpenEUICC-5ber](https://github.com/dikeckaan/OpenEUICC-5ber): OpenEUICC build with 5ber eSIM support: a free, open-source Local Profile Assistant for Android. (5 stars)
 - [magisk-zte-f50-statusbot](https://github.com/dikeckaan/magisk-zte-f50-statusbot): Telegram bot for ZTE F50 (rooted Android): status, AT, shell, ZTE perf, IMEI/SMS, tailscale toggle, speedtest, /update via GitHub (5 stars)
 - [magisk-zte-f50-ims-voice-fix](https://github.com/dikeckaan/magisk-zte-f50-ims-voice-fix): Magisk overlay for ZTE F50 IMS apk — patches the PhoneStateMonitor SCREEN_OFF handler to stop call drops on screen lock. UNDER DEVELOPMENT: root cause not yet confirmed. (4 stars)
@@ -46,14 +46,14 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - URL: https://github.com/dikeckaan/mu300-linux
 - Website: https://kaandikec.com/mu300-linux/
 - Description: Linux (Ubuntu 24.04/26.04 or OpenWrt) next to Android on the ZTE F50 / MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620): installer, vendor 5.4 and mainline 6.18 / 7.2 kernels, 5G modem, Wi-Fi, battery, LEDs, NFC, findings
-- Language: C · Stars: 730 · Forks: 117
+- Language: C · Stars: 742 · Forks: 119
 - Topics: 5g, embedded-linux, linux, linux-kernel, openwrt, ubuntu, unisoc, zte
-- Created: 2026-09-16 · Last push: 2026-10-29
+- Created: 2026-09-16 · Last push: 2026-10-31
 
 #### zte-f50-toolkit
 - URL: https://github.com/dikeckaan/zte-f50-toolkit
 - Description: ZTE F50 (5G MiFi) flashing toolkit — B09 downgrade, root, BL unlock, IMEI patch. Built on a custom spd_dump fork.
-- Language: C · Stars: 45 · Forks: 12
+- Language: C · Stars: 46 · Forks: 12
 - Topics: none
 - Created: 2026-05-21 · Last push: 2026-09-12
 
@@ -163,13 +163,6 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Topics: none
 - Created: 2023-11-13 · Last push: 2023-11-14
 
-#### mu300-audio
-- URL: https://github.com/dikeckaan/mu300-audio
-- Description: Call audio for the ZTE F50 / U30 Air on mu300-linux's 5.4 kernel: prebuilt Unisoc audio drivers, installer, Bluetooth headset helper (firmware not included)
-- Language: C · Stars: 1 · Forks: 2
-- Topics: none
-- Created: 2026-10-18 · Last push: 2026-10-29
-
 #### magisk-zte-f50-sip-bridge-app
 - URL: https://github.com/dikeckaan/magisk-zte-f50-sip-bridge-app
 - Description: F50SipBridge — the on-device Android app (com.f50.sip) that pairs with magisk-zte-f50-sip-server: holds the default SMS role, registers to the local sipserver as 'server', observes cellular calls via TelephonyCallback, and (in progress) provides a WebSocket audio bridge for two-way SIP-cellular voice.
@@ -189,7 +182,7 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Description: Release files of dikeckaan/mu300-linux in parts, for the web installer (written by its release workflow; nothing to see here: use the main repository)
 - Language: n/a · Stars: 1 · Forks: 1
 - Topics: none
-- Created: 2026-10-13 · Last push: 2026-10-29
+- Created: 2026-10-13 · Last push: 2026-10-30
 
 #### magisk-zte-f50-cloudflared-tunnel
 - URL: https://github.com/dikeckaan/magisk-zte-f50-cloudflared-tunnel
@@ -339,12 +332,12 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Description: Native macOS GUI for vphone-cli with VM management and an integrated IPA library
 - Language: Swift · Stars: 11 · Forks: 2
 - Topics: none
-- Created: 2026-09-16 · Last push: 2026-10-30
+- Created: 2026-09-16 · Last push: 2026-10-31
 
 #### internetmerge
 - URL: https://github.com/dikeckaan/internetmerge
 - Description: Bond multiple network links into faster total internet — cross-platform, Mac-first (Connectify Dispatcher style)
-- Language: Go · Stars: 5 · Forks: 1
+- Language: Go · Stars: 6 · Forks: 1
 - Topics: none
 - Created: 2026-05-30 · Last push: 2026-06-09
 
@@ -474,19 +467,19 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Topics: none
 - Created: 2025-12-07 · Last push: 2025-12-07
 
+#### dikeckaan
+- URL: https://github.com/dikeckaan/dikeckaan
+- Description: (none)
+- Language: JavaScript · Stars: 1 · Forks: 0
+- Topics: none
+- Created: 2020-10-24 · Last push: 2026-10-30
+
 #### dikeckaan.github.io
 - URL: https://github.com/dikeckaan/dikeckaan.github.io
 - Description: my web site
 - Language: HTML · Stars: 1 · Forks: 0
 - Topics: none
 - Created: 2019-06-23 · Last push: 2026-10-30
-
-#### dikeckaan
-- URL: https://github.com/dikeckaan/dikeckaan
-- Description: (none)
-- Language: JavaScript · Stars: 1 · Forks: 0
-- Topics: none
-- Created: 2020-10-24 · Last push: 2026-10-29
 
 #### kindle-apps
 - URL: https://github.com/dikeckaan/kindle-apps
