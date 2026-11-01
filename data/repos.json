@@ -1,12 +1,12 @@
 {
- "generated": "2026-10-31T09:38:55.680Z",
+ "generated": "2026-11-01T10:27:36.108Z",
  "user": {
   "login": "dikeckaan",
   "name": "KAAN DIKEC",
   "bio": "Computer Engineer, linux lover. Developer",
   "avatar": "https://avatars.githubusercontent.com/u/21171681?v=4",
   "location": "Turkey/Istanbul",
-  "followers": 86,
+  "followers": 87,
   "public_repos": 165
  },
  "repos": [
@@ -16,9 +16,9 @@
    "url": "https://github.com/dikeckaan/mu300-linux",
    "homepage": "https://kaandikec.com/mu300-linux/",
    "language": "C",
-   "stars": 742,
-   "forks": 119,
-   "issues": 18,
+   "stars": 755,
+   "forks": 120,
+   "issues": 19,
    "fork": false,
    "archived": false,
    "topics": [
@@ -84,6 +84,22 @@
    "pushed": "2020-03-14T19:49:50Z"
   },
   {
+   "name": "mu300-linux-vpn",
+   "description": "VPN toolkit for MU300 Linux (ZTE F50 / U30 Air): one command for Xray, sing-box, mihomo, WireGuard and OpenVPN profiles, as a module for Ubuntu and OpenWrt",
+   "url": "https://github.com/dikeckaan/mu300-linux-vpn",
+   "homepage": "",
+   "language": "Python",
+   "stars": 12,
+   "forks": 2,
+   "issues": 3,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "",
+   "created": "2026-10-09T18:25:19Z",
+   "pushed": "2026-10-18T07:46:21Z"
+  },
+  {
    "name": "easy-vphone",
    "description": "Native macOS GUI for vphone-cli with VM management and an integrated IPA library",
    "url": "https://github.com/dikeckaan/easy-vphone",
@@ -97,23 +113,7 @@
    "topics": [],
    "license": "",
    "created": "2026-09-16T06:34:56Z",
-   "pushed": "2026-10-31T05:53:13Z"
-  },
-  {
-   "name": "mu300-linux-vpn",
-   "description": "VPN toolkit for MU300 Linux (ZTE F50 / U30 Air): one command for Xray, sing-box, mihomo, WireGuard and OpenVPN profiles, as a module for Ubuntu and OpenWrt",
-   "url": "https://github.com/dikeckaan/mu300-linux-vpn",
-   "homepage": "",
-   "language": "Python",
-   "stars": 11,
-   "forks": 2,
-   "issues": 3,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "",
-   "created": "2026-10-09T18:25:19Z",
-   "pushed": "2026-10-18T07:46:21Z"
+   "pushed": "2026-11-01T09:57:35Z"
   },
   {
    "name": "f50-magisk-modules",
@@ -570,20 +570,27 @@
    "pushed": "2020-09-15T08:44:04Z"
   },
   {
-   "name": "mu300-linux-mirror",
-   "description": "Release files of dikeckaan/mu300-linux in parts, for the web installer (written by its release workflow; nothing to see here: use the main repository)",
-   "url": "https://github.com/dikeckaan/mu300-linux-mirror",
-   "homepage": "",
-   "language": "",
+   "name": "mu5358-linux",
+   "description": "OpenWrt on the ZTE U30 Pro (MU5358, UMS9632) 5G hotspot, next to Android, with its round screen as a control panel",
+   "url": "https://github.com/dikeckaan/mu5358-linux",
+   "homepage": "https://kaandikec.com/mu5358-linux/",
+   "language": "C",
    "stars": 1,
-   "forks": 1,
-   "issues": 0,
+   "forks": 0,
+   "issues": 1,
    "fork": false,
    "archived": false,
-   "topics": [],
+   "topics": [
+    "5g-hotspot",
+    "openwrt",
+    "u30-pro",
+    "ums9632",
+    "unisoc",
+    "zte"
+   ],
    "license": "",
-   "created": "2026-10-13T10:50:43Z",
-   "pushed": "2026-10-30T12:59:29Z"
+   "created": "2026-10-30T04:22:30Z",
+   "pushed": "2026-11-01T09:28:18Z"
   },
   {
    "name": "dikeckaan",
@@ -599,7 +606,7 @@
    "topics": [],
    "license": "",
    "created": "2020-10-24T21:55:41Z",
-   "pushed": "2026-10-30T10:55:11Z"
+   "pushed": "2026-10-31T10:27:50Z"
   },
   {
    "name": "dikeckaan.github.io",
@@ -615,7 +622,23 @@
    "topics": [],
    "license": "",
    "created": "2019-06-23T07:23:06Z",
-   "pushed": "2026-10-30T10:00:33Z"
+   "pushed": "2026-10-31T09:38:56Z"
+  },
+  {
+   "name": "mu300-linux-mirror",
+   "description": "Release files of dikeckaan/mu300-linux in parts, for the web installer (written by its release workflow; nothing to see here: use the main repository)",
+   "url": "https://github.com/dikeckaan/mu300-linux-mirror",
+   "homepage": "",
+   "language": "",
+   "stars": 1,
+   "forks": 1,
+   "issues": 0,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "",
+   "created": "2026-10-13T10:50:43Z",
+   "pushed": "2026-10-30T12:59:29Z"
   },
   {
    "name": "kindle-apps",
@@ -1139,29 +1162,6 @@
    "license": "MIT",
    "created": "2017-11-22T17:47:13Z",
    "pushed": "2016-09-06T04:01:29Z"
-  },
-  {
-   "name": "mu5358-linux",
-   "description": "OpenWrt on the ZTE U30 Pro (MU5358, UMS9632) 5G hotspot, next to Android, with its round screen as a control panel",
-   "url": "https://github.com/dikeckaan/mu5358-linux",
-   "homepage": "https://kaandikec.com/mu5358-linux/",
-   "language": "C",
-   "stars": 0,
-   "forks": 0,
-   "issues": 1,
-   "fork": false,
-   "archived": false,
-   "topics": [
-    "5g-hotspot",
-    "openwrt",
-    "u30-pro",
-    "ums9632",
-    "unisoc",
-    "zte"
-   ],
-   "license": "",
-   "created": "2026-10-30T04:22:30Z",
-   "pushed": "2026-10-30T21:50:15Z"
   },
   {
    "name": ".github",
