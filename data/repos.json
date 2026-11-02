@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-01T10:27:36.108Z",
+ "generated": "2026-11-02T11:06:54.888Z",
  "user": {
   "login": "dikeckaan",
   "name": "KAAN DIKEC",
   "bio": "Computer Engineer, linux lover. Developer",
   "avatar": "https://avatars.githubusercontent.com/u/21171681?v=4",
   "location": "Turkey/Istanbul",
-  "followers": 87,
+  "followers": 89,
   "public_repos": 165
  },
  "repos": [
@@ -16,9 +16,9 @@
    "url": "https://github.com/dikeckaan/mu300-linux",
    "homepage": "https://kaandikec.com/mu300-linux/",
    "language": "C",
-   "stars": 755,
-   "forks": 120,
-   "issues": 19,
+   "stars": 770,
+   "forks": 122,
+   "issues": 21,
    "fork": false,
    "archived": false,
    "topics": [
@@ -33,7 +33,7 @@
    ],
    "license": "",
    "created": "2026-09-16T18:51:14Z",
-   "pushed": "2026-10-31T01:06:41Z"
+   "pushed": "2026-11-02T08:54:32Z"
   },
   {
    "name": "zte-f50-toolkit",
@@ -41,7 +41,7 @@
    "url": "https://github.com/dikeckaan/zte-f50-toolkit",
    "homepage": "",
    "language": "C",
-   "stars": 46,
+   "stars": 45,
    "forks": 12,
    "issues": 1,
    "fork": false,
@@ -113,7 +113,7 @@
    "topics": [],
    "license": "",
    "created": "2026-09-16T06:34:56Z",
-   "pushed": "2026-11-01T09:57:35Z"
+   "pushed": "2026-11-02T09:58:22Z"
   },
   {
    "name": "f50-magisk-modules",
@@ -235,6 +235,22 @@
    "license": "GPL-3.0",
    "created": "2026-05-19T22:00:51Z",
    "pushed": "2026-05-20T12:25:01Z"
+  },
+  {
+   "name": "u30prov2ray",
+   "description": "v2ray client for a 240x240 round-screen Android watch (MU5358). Patched Xray-core keeps allowInsecure working. GPL-3.0, derived from v2rayNG.",
+   "url": "https://github.com/dikeckaan/u30prov2ray",
+   "homepage": "",
+   "language": "Kotlin",
+   "stars": 3,
+   "forks": 0,
+   "issues": 1,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "GPL-3.0",
+   "created": "2026-08-02T08:34:21Z",
+   "pushed": "2026-08-02T08:51:51Z"
   },
   {
    "name": "dikec-control-panel",
@@ -416,7 +432,7 @@
    "homepage": "",
    "language": "C",
    "stars": 2,
-   "forks": 1,
+   "forks": 2,
    "issues": 1,
    "fork": false,
    "archived": false,
@@ -440,22 +456,6 @@
    "license": "",
    "created": "2026-08-02T07:58:09Z",
    "pushed": "2026-08-04T14:06:40Z"
-  },
-  {
-   "name": "u30prov2ray",
-   "description": "v2ray client for a 240x240 round-screen Android watch (MU5358). Patched Xray-core keeps allowInsecure working. GPL-3.0, derived from v2rayNG.",
-   "url": "https://github.com/dikeckaan/u30prov2ray",
-   "homepage": "",
-   "language": "Kotlin",
-   "stars": 2,
-   "forks": 0,
-   "issues": 1,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "GPL-3.0",
-   "created": "2026-08-02T08:34:21Z",
-   "pushed": "2026-08-02T08:51:51Z"
   },
   {
    "name": "magisk-zte-f50-sip-server",
@@ -590,39 +590,7 @@
    ],
    "license": "",
    "created": "2026-10-30T04:22:30Z",
-   "pushed": "2026-11-01T09:28:18Z"
-  },
-  {
-   "name": "dikeckaan",
-   "description": "",
-   "url": "https://github.com/dikeckaan/dikeckaan",
-   "homepage": "",
-   "language": "JavaScript",
-   "stars": 1,
-   "forks": 0,
-   "issues": 1,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "",
-   "created": "2020-10-24T21:55:41Z",
-   "pushed": "2026-10-31T10:27:50Z"
-  },
-  {
-   "name": "dikeckaan.github.io",
-   "description": "my web site",
-   "url": "https://github.com/dikeckaan/dikeckaan.github.io",
-   "homepage": "",
-   "language": "HTML",
-   "stars": 1,
-   "forks": 0,
-   "issues": 1,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "",
-   "created": "2019-06-23T07:23:06Z",
-   "pushed": "2026-10-31T09:38:56Z"
+   "pushed": "2026-11-02T11:05:08Z"
   },
   {
    "name": "mu300-linux-mirror",
@@ -638,7 +606,39 @@
    "topics": [],
    "license": "",
    "created": "2026-10-13T10:50:43Z",
-   "pushed": "2026-10-30T12:59:29Z"
+   "pushed": "2026-11-01T17:38:01Z"
+  },
+  {
+   "name": "dikeckaan",
+   "description": "",
+   "url": "https://github.com/dikeckaan/dikeckaan",
+   "homepage": "",
+   "language": "JavaScript",
+   "stars": 1,
+   "forks": 0,
+   "issues": 1,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "",
+   "created": "2020-10-24T21:55:41Z",
+   "pushed": "2026-11-01T11:21:04Z"
+  },
+  {
+   "name": "dikeckaan.github.io",
+   "description": "my web site",
+   "url": "https://github.com/dikeckaan/dikeckaan.github.io",
+   "homepage": "",
+   "language": "HTML",
+   "stars": 1,
+   "forks": 0,
+   "issues": 1,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "",
+   "created": "2019-06-23T07:23:06Z",
+   "pushed": "2026-11-01T10:27:36Z"
   },
   {
    "name": "kindle-apps",
