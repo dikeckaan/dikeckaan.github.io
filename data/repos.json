@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02T11:06:54.888Z",
+ "generated": "2026-11-03T10:52:44.868Z",
  "user": {
   "login": "dikeckaan",
   "name": "KAAN DIKEC",
@@ -16,9 +16,9 @@
    "url": "https://github.com/dikeckaan/mu300-linux",
    "homepage": "https://kaandikec.com/mu300-linux/",
    "language": "C",
-   "stars": 770,
-   "forks": 122,
-   "issues": 21,
+   "stars": 783,
+   "forks": 123,
+   "issues": 22,
    "fork": false,
    "archived": false,
    "topics": [
@@ -113,7 +113,7 @@
    "topics": [],
    "license": "",
    "created": "2026-09-16T06:34:56Z",
-   "pushed": "2026-11-02T09:58:22Z"
+   "pushed": "2026-11-03T09:58:44Z"
   },
   {
    "name": "f50-magisk-modules",
@@ -357,6 +357,29 @@
    "pushed": "2020-08-20T18:49:15Z"
   },
   {
+   "name": "mu5358-linux",
+   "description": "OpenWrt on the ZTE U30 Pro (MU5358, UMS9632) 5G hotspot, next to Android, with its round screen as a control panel",
+   "url": "https://github.com/dikeckaan/mu5358-linux",
+   "homepage": "https://kaandikec.com/mu5358-linux/",
+   "language": "C",
+   "stars": 2,
+   "forks": 0,
+   "issues": 1,
+   "fork": false,
+   "archived": false,
+   "topics": [
+    "5g-hotspot",
+    "openwrt",
+    "u30-pro",
+    "ums9632",
+    "unisoc",
+    "zte"
+   ],
+   "license": "",
+   "created": "2026-10-30T04:22:30Z",
+   "pushed": "2026-11-02T12:23:33Z"
+  },
+  {
    "name": "zte-u30-pro-launcher",
    "description": "ZTE MU5358 (U30 Pro) UFI router icin ozel launcher + Magisk modulu — 240x240 yuvarlak dokunmatik ekran, Kotlin/Canvas, Gradle'siz",
    "url": "https://github.com/dikeckaan/zte-u30-pro-launcher",
@@ -570,27 +593,36 @@
    "pushed": "2020-09-15T08:44:04Z"
   },
   {
-   "name": "mu5358-linux",
-   "description": "OpenWrt on the ZTE U30 Pro (MU5358, UMS9632) 5G hotspot, next to Android, with its round screen as a control panel",
-   "url": "https://github.com/dikeckaan/mu5358-linux",
-   "homepage": "https://kaandikec.com/mu5358-linux/",
-   "language": "C",
+   "name": "dikeckaan",
+   "description": "",
+   "url": "https://github.com/dikeckaan/dikeckaan",
+   "homepage": "",
+   "language": "JavaScript",
    "stars": 1,
    "forks": 0,
    "issues": 1,
    "fork": false,
    "archived": false,
-   "topics": [
-    "5g-hotspot",
-    "openwrt",
-    "u30-pro",
-    "ums9632",
-    "unisoc",
-    "zte"
-   ],
+   "topics": [],
    "license": "",
-   "created": "2026-10-30T04:22:30Z",
-   "pushed": "2026-11-02T11:05:08Z"
+   "created": "2020-10-24T21:55:41Z",
+   "pushed": "2026-11-02T12:34:01Z"
+  },
+  {
+   "name": "dikeckaan.github.io",
+   "description": "my web site",
+   "url": "https://github.com/dikeckaan/dikeckaan.github.io",
+   "homepage": "",
+   "language": "HTML",
+   "stars": 1,
+   "forks": 0,
+   "issues": 1,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "",
+   "created": "2019-06-23T07:23:06Z",
+   "pushed": "2026-11-02T11:06:55Z"
   },
   {
    "name": "mu300-linux-mirror",
@@ -607,38 +639,6 @@
    "license": "",
    "created": "2026-10-13T10:50:43Z",
    "pushed": "2026-11-01T17:38:01Z"
-  },
-  {
-   "name": "dikeckaan",
-   "description": "",
-   "url": "https://github.com/dikeckaan/dikeckaan",
-   "homepage": "",
-   "language": "JavaScript",
-   "stars": 1,
-   "forks": 0,
-   "issues": 1,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "",
-   "created": "2020-10-24T21:55:41Z",
-   "pushed": "2026-11-01T11:21:04Z"
-  },
-  {
-   "name": "dikeckaan.github.io",
-   "description": "my web site",
-   "url": "https://github.com/dikeckaan/dikeckaan.github.io",
-   "homepage": "",
-   "language": "HTML",
-   "stars": 1,
-   "forks": 0,
-   "issues": 1,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "",
-   "created": "2019-06-23T07:23:06Z",
-   "pushed": "2026-11-01T10:27:36Z"
   },
   {
    "name": "kindle-apps",
