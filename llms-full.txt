@@ -2,21 +2,21 @@
 
 > Abdurrahman Kaan Dikeç (also written Kaan Dikeç or Kaan Dikec; GitHub: dikeckaan) is a computer engineer, developer and musician from Istanbul, Türkiye. Most of his work is close to the hardware: he created mu300-linux, which runs a full Ubuntu or OpenWrt next to Android on the ZTE F50, MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620), together with a flashing toolkit, a VPN module and a family of Magisk modules for those devices. He also builds native macOS apps (easy-vphone), Hackintosh EFIs, a Forza Horizon telemetry dashboard and networking / VPN tools. Almost all of it is open source on GitHub.
 
-Numbers as of 2026-11-03: 98 original public repositories (165 including forks), 981 stars and 405 forks on his own repositories, 89 GitHub followers.
+Numbers as of 2026-11-04: 98 original public repositories (165 including forks), 1,005 stars and 408 forks on his own repositories, 90 GitHub followers.
 
 ## Most-starred projects
 
-- [mu300-linux](https://github.com/dikeckaan/mu300-linux): Linux (Ubuntu 24.04/26.04 or OpenWrt) next to Android on the ZTE F50 / MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620): installer, vendor 5.4 and mainline 6.18 / 7.2 kernels, 5G modem, Wi-Fi, battery, LEDs, NFC, findings (website: https://kaandikec.com/mu300-linux/) (783 stars)
+- [mu300-linux](https://github.com/dikeckaan/mu300-linux): Linux (Ubuntu 24.04/26.04 or OpenWrt) next to Android on the ZTE F50 / MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620): installer, vendor 5.4 and mainline 6.18 / 7.2 kernels, 5G modem, Wi-Fi, battery, LEDs, NFC, findings (website: https://kaandikec.com/mu300-linux/) (793 stars)
 - [zte-f50-toolkit](https://github.com/dikeckaan/zte-f50-toolkit): ZTE F50 (5G MiFi) flashing toolkit — B09 downgrade, root, BL unlock, IMEI patch. Built on a custom spd_dump fork. (45 stars)
 - [MacOS-Workflow-VNC](https://github.com/dikeckaan/MacOS-Workflow-VNC): A free macOS desktop over VNC in about five minutes, running on GitHub Actions runners with an ngrok tunnel. (16 stars)
+- [mu300-linux-vpn](https://github.com/dikeckaan/mu300-linux-vpn): VPN toolkit for MU300 Linux (ZTE F50 / U30 Air): one command for Xray, sing-box, mihomo, WireGuard and OpenVPN profiles, as a module for Ubuntu and OpenWrt (16 stars)
 - [macjaro](https://github.com/dikeckaan/macjaro): MacOS theme for Manjaro Gnome or any Arch based Gnome (15 stars)
-- [mu300-linux-vpn](https://github.com/dikeckaan/mu300-linux-vpn): VPN toolkit for MU300 Linux (ZTE F50 / U30 Air): one command for Xray, sing-box, mihomo, WireGuard and OpenVPN profiles, as a module for Ubuntu and OpenWrt (12 stars)
 - [easy-vphone](https://github.com/dikeckaan/easy-vphone): Native macOS GUI for vphone-cli with VM management and an integrated IPA library (11 stars)
-- [f50-magisk-modules](https://github.com/dikeckaan/f50-magisk-modules): Index of Magisk modules for ZTE F50 (rooted Android, Unisoc UMS9620). Each module auto-updates via updateJson; statusbot has /update command. (6 stars)
+- [f50-magisk-modules](https://github.com/dikeckaan/f50-magisk-modules): Index of Magisk modules for ZTE F50 (rooted Android, Unisoc UMS9620). Each module auto-updates via updateJson; statusbot has /update command. (7 stars)
 - [internetmerge](https://github.com/dikeckaan/internetmerge): Bond multiple network links into faster total internet — cross-platform, Mac-first (Connectify Dispatcher style) (6 stars)
+- [magisk-zte-f50-statusbot](https://github.com/dikeckaan/magisk-zte-f50-statusbot): Telegram bot for ZTE F50 (rooted Android): status, AT, shell, ZTE perf, IMEI/SMS, tailscale toggle, speedtest, /update via GitHub (6 stars)
 - [mf286r-telnet-openwrt-exploit](https://github.com/dikeckaan/mf286r-telnet-openwrt-exploit): This guide provides step-by-step instructions to enable Telnet access on the ZTE MF286R router with stock firmware. It also includes advanced options for flashing OpenWRT firmware and recovering the router via a serial connection. Proceed with caution, as some actions may result in bricking the device. (5 stars)
 - [OpenEUICC-5ber](https://github.com/dikeckaan/OpenEUICC-5ber): OpenEUICC build with 5ber eSIM support: a free, open-source Local Profile Assistant for Android. (5 stars)
-- [magisk-zte-f50-statusbot](https://github.com/dikeckaan/magisk-zte-f50-statusbot): Telegram bot for ZTE F50 (rooted Android): status, AT, shell, ZTE perf, IMEI/SMS, tailscale toggle, speedtest, /update via GitHub (5 stars)
 - [magisk-zte-f50-ims-voice-fix](https://github.com/dikeckaan/magisk-zte-f50-ims-voice-fix): Magisk overlay for ZTE F50 IMS apk — patches the PhoneStateMonitor SCREEN_OFF handler to stop call drops on screen lock. UNDER DEVELOPMENT: root cause not yet confirmed. (4 stars)
 
 ## Pages
@@ -46,9 +46,9 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - URL: https://github.com/dikeckaan/mu300-linux
 - Website: https://kaandikec.com/mu300-linux/
 - Description: Linux (Ubuntu 24.04/26.04 or OpenWrt) next to Android on the ZTE F50 / MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620): installer, vendor 5.4 and mainline 6.18 / 7.2 kernels, 5G modem, Wi-Fi, battery, LEDs, NFC, findings
-- Language: C · Stars: 783 · Forks: 123
+- Language: C · Stars: 793 · Forks: 126
 - Topics: 5g, embedded-linux, linux, linux-kernel, openwrt, ubuntu, unisoc, zte
-- Created: 2026-09-16 · Last push: 2026-11-02
+- Created: 2026-09-16 · Last push: 2026-11-03
 
 #### zte-f50-toolkit
 - URL: https://github.com/dikeckaan/zte-f50-toolkit
@@ -60,14 +60,21 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 #### mu300-linux-vpn
 - URL: https://github.com/dikeckaan/mu300-linux-vpn
 - Description: VPN toolkit for MU300 Linux (ZTE F50 / U30 Air): one command for Xray, sing-box, mihomo, WireGuard and OpenVPN profiles, as a module for Ubuntu and OpenWrt
-- Language: Python · Stars: 12 · Forks: 2
+- Language: Python · Stars: 16 · Forks: 2
 - Topics: none
 - Created: 2026-10-09 · Last push: 2026-10-18
 
 #### f50-magisk-modules
 - URL: https://github.com/dikeckaan/f50-magisk-modules
 - Description: Index of Magisk modules for ZTE F50 (rooted Android, Unisoc UMS9620). Each module auto-updates via updateJson; statusbot has /update command.
-- Language: n/a · Stars: 6 · Forks: 1 · License: GPL-3.0
+- Language: n/a · Stars: 7 · Forks: 1 · License: GPL-3.0
+- Topics: none
+- Created: 2026-05-18 · Last push: 2026-06-12
+
+#### magisk-zte-f50-statusbot
+- URL: https://github.com/dikeckaan/magisk-zte-f50-statusbot
+- Description: Telegram bot for ZTE F50 (rooted Android): status, AT, shell, ZTE perf, IMEI/SMS, tailscale toggle, speedtest, /update via GitHub
+- Language: Shell · Stars: 6 · Forks: 0 · License: GPL-3.0
 - Topics: none
 - Created: 2026-05-18 · Last push: 2026-06-12
 
@@ -85,13 +92,6 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Topics: none
 - Created: 2025-01-19 · Last push: 2025-01-19
 
-#### magisk-zte-f50-statusbot
-- URL: https://github.com/dikeckaan/magisk-zte-f50-statusbot
-- Description: Telegram bot for ZTE F50 (rooted Android): status, AT, shell, ZTE perf, IMEI/SMS, tailscale toggle, speedtest, /update via GitHub
-- Language: Shell · Stars: 5 · Forks: 0 · License: GPL-3.0
-- Topics: none
-- Created: 2026-05-18 · Last push: 2026-06-12
-
 #### magisk-zte-f50-ims-voice-fix
 - URL: https://github.com/dikeckaan/magisk-zte-f50-ims-voice-fix
 - Description: Magisk overlay for ZTE F50 IMS apk — patches the PhoneStateMonitor SCREEN_OFF handler to stop call drops on screen lock. UNDER DEVELOPMENT: root cause not yet confirmed.
@@ -105,6 +105,13 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Language: Shell · Stars: 4 · Forks: 0 · License: GPL-3.0
 - Topics: none
 - Created: 2026-06-12 · Last push: 2026-06-12
+
+#### zte-u30-pro-launcher
+- URL: https://github.com/dikeckaan/zte-u30-pro-launcher
+- Description: ZTE MU5358 (U30 Pro) UFI router icin ozel launcher + Magisk modulu — 240x240 yuvarlak dokunmatik ekran, Kotlin/Canvas, Gradle'siz
+- Language: Kotlin · Stars: 3 · Forks: 0
+- Topics: none
+- Created: 2026-09-08 · Last push: 2026-10-25
 
 #### u30prov2ray
 - URL: https://github.com/dikeckaan/u30prov2ray
@@ -134,20 +141,20 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Topics: none
 - Created: 2026-05-19 · Last push: 2026-05-20
 
+#### mu300-linux-mirror
+- URL: https://github.com/dikeckaan/mu300-linux-mirror
+- Description: Release files of dikeckaan/mu300-linux in parts, for the web installer (written by its release workflow; nothing to see here: use the main repository)
+- Language: n/a · Stars: 2 · Forks: 1
+- Topics: none
+- Created: 2026-10-13 · Last push: 2026-11-01
+
 #### mu5358-linux
 - URL: https://github.com/dikeckaan/mu5358-linux
 - Website: https://kaandikec.com/mu5358-linux/
 - Description: OpenWrt on the ZTE U30 Pro (MU5358, UMS9632) 5G hotspot, next to Android, with its round screen as a control panel
 - Language: C · Stars: 2 · Forks: 0
 - Topics: 5g-hotspot, openwrt, u30-pro, ums9632, unisoc, zte
-- Created: 2026-10-30 · Last push: 2026-11-02
-
-#### zte-u30-pro-launcher
-- URL: https://github.com/dikeckaan/zte-u30-pro-launcher
-- Description: ZTE MU5358 (U30 Pro) UFI router icin ozel launcher + Magisk modulu — 240x240 yuvarlak dokunmatik ekran, Kotlin/Canvas, Gradle'siz
-- Language: Kotlin · Stars: 2 · Forks: 0
-- Topics: none
-- Created: 2026-09-08 · Last push: 2026-10-25
+- Created: 2026-10-30 · Last push: 2026-11-03
 
 #### forza-horizon-6-telemetry-dashboard
 - URL: https://github.com/dikeckaan/forza-horizon-6-telemetry-dashboard
@@ -163,6 +170,20 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Language: Kotlin · Stars: 2 · Forks: 0
 - Topics: none
 - Created: 2026-08-02 · Last push: 2026-08-04
+
+#### magisk-zte-f50-cloudflared-tunnel
+- URL: https://github.com/dikeckaan/magisk-zte-f50-cloudflared-tunnel
+- Description: Cloudflare Tunnel (cloudflared) daemon with supervisor + health check for ZTE F50
+- Language: Shell · Stars: 2 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2026-05-18 · Last push: 2026-06-12
+
+#### magisk-zte-f50-bin-utils
+- URL: https://github.com/dikeckaan/magisk-zte-f50-bin-utils
+- Description: Static aarch64 binaries (curl/wget/jq/sendat/busybox) for ZTE F50 Magisk modules
+- Language: Shell · Stars: 2 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2026-05-18 · Last push: 2026-06-12
 
 #### Kindle-Epub-Manager
 - URL: https://github.com/dikeckaan/Kindle-Epub-Manager
@@ -185,23 +206,30 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Topics: none
 - Created: 2024-12-02 · Last push: 2025-05-19
 
-#### mu300-linux-mirror
-- URL: https://github.com/dikeckaan/mu300-linux-mirror
-- Description: Release files of dikeckaan/mu300-linux in parts, for the web installer (written by its release workflow; nothing to see here: use the main repository)
-- Language: n/a · Stars: 1 · Forks: 1
+#### mu300-audio-firmware
+- URL: https://github.com/dikeckaan/mu300-audio-firmware
+- Description: (none)
+- Language: n/a · Stars: 1 · Forks: 0
 - Topics: none
-- Created: 2026-10-13 · Last push: 2026-11-01
+- Created: 2026-10-18 · Last push: 2026-10-18
 
-#### magisk-zte-f50-cloudflared-tunnel
-- URL: https://github.com/dikeckaan/magisk-zte-f50-cloudflared-tunnel
-- Description: Cloudflare Tunnel (cloudflared) daemon with supervisor + health check for ZTE F50
+#### magisk-zte-f50-wireless-adb-keeper
+- URL: https://github.com/dikeckaan/magisk-zte-f50-wireless-adb-keeper
+- Description: Forces wireless ADB on port 55555 every boot (avoids UFI conflict) — ZTE F50 Magisk module
+- Language: Shell · Stars: 1 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2026-05-18 · Last push: 2026-08-04
+
+#### magisk-zte-f50-tailscale-control
+- URL: https://github.com/dikeckaan/magisk-zte-f50-tailscale-control
+- Description: Tailscale 1.98.2 (arm64) Magisk module: toggle from statusbot, adaptive routing, doesn't touch existing VPN
 - Language: Shell · Stars: 1 · Forks: 0 · License: GPL-3.0
 - Topics: none
 - Created: 2026-05-18 · Last push: 2026-06-12
 
-#### magisk-zte-f50-bin-utils
-- URL: https://github.com/dikeckaan/magisk-zte-f50-bin-utils
-- Description: Static aarch64 binaries (curl/wget/jq/sendat/busybox) for ZTE F50 Magisk modules
+#### magisk-zte-f50-dropbear-ssh
+- URL: https://github.com/dikeckaan/magisk-zte-f50-dropbear-ssh
+- Description: Dropbear SSH server (port 22222, key-only auth) for ZTE F50 Magisk
 - Language: Shell · Stars: 1 · Forks: 0 · License: GPL-3.0
 - Topics: none
 - Created: 2026-05-18 · Last push: 2026-06-12
@@ -227,26 +255,12 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Topics: none
 - Created: 2026-05-20 · Last push: 2026-05-20
 
-#### mu300-audio-firmware
-- URL: https://github.com/dikeckaan/mu300-audio-firmware
-- Description: (none)
-- Language: n/a · Stars: 0 · Forks: 0
-- Topics: none
-- Created: 2026-10-18 · Last push: 2026-10-18
-
 #### u30p-boot-video
 - URL: https://github.com/dikeckaan/u30p-boot-video
 - Description: Magisk module: custom boot video for ZTE U30 Pro (auto-updating via GitHub releases)
 - Language: HTML · Stars: 0 · Forks: 0
 - Topics: none
 - Created: 2026-10-14 · Last push: 2026-10-17
-
-#### magisk-zte-f50-wireless-adb-keeper
-- URL: https://github.com/dikeckaan/magisk-zte-f50-wireless-adb-keeper
-- Description: Forces wireless ADB on port 55555 every boot (avoids UFI conflict) — ZTE F50 Magisk module
-- Language: Shell · Stars: 0 · Forks: 0 · License: GPL-3.0
-- Topics: none
-- Created: 2026-05-18 · Last push: 2026-08-04
 
 #### magisk-zte-f50-webview-provider
 - URL: https://github.com/dikeckaan/magisk-zte-f50-webview-provider
@@ -261,20 +275,6 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Language: Shell · Stars: 0 · Forks: 0 · License: GPL-3.0
 - Topics: none
 - Created: 2026-05-19 · Last push: 2026-06-12
-
-#### magisk-zte-f50-tailscale-control
-- URL: https://github.com/dikeckaan/magisk-zte-f50-tailscale-control
-- Description: Tailscale 1.98.2 (arm64) Magisk module: toggle from statusbot, adaptive routing, doesn't touch existing VPN
-- Language: Shell · Stars: 0 · Forks: 0 · License: GPL-3.0
-- Topics: none
-- Created: 2026-05-18 · Last push: 2026-06-12
-
-#### magisk-zte-f50-dropbear-ssh
-- URL: https://github.com/dikeckaan/magisk-zte-f50-dropbear-ssh
-- Description: Dropbear SSH server (port 22222, key-only auth) for ZTE F50 Magisk
-- Language: Shell · Stars: 0 · Forks: 0 · License: GPL-3.0
-- Topics: none
-- Created: 2026-05-18 · Last push: 2026-06-12
 
 #### magisk-zte-f50-adguardhome
 - URL: https://github.com/dikeckaan/magisk-zte-f50-adguardhome
@@ -332,7 +332,7 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Description: Native macOS GUI for vphone-cli with VM management and an integrated IPA library
 - Language: Swift · Stars: 11 · Forks: 2
 - Topics: none
-- Created: 2026-09-16 · Last push: 2026-11-03
+- Created: 2026-09-16 · Last push: 2026-11-04
 
 #### internetmerge
 - URL: https://github.com/dikeckaan/internetmerge
@@ -472,14 +472,14 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Description: (none)
 - Language: JavaScript · Stars: 1 · Forks: 0
 - Topics: none
-- Created: 2020-10-24 · Last push: 2026-11-02
+- Created: 2020-10-24 · Last push: 2026-11-03
 
 #### dikeckaan.github.io
 - URL: https://github.com/dikeckaan/dikeckaan.github.io
 - Description: my web site
 - Language: HTML · Stars: 1 · Forks: 0
 - Topics: none
-- Created: 2019-06-23 · Last push: 2026-11-02
+- Created: 2019-06-23 · Last push: 2026-11-03
 
 #### kindle-apps
 - URL: https://github.com/dikeckaan/kindle-apps

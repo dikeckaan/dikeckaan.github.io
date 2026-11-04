@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-03T10:52:44.868Z",
+ "generated": "2026-11-04T10:55:03.605Z",
  "user": {
   "login": "dikeckaan",
   "name": "KAAN DIKEC",
   "bio": "Computer Engineer, linux lover. Developer",
   "avatar": "https://avatars.githubusercontent.com/u/21171681?v=4",
   "location": "Turkey/Istanbul",
-  "followers": 89,
+  "followers": 90,
   "public_repos": 165
  },
  "repos": [
@@ -16,9 +16,9 @@
    "url": "https://github.com/dikeckaan/mu300-linux",
    "homepage": "https://kaandikec.com/mu300-linux/",
    "language": "C",
-   "stars": 783,
-   "forks": 123,
-   "issues": 22,
+   "stars": 793,
+   "forks": 126,
+   "issues": 21,
    "fork": false,
    "archived": false,
    "topics": [
@@ -33,7 +33,7 @@
    ],
    "license": "",
    "created": "2026-09-16T18:51:14Z",
-   "pushed": "2026-11-02T08:54:32Z"
+   "pushed": "2026-11-03T18:04:33Z"
   },
   {
    "name": "zte-f50-toolkit",
@@ -50,6 +50,22 @@
    "license": "",
    "created": "2026-05-21T21:19:42Z",
    "pushed": "2026-09-12T21:24:36Z"
+  },
+  {
+   "name": "mu300-linux-vpn",
+   "description": "VPN toolkit for MU300 Linux (ZTE F50 / U30 Air): one command for Xray, sing-box, mihomo, WireGuard and OpenVPN profiles, as a module for Ubuntu and OpenWrt",
+   "url": "https://github.com/dikeckaan/mu300-linux-vpn",
+   "homepage": "",
+   "language": "Python",
+   "stars": 16,
+   "forks": 2,
+   "issues": 3,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "",
+   "created": "2026-10-09T18:25:19Z",
+   "pushed": "2026-10-18T07:46:21Z"
   },
   {
    "name": "MacOS-Workflow-VNC",
@@ -84,22 +100,6 @@
    "pushed": "2020-03-14T19:49:50Z"
   },
   {
-   "name": "mu300-linux-vpn",
-   "description": "VPN toolkit for MU300 Linux (ZTE F50 / U30 Air): one command for Xray, sing-box, mihomo, WireGuard and OpenVPN profiles, as a module for Ubuntu and OpenWrt",
-   "url": "https://github.com/dikeckaan/mu300-linux-vpn",
-   "homepage": "",
-   "language": "Python",
-   "stars": 12,
-   "forks": 2,
-   "issues": 3,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "",
-   "created": "2026-10-09T18:25:19Z",
-   "pushed": "2026-10-18T07:46:21Z"
-  },
-  {
    "name": "easy-vphone",
    "description": "Native macOS GUI for vphone-cli with VM management and an integrated IPA library",
    "url": "https://github.com/dikeckaan/easy-vphone",
@@ -113,7 +113,7 @@
    "topics": [],
    "license": "",
    "created": "2026-09-16T06:34:56Z",
-   "pushed": "2026-11-03T09:58:44Z"
+   "pushed": "2026-11-04T06:36:13Z"
   },
   {
    "name": "f50-magisk-modules",
@@ -121,7 +121,7 @@
    "url": "https://github.com/dikeckaan/f50-magisk-modules",
    "homepage": "",
    "language": "",
-   "stars": 6,
+   "stars": 7,
    "forks": 1,
    "issues": 0,
    "fork": false,
@@ -130,6 +130,22 @@
    "license": "GPL-3.0",
    "created": "2026-05-18T21:35:36Z",
    "pushed": "2026-06-12T21:59:33Z"
+  },
+  {
+   "name": "magisk-zte-f50-statusbot",
+   "description": "Telegram bot for ZTE F50 (rooted Android): status, AT, shell, ZTE perf, IMEI/SMS, tailscale toggle, speedtest, /update via GitHub",
+   "url": "https://github.com/dikeckaan/magisk-zte-f50-statusbot",
+   "homepage": "",
+   "language": "Shell",
+   "stars": 6,
+   "forks": 0,
+   "issues": 0,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "GPL-3.0",
+   "created": "2026-05-18T21:33:34Z",
+   "pushed": "2026-06-12T21:47:41Z"
   },
   {
    "name": "internetmerge",
@@ -146,22 +162,6 @@
    "license": "",
    "created": "2026-05-30T10:24:33Z",
    "pushed": "2026-06-09T20:24:20Z"
-  },
-  {
-   "name": "magisk-zte-f50-statusbot",
-   "description": "Telegram bot for ZTE F50 (rooted Android): status, AT, shell, ZTE perf, IMEI/SMS, tailscale toggle, speedtest, /update via GitHub",
-   "url": "https://github.com/dikeckaan/magisk-zte-f50-statusbot",
-   "homepage": "",
-   "language": "Shell",
-   "stars": 5,
-   "forks": 0,
-   "issues": 0,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "GPL-3.0",
-   "created": "2026-05-18T21:33:34Z",
-   "pushed": "2026-06-12T21:47:41Z"
   },
   {
    "name": "OpenEUICC-5ber",
@@ -235,6 +235,22 @@
    "license": "GPL-3.0",
    "created": "2026-05-19T22:00:51Z",
    "pushed": "2026-05-20T12:25:01Z"
+  },
+  {
+   "name": "zte-u30-pro-launcher",
+   "description": "ZTE MU5358 (U30 Pro) UFI router icin ozel launcher + Magisk modulu — 240x240 yuvarlak dokunmatik ekran, Kotlin/Canvas, Gradle'siz",
+   "url": "https://github.com/dikeckaan/zte-u30-pro-launcher",
+   "homepage": "",
+   "language": "Kotlin",
+   "stars": 3,
+   "forks": 0,
+   "issues": 1,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "",
+   "created": "2026-09-08T21:43:29Z",
+   "pushed": "2026-10-25T20:06:18Z"
   },
   {
    "name": "u30prov2ray",
@@ -377,23 +393,23 @@
    ],
    "license": "",
    "created": "2026-10-30T04:22:30Z",
-   "pushed": "2026-11-02T12:23:33Z"
+   "pushed": "2026-11-03T21:07:58Z"
   },
   {
-   "name": "zte-u30-pro-launcher",
-   "description": "ZTE MU5358 (U30 Pro) UFI router icin ozel launcher + Magisk modulu — 240x240 yuvarlak dokunmatik ekran, Kotlin/Canvas, Gradle'siz",
-   "url": "https://github.com/dikeckaan/zte-u30-pro-launcher",
+   "name": "mu300-linux-mirror",
+   "description": "Release files of dikeckaan/mu300-linux in parts, for the web installer (written by its release workflow; nothing to see here: use the main repository)",
+   "url": "https://github.com/dikeckaan/mu300-linux-mirror",
    "homepage": "",
-   "language": "Kotlin",
+   "language": "",
    "stars": 2,
-   "forks": 0,
-   "issues": 1,
+   "forks": 1,
+   "issues": 0,
    "fork": false,
    "archived": false,
    "topics": [],
    "license": "",
-   "created": "2026-09-08T21:43:29Z",
-   "pushed": "2026-10-25T20:06:18Z"
+   "created": "2026-10-13T10:50:43Z",
+   "pushed": "2026-11-01T17:38:01Z"
   },
   {
    "name": "pi5-fan-control-web",
@@ -479,6 +495,38 @@
    "license": "",
    "created": "2026-08-02T07:58:09Z",
    "pushed": "2026-08-04T14:06:40Z"
+  },
+  {
+   "name": "magisk-zte-f50-cloudflared-tunnel",
+   "description": "Cloudflare Tunnel (cloudflared) daemon with supervisor + health check for ZTE F50",
+   "url": "https://github.com/dikeckaan/magisk-zte-f50-cloudflared-tunnel",
+   "homepage": "",
+   "language": "Shell",
+   "stars": 2,
+   "forks": 0,
+   "issues": 0,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "GPL-3.0",
+   "created": "2026-05-18T21:24:21Z",
+   "pushed": "2026-06-12T20:30:28Z"
+  },
+  {
+   "name": "magisk-zte-f50-bin-utils",
+   "description": "Static aarch64 binaries (curl/wget/jq/sendat/busybox) for ZTE F50 Magisk modules",
+   "url": "https://github.com/dikeckaan/magisk-zte-f50-bin-utils",
+   "homepage": "",
+   "language": "Shell",
+   "stars": 2,
+   "forks": 0,
+   "issues": 0,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "GPL-3.0",
+   "created": "2026-05-18T21:23:06Z",
+   "pushed": "2026-06-12T20:30:08Z"
   },
   {
    "name": "magisk-zte-f50-sip-server",
@@ -606,7 +654,7 @@
    "topics": [],
    "license": "",
    "created": "2020-10-24T21:55:41Z",
-   "pushed": "2026-11-02T12:34:01Z"
+   "pushed": "2026-11-03T12:00:29Z"
   },
   {
    "name": "dikeckaan.github.io",
@@ -622,23 +670,7 @@
    "topics": [],
    "license": "",
    "created": "2019-06-23T07:23:06Z",
-   "pushed": "2026-11-02T11:06:55Z"
-  },
-  {
-   "name": "mu300-linux-mirror",
-   "description": "Release files of dikeckaan/mu300-linux in parts, for the web installer (written by its release workflow; nothing to see here: use the main repository)",
-   "url": "https://github.com/dikeckaan/mu300-linux-mirror",
-   "homepage": "",
-   "language": "",
-   "stars": 1,
-   "forks": 1,
-   "issues": 0,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "",
-   "created": "2026-10-13T10:50:43Z",
-   "pushed": "2026-11-01T17:38:01Z"
+   "pushed": "2026-11-03T10:52:46Z"
   },
   {
    "name": "kindle-apps",
@@ -655,6 +687,22 @@
    "license": "GPL-3.0",
    "created": "2026-10-18T07:39:12Z",
    "pushed": "2026-10-24T03:36:22Z"
+  },
+  {
+   "name": "mu300-audio-firmware",
+   "description": "",
+   "url": "https://github.com/dikeckaan/mu300-audio-firmware",
+   "homepage": "",
+   "language": "",
+   "stars": 1,
+   "forks": 0,
+   "issues": 0,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "",
+   "created": "2026-10-18T08:23:32Z",
+   "pushed": "2026-10-18T08:27:09Z"
   },
   {
    "name": "keyflow-gallery",
@@ -689,9 +737,9 @@
    "pushed": "2026-08-29T19:47:21Z"
   },
   {
-   "name": "magisk-zte-f50-cloudflared-tunnel",
-   "description": "Cloudflare Tunnel (cloudflared) daemon with supervisor + health check for ZTE F50",
-   "url": "https://github.com/dikeckaan/magisk-zte-f50-cloudflared-tunnel",
+   "name": "magisk-zte-f50-wireless-adb-keeper",
+   "description": "Forces wireless ADB on port 55555 every boot (avoids UFI conflict) — ZTE F50 Magisk module",
+   "url": "https://github.com/dikeckaan/magisk-zte-f50-wireless-adb-keeper",
    "homepage": "",
    "language": "Shell",
    "stars": 1,
@@ -701,13 +749,13 @@
    "archived": false,
    "topics": [],
    "license": "GPL-3.0",
-   "created": "2026-05-18T21:24:21Z",
-   "pushed": "2026-06-12T20:30:28Z"
+   "created": "2026-05-18T21:25:37Z",
+   "pushed": "2026-08-04T12:42:52Z"
   },
   {
-   "name": "magisk-zte-f50-bin-utils",
-   "description": "Static aarch64 binaries (curl/wget/jq/sendat/busybox) for ZTE F50 Magisk modules",
-   "url": "https://github.com/dikeckaan/magisk-zte-f50-bin-utils",
+   "name": "magisk-zte-f50-tailscale-control",
+   "description": "Tailscale 1.98.2 (arm64) Magisk module: toggle from statusbot, adaptive routing, doesn't touch existing VPN",
+   "url": "https://github.com/dikeckaan/magisk-zte-f50-tailscale-control",
    "homepage": "",
    "language": "Shell",
    "stars": 1,
@@ -717,8 +765,24 @@
    "archived": false,
    "topics": [],
    "license": "GPL-3.0",
-   "created": "2026-05-18T21:23:06Z",
-   "pushed": "2026-06-12T20:30:08Z"
+   "created": "2026-05-18T21:25:56Z",
+   "pushed": "2026-06-12T20:30:20Z"
+  },
+  {
+   "name": "magisk-zte-f50-dropbear-ssh",
+   "description": "Dropbear SSH server (port 22222, key-only auth) for ZTE F50 Magisk",
+   "url": "https://github.com/dikeckaan/magisk-zte-f50-dropbear-ssh",
+   "homepage": "",
+   "language": "Shell",
+   "stars": 1,
+   "forks": 0,
+   "issues": 0,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "GPL-3.0",
+   "created": "2026-05-18T21:25:19Z",
+   "pushed": "2026-06-12T20:30:12Z"
   },
   {
    "name": "magisk-zte-f50-cell-tools",
@@ -1196,22 +1260,6 @@
    "pushed": "2026-10-27T10:38:51Z"
   },
   {
-   "name": "mu300-audio-firmware",
-   "description": "",
-   "url": "https://github.com/dikeckaan/mu300-audio-firmware",
-   "homepage": "",
-   "language": "",
-   "stars": 0,
-   "forks": 0,
-   "issues": 0,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "",
-   "created": "2026-10-18T08:23:32Z",
-   "pushed": "2026-10-18T08:27:09Z"
-  },
-  {
    "name": "u30p-boot-video",
    "description": "Magisk module: custom boot video for ZTE U30 Pro (auto-updating via GitHub releases)",
    "url": "https://github.com/dikeckaan/u30p-boot-video",
@@ -1462,22 +1510,6 @@
    "pushed": "2026-08-05T12:45:47Z"
   },
   {
-   "name": "magisk-zte-f50-wireless-adb-keeper",
-   "description": "Forces wireless ADB on port 55555 every boot (avoids UFI conflict) — ZTE F50 Magisk module",
-   "url": "https://github.com/dikeckaan/magisk-zte-f50-wireless-adb-keeper",
-   "homepage": "",
-   "language": "Shell",
-   "stars": 0,
-   "forks": 0,
-   "issues": 0,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "GPL-3.0",
-   "created": "2026-05-18T21:25:37Z",
-   "pushed": "2026-08-04T12:42:52Z"
-  },
-  {
    "name": "v2rayNG",
    "description": "A V2Ray client for Android, support Xray core and v2fly core",
    "url": "https://github.com/dikeckaan/v2rayNG",
@@ -1524,38 +1556,6 @@
    "license": "GPL-3.0",
    "created": "2026-05-19T10:04:24Z",
    "pushed": "2026-06-12T20:30:24Z"
-  },
-  {
-   "name": "magisk-zte-f50-tailscale-control",
-   "description": "Tailscale 1.98.2 (arm64) Magisk module: toggle from statusbot, adaptive routing, doesn't touch existing VPN",
-   "url": "https://github.com/dikeckaan/magisk-zte-f50-tailscale-control",
-   "homepage": "",
-   "language": "Shell",
-   "stars": 0,
-   "forks": 0,
-   "issues": 0,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "GPL-3.0",
-   "created": "2026-05-18T21:25:56Z",
-   "pushed": "2026-06-12T20:30:20Z"
-  },
-  {
-   "name": "magisk-zte-f50-dropbear-ssh",
-   "description": "Dropbear SSH server (port 22222, key-only auth) for ZTE F50 Magisk",
-   "url": "https://github.com/dikeckaan/magisk-zte-f50-dropbear-ssh",
-   "homepage": "",
-   "language": "Shell",
-   "stars": 0,
-   "forks": 0,
-   "issues": 0,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "GPL-3.0",
-   "created": "2026-05-18T21:25:19Z",
-   "pushed": "2026-06-12T20:30:12Z"
   },
   {
    "name": "magisk-zte-f50-adguardhome",
