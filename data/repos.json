@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-04T10:55:03.605Z",
+ "generated": "2026-11-05T10:56:20.841Z",
  "user": {
   "login": "dikeckaan",
   "name": "KAAN DIKEC",
   "bio": "Computer Engineer, linux lover. Developer",
   "avatar": "https://avatars.githubusercontent.com/u/21171681?v=4",
   "location": "Turkey/Istanbul",
-  "followers": 90,
+  "followers": 91,
   "public_repos": 165
  },
  "repos": [
@@ -16,9 +16,9 @@
    "url": "https://github.com/dikeckaan/mu300-linux",
    "homepage": "https://kaandikec.com/mu300-linux/",
    "language": "C",
-   "stars": 793,
-   "forks": 126,
-   "issues": 21,
+   "stars": 801,
+   "forks": 128,
+   "issues": 24,
    "fork": false,
    "archived": false,
    "topics": [
@@ -113,7 +113,7 @@
    "topics": [],
    "license": "",
    "created": "2026-09-16T06:34:56Z",
-   "pushed": "2026-11-04T06:36:13Z"
+   "pushed": "2026-11-05T09:59:38Z"
   },
   {
    "name": "f50-magisk-modules",
@@ -654,7 +654,7 @@
    "topics": [],
    "license": "",
    "created": "2020-10-24T21:55:41Z",
-   "pushed": "2026-11-03T12:00:29Z"
+   "pushed": "2026-11-04T12:15:47Z"
   },
   {
    "name": "dikeckaan.github.io",
@@ -670,7 +670,7 @@
    "topics": [],
    "license": "",
    "created": "2019-06-23T07:23:06Z",
-   "pushed": "2026-11-03T10:52:46Z"
+   "pushed": "2026-11-04T10:55:11Z"
   },
   {
    "name": "kindle-apps",
