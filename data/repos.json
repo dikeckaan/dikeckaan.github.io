@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T10:56:20.841Z",
+ "generated": "2026-11-06T10:52:31.304Z",
  "user": {
   "login": "dikeckaan",
   "name": "KAAN DIKEC",
@@ -16,9 +16,9 @@
    "url": "https://github.com/dikeckaan/mu300-linux",
    "homepage": "https://kaandikec.com/mu300-linux/",
    "language": "C",
-   "stars": 801,
-   "forks": 128,
-   "issues": 24,
+   "stars": 808,
+   "forks": 130,
+   "issues": 26,
    "fork": false,
    "archived": false,
    "topics": [
@@ -57,7 +57,7 @@
    "url": "https://github.com/dikeckaan/mu300-linux-vpn",
    "homepage": "",
    "language": "Python",
-   "stars": 16,
+   "stars": 17,
    "forks": 2,
    "issues": 3,
    "fork": false,
@@ -74,7 +74,7 @@
    "homepage": "",
    "language": "Shell",
    "stars": 16,
-   "forks": 190,
+   "forks": 189,
    "issues": 0,
    "fork": false,
    "archived": false,
@@ -113,7 +113,7 @@
    "topics": [],
    "license": "",
    "created": "2026-09-16T06:34:56Z",
-   "pushed": "2026-11-05T09:59:38Z"
+   "pushed": "2026-11-06T06:56:30Z"
   },
   {
    "name": "f50-magisk-modules",
@@ -235,6 +235,29 @@
    "license": "GPL-3.0",
    "created": "2026-05-19T22:00:51Z",
    "pushed": "2026-05-20T12:25:01Z"
+  },
+  {
+   "name": "mu5358-linux",
+   "description": "OpenWrt on the ZTE U30 Pro (MU5358, UMS9632) 5G hotspot, next to Android, with its round screen as a control panel",
+   "url": "https://github.com/dikeckaan/mu5358-linux",
+   "homepage": "https://kaandikec.com/mu5358-linux/",
+   "language": "C",
+   "stars": 3,
+   "forks": 0,
+   "issues": 1,
+   "fork": false,
+   "archived": false,
+   "topics": [
+    "5g-hotspot",
+    "openwrt",
+    "u30-pro",
+    "ums9632",
+    "unisoc",
+    "zte"
+   ],
+   "license": "",
+   "created": "2026-10-30T04:22:30Z",
+   "pushed": "2026-11-03T21:07:58Z"
   },
   {
    "name": "zte-u30-pro-launcher",
@@ -371,29 +394,6 @@
    "license": "GPL-3.0",
    "created": "2020-07-04T13:40:19Z",
    "pushed": "2020-08-20T18:49:15Z"
-  },
-  {
-   "name": "mu5358-linux",
-   "description": "OpenWrt on the ZTE U30 Pro (MU5358, UMS9632) 5G hotspot, next to Android, with its round screen as a control panel",
-   "url": "https://github.com/dikeckaan/mu5358-linux",
-   "homepage": "https://kaandikec.com/mu5358-linux/",
-   "language": "C",
-   "stars": 2,
-   "forks": 0,
-   "issues": 1,
-   "fork": false,
-   "archived": false,
-   "topics": [
-    "5g-hotspot",
-    "openwrt",
-    "u30-pro",
-    "ums9632",
-    "unisoc",
-    "zte"
-   ],
-   "license": "",
-   "created": "2026-10-30T04:22:30Z",
-   "pushed": "2026-11-03T21:07:58Z"
   },
   {
    "name": "mu300-linux-mirror",
@@ -654,7 +654,7 @@
    "topics": [],
    "license": "",
    "created": "2020-10-24T21:55:41Z",
-   "pushed": "2026-11-04T12:15:47Z"
+   "pushed": "2026-11-05T12:29:15Z"
   },
   {
    "name": "dikeckaan.github.io",
@@ -670,7 +670,7 @@
    "topics": [],
    "license": "",
    "created": "2019-06-23T07:23:06Z",
-   "pushed": "2026-11-04T10:55:11Z"
+   "pushed": "2026-11-05T10:56:21Z"
   },
   {
    "name": "kindle-apps",
