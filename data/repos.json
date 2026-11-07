@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06T10:52:31.304Z",
+ "generated": "2026-11-07T10:08:26.322Z",
  "user": {
   "login": "dikeckaan",
   "name": "KAAN DIKEC",
@@ -16,9 +16,9 @@
    "url": "https://github.com/dikeckaan/mu300-linux",
    "homepage": "https://kaandikec.com/mu300-linux/",
    "language": "C",
-   "stars": 808,
-   "forks": 130,
-   "issues": 26,
+   "stars": 816,
+   "forks": 131,
+   "issues": 27,
    "fork": false,
    "archived": false,
    "topics": [
@@ -33,7 +33,7 @@
    ],
    "license": "",
    "created": "2026-09-16T18:51:14Z",
-   "pushed": "2026-11-03T18:04:33Z"
+   "pushed": "2026-11-06T19:30:24Z"
   },
   {
    "name": "zte-f50-toolkit",
@@ -113,7 +113,7 @@
    "topics": [],
    "license": "",
    "created": "2026-09-16T06:34:56Z",
-   "pushed": "2026-11-06T06:56:30Z"
+   "pushed": "2026-11-07T06:07:55Z"
   },
   {
    "name": "f50-magisk-modules",
@@ -654,7 +654,7 @@
    "topics": [],
    "license": "",
    "created": "2020-10-24T21:55:41Z",
-   "pushed": "2026-11-05T12:29:15Z"
+   "pushed": "2026-11-06T12:12:18Z"
   },
   {
    "name": "dikeckaan.github.io",
@@ -670,7 +670,7 @@
    "topics": [],
    "license": "",
    "created": "2019-06-23T07:23:06Z",
-   "pushed": "2026-11-05T10:56:21Z"
+   "pushed": "2026-11-06T10:52:32Z"
   },
   {
    "name": "kindle-apps",
