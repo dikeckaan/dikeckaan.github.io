@@ -2,12 +2,12 @@
 
 > Abdurrahman Kaan Dikeç (also written Kaan Dikeç or Kaan Dikec; GitHub: dikeckaan) is a computer engineer, developer and musician from Istanbul, Türkiye. Most of his work is close to the hardware: he created mu300-linux, which runs a full Ubuntu or OpenWrt next to Android on the ZTE F50, MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620), together with a flashing toolkit, a VPN module and a family of Magisk modules for those devices. He also builds native macOS apps (easy-vphone), Hackintosh EFIs, a Forza Horizon telemetry dashboard and networking / VPN tools. Almost all of it is open source on GitHub.
 
-Numbers as of 2026-11-07: 98 original public repositories (165 including forks), 1,030 stars and 412 forks on his own repositories, 91 GitHub followers.
+Numbers as of 2026-11-08: 99 original public repositories (166 including forks), 1,041 stars and 414 forks on his own repositories, 91 GitHub followers.
 
 ## Most-starred projects
 
-- [mu300-linux](https://github.com/dikeckaan/mu300-linux): Linux (Ubuntu 24.04/26.04 or OpenWrt) next to Android on the ZTE F50 / MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620): installer, vendor 5.4 and mainline 6.18 / 7.2 kernels, 5G modem, Wi-Fi, battery, LEDs, NFC, findings (website: https://kaandikec.com/mu300-linux/) (816 stars)
-- [zte-f50-toolkit](https://github.com/dikeckaan/zte-f50-toolkit): ZTE F50 (5G MiFi) flashing toolkit — B09 downgrade, root, BL unlock, IMEI patch. Built on a custom spd_dump fork. (45 stars)
+- [mu300-linux](https://github.com/dikeckaan/mu300-linux): Linux (Ubuntu 24.04/26.04 or OpenWrt) next to Android on the ZTE F50 / MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620): installer, vendor 5.4 and mainline 6.18 / 7.2 kernels, 5G modem, Wi-Fi, battery, LEDs, NFC, findings (website: https://kaandikec.com/mu300-linux/) (823 stars)
+- [zte-f50-toolkit](https://github.com/dikeckaan/zte-f50-toolkit): ZTE F50 (5G MiFi) flashing toolkit — B09 downgrade, root, BL unlock, IMEI patch. Built on a custom spd_dump fork. (46 stars)
 - [mu300-linux-vpn](https://github.com/dikeckaan/mu300-linux-vpn): VPN toolkit for MU300 Linux (ZTE F50 / U30 Air): one command for Xray, sing-box, mihomo, WireGuard and OpenVPN profiles, as a module for Ubuntu and OpenWrt (17 stars)
 - [MacOS-Workflow-VNC](https://github.com/dikeckaan/MacOS-Workflow-VNC): A free macOS desktop over VNC in about five minutes, running on GitHub Actions runners with an ngrok tunnel. (16 stars)
 - [macjaro](https://github.com/dikeckaan/macjaro): MacOS theme for Manjaro Gnome or any Arch based Gnome (15 stars)
@@ -46,14 +46,14 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - URL: https://github.com/dikeckaan/mu300-linux
 - Website: https://kaandikec.com/mu300-linux/
 - Description: Linux (Ubuntu 24.04/26.04 or OpenWrt) next to Android on the ZTE F50 / MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620): installer, vendor 5.4 and mainline 6.18 / 7.2 kernels, 5G modem, Wi-Fi, battery, LEDs, NFC, findings
-- Language: C · Stars: 816 · Forks: 131
+- Language: C · Stars: 823 · Forks: 132
 - Topics: 5g, embedded-linux, linux, linux-kernel, openwrt, ubuntu, unisoc, zte
 - Created: 2026-09-16 · Last push: 2026-11-06
 
 #### zte-f50-toolkit
 - URL: https://github.com/dikeckaan/zte-f50-toolkit
 - Description: ZTE F50 (5G MiFi) flashing toolkit — B09 downgrade, root, BL unlock, IMEI patch. Built on a custom spd_dump fork.
-- Language: C · Stars: 45 · Forks: 12
+- Language: C · Stars: 46 · Forks: 12
 - Topics: none
 - Created: 2026-05-21 · Last push: 2026-09-12
 
@@ -99,6 +99,13 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Topics: none
 - Created: 2026-05-19 · Last push: 2026-05-20
 
+#### dikec-control-panel
+- URL: https://github.com/dikeckaan/dikec-control-panel
+- Description: ZTE F50 için xray tabanlı VPN + web panel + Telegram bot + SMS merkezi (tek ortak backend)
+- Language: Shell · Stars: 4 · Forks: 0
+- Topics: android, magisk, sms, telegram-bot, vpn, xray, zte-f50
+- Created: 2026-06-26 · Last push: 2026-07-04
+
 #### magisk-zte-f50-lite-mem
 - URL: https://github.com/dikeckaan/magisk-zte-f50-lite-mem
 - Description: zram + debloat memory relief for the low-RAM ZTE F50
@@ -127,13 +134,6 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Language: Kotlin · Stars: 3 · Forks: 0 · License: GPL-3.0
 - Topics: none
 - Created: 2026-08-02 · Last push: 2026-08-02
-
-#### dikec-control-panel
-- URL: https://github.com/dikeckaan/dikec-control-panel
-- Description: ZTE F50 için xray tabanlı VPN + web panel + Telegram bot + SMS merkezi (tek ortak backend)
-- Language: Shell · Stars: 3 · Forks: 0
-- Topics: android, magisk, sms, telegram-bot, vpn, xray, zte-f50
-- Created: 2026-06-26 · Last push: 2026-07-04
 
 #### zte-ums9620-kernel-5.4.254
 - URL: https://github.com/dikeckaan/zte-ums9620-kernel-5.4.254
@@ -171,6 +171,13 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Topics: none
 - Created: 2026-08-02 · Last push: 2026-08-04
 
+#### magisk-zte-f50-wireless-adb-keeper
+- URL: https://github.com/dikeckaan/magisk-zte-f50-wireless-adb-keeper
+- Description: Forces wireless ADB on port 55555 every boot (avoids UFI conflict) — ZTE F50 Magisk module
+- Language: Shell · Stars: 2 · Forks: 0 · License: GPL-3.0
+- Topics: none
+- Created: 2026-05-18 · Last push: 2026-08-04
+
 #### magisk-zte-f50-cloudflared-tunnel
 - URL: https://github.com/dikeckaan/magisk-zte-f50-cloudflared-tunnel
 - Description: Cloudflare Tunnel (cloudflared) daemon with supervisor + health check for ZTE F50
@@ -206,19 +213,19 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Topics: none
 - Created: 2024-12-02 · Last push: 2025-05-19
 
+#### magisk-zte-f50-vpn-gateway
+- URL: https://github.com/dikeckaan/magisk-zte-f50-vpn-gateway
+- Description: F50 fork of Kr328/vpn-gateway — Magisk module that routes LAN through tun0, plus a Tailscale-aware exception so replies to Tailscale peers don't get swallowed by the VPN tunnel.
+- Language: Shell · Stars: 1 · Forks: 1 · License: GPL-3.0
+- Topics: none
+- Created: 2026-05-20 · Last push: 2026-05-20
+
 #### mu300-audio-firmware
 - URL: https://github.com/dikeckaan/mu300-audio-firmware
 - Description: (none)
 - Language: n/a · Stars: 1 · Forks: 0
 - Topics: none
 - Created: 2026-10-18 · Last push: 2026-10-18
-
-#### magisk-zte-f50-wireless-adb-keeper
-- URL: https://github.com/dikeckaan/magisk-zte-f50-wireless-adb-keeper
-- Description: Forces wireless ADB on port 55555 every boot (avoids UFI conflict) — ZTE F50 Magisk module
-- Language: Shell · Stars: 1 · Forks: 0 · License: GPL-3.0
-- Topics: none
-- Created: 2026-05-18 · Last push: 2026-08-04
 
 #### magisk-zte-f50-tailscale-control
 - URL: https://github.com/dikeckaan/magisk-zte-f50-tailscale-control
@@ -247,13 +254,6 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Language: Shell · Stars: 1 · Forks: 0 · License: GPL-3.0
 - Topics: none
 - Created: 2026-05-19 · Last push: 2026-05-19
-
-#### magisk-zte-f50-vpn-gateway
-- URL: https://github.com/dikeckaan/magisk-zte-f50-vpn-gateway
-- Description: F50 fork of Kr328/vpn-gateway — Magisk module that routes LAN through tun0, plus a Tailscale-aware exception so replies to Tailscale peers don't get swallowed by the VPN tunnel.
-- Language: Shell · Stars: 0 · Forks: 1 · License: GPL-3.0
-- Topics: none
-- Created: 2026-05-20 · Last push: 2026-05-20
 
 #### u30p-boot-video
 - URL: https://github.com/dikeckaan/u30p-boot-video
@@ -316,7 +316,7 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 #### MacOS-Workflow-VNC
 - URL: https://github.com/dikeckaan/MacOS-Workflow-VNC
 - Description: A free macOS desktop over VNC in about five minutes, running on GitHub Actions runners with an ngrok tunnel.
-- Language: Shell · Stars: 16 · Forks: 189 · License: Apache-2.0
+- Language: Shell · Stars: 16 · Forks: 190 · License: Apache-2.0
 - Topics: none
 - Created: 2021-05-26 · Last push: 2026-03-30
 
@@ -332,7 +332,7 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Description: Native macOS GUI for vphone-cli with VM management and an integrated IPA library
 - Language: Swift · Stars: 11 · Forks: 2
 - Topics: none
-- Created: 2026-09-16 · Last push: 2026-11-07
+- Created: 2026-09-16 · Last push: 2026-11-08
 
 #### internetmerge
 - URL: https://github.com/dikeckaan/internetmerge
@@ -472,14 +472,14 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Description: (none)
 - Language: JavaScript · Stars: 1 · Forks: 0
 - Topics: none
-- Created: 2020-10-24 · Last push: 2026-11-06
+- Created: 2020-10-24 · Last push: 2026-11-07
 
 #### dikeckaan.github.io
 - URL: https://github.com/dikeckaan/dikeckaan.github.io
 - Description: my web site
 - Language: HTML · Stars: 1 · Forks: 0
 - Topics: none
-- Created: 2019-06-23 · Last push: 2026-11-06
+- Created: 2019-06-23 · Last push: 2026-11-07
 
 #### kindle-apps
 - URL: https://github.com/dikeckaan/kindle-apps
@@ -571,6 +571,13 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Language: n/a · Stars: 0 · Forks: 1
 - Topics: none
 - Created: 2020-10-31 · Last push: 2020-11-01
+
+#### pos-foto-makinesi
+- URL: https://github.com/dikeckaan/pos-foto-makinesi
+- Description: Sunmi P2'yi AirPrint / IPP ağ yazıcısına çeviren uygulama: fotoğraf sayfası ve fiş oluşturucu
+- Language: Kotlin · Stars: 0 · Forks: 0
+- Topics: none
+- Created: 2026-11-08 · Last push: 2026-11-08
 
 #### .github
 - URL: https://github.com/dikeckaan/.github
