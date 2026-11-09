@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T10:23:00.504Z",
+ "generated": "2026-11-09T11:31:39.603Z",
  "user": {
   "login": "dikeckaan",
   "name": "KAAN DIKEC",
@@ -7,7 +7,7 @@
   "avatar": "https://avatars.githubusercontent.com/u/21171681?v=4",
   "location": "Turkey/Istanbul",
   "followers": 91,
-  "public_repos": 166
+  "public_repos": 169
  },
  "repos": [
   {
@@ -16,8 +16,8 @@
    "url": "https://github.com/dikeckaan/mu300-linux",
    "homepage": "https://kaandikec.com/mu300-linux/",
    "language": "C",
-   "stars": 823,
-   "forks": 132,
+   "stars": 827,
+   "forks": 133,
    "issues": 27,
    "fork": false,
    "archived": false,
@@ -113,7 +113,7 @@
    "topics": [],
    "license": "",
    "created": "2026-09-16T06:34:56Z",
-   "pushed": "2026-11-08T09:48:10Z"
+   "pushed": "2026-11-09T09:48:34Z"
   },
   {
    "name": "f50-magisk-modules",
@@ -205,6 +205,29 @@
    "pushed": "2024-11-23T08:55:57Z"
   },
   {
+   "name": "mu5358-linux",
+   "description": "OpenWrt on the ZTE U30 Pro (MU5358, UMS9632) 5G hotspot, next to Android, with its round screen as a control panel",
+   "url": "https://github.com/dikeckaan/mu5358-linux",
+   "homepage": "https://kaandikec.com/mu5358-linux/",
+   "language": "C",
+   "stars": 4,
+   "forks": 0,
+   "issues": 1,
+   "fork": false,
+   "archived": false,
+   "topics": [
+    "5g-hotspot",
+    "openwrt",
+    "u30-pro",
+    "ums9632",
+    "unisoc",
+    "zte"
+   ],
+   "license": "",
+   "created": "2026-10-30T04:22:30Z",
+   "pushed": "2026-11-03T21:07:58Z"
+  },
+  {
    "name": "dikec-control-panel",
    "description": "ZTE F50 için xray tabanlı VPN + web panel + Telegram bot + SMS merkezi (tek ortak backend)",
    "url": "https://github.com/dikeckaan/dikec-control-panel",
@@ -259,29 +282,6 @@
    "license": "GPL-3.0",
    "created": "2026-05-19T22:00:51Z",
    "pushed": "2026-05-20T12:25:01Z"
-  },
-  {
-   "name": "mu5358-linux",
-   "description": "OpenWrt on the ZTE U30 Pro (MU5358, UMS9632) 5G hotspot, next to Android, with its round screen as a control panel",
-   "url": "https://github.com/dikeckaan/mu5358-linux",
-   "homepage": "https://kaandikec.com/mu5358-linux/",
-   "language": "C",
-   "stars": 3,
-   "forks": 0,
-   "issues": 1,
-   "fork": false,
-   "archived": false,
-   "topics": [
-    "5g-hotspot",
-    "openwrt",
-    "u30-pro",
-    "ums9632",
-    "unisoc",
-    "zte"
-   ],
-   "license": "",
-   "created": "2026-10-30T04:22:30Z",
-   "pushed": "2026-11-03T21:07:58Z"
   },
   {
    "name": "zte-u30-pro-launcher",
@@ -670,7 +670,7 @@
    "topics": [],
    "license": "",
    "created": "2020-10-24T21:55:41Z",
-   "pushed": "2026-11-07T11:09:13Z"
+   "pushed": "2026-11-08T11:21:57Z"
   },
   {
    "name": "dikeckaan.github.io",
@@ -686,7 +686,7 @@
    "topics": [],
    "license": "",
    "created": "2019-06-23T07:23:06Z",
-   "pushed": "2026-11-07T10:08:27Z"
+   "pushed": "2026-11-08T10:23:01Z"
   },
   {
    "name": "kindle-apps",
@@ -1242,6 +1242,60 @@
    "license": "MIT",
    "created": "2017-11-22T17:47:13Z",
    "pushed": "2016-09-06T04:01:29Z"
+  },
+  {
+   "name": "homebrew-claude-qwen",
+   "description": "Homebrew tap for claude-qwen",
+   "url": "https://github.com/dikeckaan/homebrew-claude-qwen",
+   "homepage": "",
+   "language": "Ruby",
+   "stars": 0,
+   "forks": 0,
+   "issues": 0,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "MIT",
+   "created": "2026-11-08T13:31:28Z",
+   "pushed": "2026-11-08T21:18:14Z"
+  },
+  {
+   "name": "claude-qwen",
+   "description": "Run Claude Code with a local Qwen3.8-27B (or any GGUF) model via llama.cpp on Apple Silicon",
+   "url": "https://github.com/dikeckaan/claude-qwen",
+   "homepage": "",
+   "language": "Shell",
+   "stars": 0,
+   "forks": 0,
+   "issues": 0,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "",
+   "created": "2026-11-08T12:28:27Z",
+   "pushed": "2026-11-08T21:18:09Z"
+  },
+  {
+   "name": "boreas",
+   "description": "Free, open-source fan control and temperature monitor for Apple Silicon Macs — custom fan curves, menu bar app, safe by default.",
+   "url": "https://github.com/dikeckaan/boreas",
+   "homepage": "",
+   "language": "Swift",
+   "stars": 0,
+   "forks": 0,
+   "issues": 1,
+   "fork": false,
+   "archived": false,
+   "topics": [
+    "apple-silicon",
+    "fan-control",
+    "macos",
+    "menubar-app",
+    "swiftui"
+   ],
+   "license": "MIT",
+   "created": "2026-11-08T17:24:08Z",
+   "pushed": "2026-11-08T17:34:32Z"
   },
   {
    "name": "pos-foto-makinesi",
