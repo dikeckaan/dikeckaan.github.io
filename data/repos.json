@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T11:31:39.603Z",
+ "generated": "2026-11-10T11:12:16.547Z",
  "user": {
   "login": "dikeckaan",
   "name": "KAAN DIKEC",
@@ -16,9 +16,9 @@
    "url": "https://github.com/dikeckaan/mu300-linux",
    "homepage": "https://kaandikec.com/mu300-linux/",
    "language": "C",
-   "stars": 827,
-   "forks": 133,
-   "issues": 27,
+   "stars": 838,
+   "forks": 134,
+   "issues": 28,
    "fork": false,
    "archived": false,
    "topics": [
@@ -105,7 +105,7 @@
    "url": "https://github.com/dikeckaan/easy-vphone",
    "homepage": "",
    "language": "Swift",
-   "stars": 11,
+   "stars": 12,
    "forks": 2,
    "issues": 0,
    "fork": false,
@@ -113,7 +113,7 @@
    "topics": [],
    "license": "",
    "created": "2026-09-16T06:34:56Z",
-   "pushed": "2026-11-09T09:48:34Z"
+   "pushed": "2026-11-10T09:48:57Z"
   },
   {
    "name": "f50-magisk-modules",
@@ -164,6 +164,29 @@
    "pushed": "2026-06-09T20:24:20Z"
   },
   {
+   "name": "mu5358-linux",
+   "description": "OpenWrt on the ZTE U30 Pro (MU5358, UMS9632) 5G hotspot, next to Android, with its round screen as a control panel",
+   "url": "https://github.com/dikeckaan/mu5358-linux",
+   "homepage": "https://kaandikec.com/mu5358-linux/",
+   "language": "C",
+   "stars": 5,
+   "forks": 0,
+   "issues": 1,
+   "fork": false,
+   "archived": false,
+   "topics": [
+    "5g-hotspot",
+    "openwrt",
+    "u30-pro",
+    "ums9632",
+    "unisoc",
+    "zte"
+   ],
+   "license": "",
+   "created": "2026-10-30T04:22:30Z",
+   "pushed": "2026-11-03T21:07:58Z"
+  },
+  {
    "name": "OpenEUICC-5ber",
    "description": "OpenEUICC build with 5ber eSIM support: a free, open-source Local Profile Assistant for Android.",
    "url": "https://github.com/dikeckaan/OpenEUICC-5ber",
@@ -205,27 +228,20 @@
    "pushed": "2024-11-23T08:55:57Z"
   },
   {
-   "name": "mu5358-linux",
-   "description": "OpenWrt on the ZTE U30 Pro (MU5358, UMS9632) 5G hotspot, next to Android, with its round screen as a control panel",
-   "url": "https://github.com/dikeckaan/mu5358-linux",
-   "homepage": "https://kaandikec.com/mu5358-linux/",
-   "language": "C",
+   "name": "u30prov2ray",
+   "description": "v2ray client for a 240x240 round-screen Android watch (MU5358). Patched Xray-core keeps allowInsecure working. GPL-3.0, derived from v2rayNG.",
+   "url": "https://github.com/dikeckaan/u30prov2ray",
+   "homepage": "",
+   "language": "Kotlin",
    "stars": 4,
    "forks": 0,
    "issues": 1,
    "fork": false,
    "archived": false,
-   "topics": [
-    "5g-hotspot",
-    "openwrt",
-    "u30-pro",
-    "ums9632",
-    "unisoc",
-    "zte"
-   ],
-   "license": "",
-   "created": "2026-10-30T04:22:30Z",
-   "pushed": "2026-11-03T21:07:58Z"
+   "topics": [],
+   "license": "GPL-3.0",
+   "created": "2026-08-02T08:34:21Z",
+   "pushed": "2026-08-02T08:51:51Z"
   },
   {
    "name": "dikec-control-panel",
@@ -298,22 +314,6 @@
    "license": "",
    "created": "2026-09-08T21:43:29Z",
    "pushed": "2026-10-25T20:06:18Z"
-  },
-  {
-   "name": "u30prov2ray",
-   "description": "v2ray client for a 240x240 round-screen Android watch (MU5358). Patched Xray-core keeps allowInsecure working. GPL-3.0, derived from v2rayNG.",
-   "url": "https://github.com/dikeckaan/u30prov2ray",
-   "homepage": "",
-   "language": "Kotlin",
-   "stars": 3,
-   "forks": 0,
-   "issues": 1,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "GPL-3.0",
-   "created": "2026-08-02T08:34:21Z",
-   "pushed": "2026-08-02T08:51:51Z"
   },
   {
    "name": "flutter-sni-bughost-checker",
@@ -670,7 +670,7 @@
    "topics": [],
    "license": "",
    "created": "2020-10-24T21:55:41Z",
-   "pushed": "2026-11-08T11:21:57Z"
+   "pushed": "2026-11-09T13:00:12Z"
   },
   {
    "name": "dikeckaan.github.io",
@@ -686,7 +686,23 @@
    "topics": [],
    "license": "",
    "created": "2019-06-23T07:23:06Z",
-   "pushed": "2026-11-08T10:23:01Z"
+   "pushed": "2026-11-09T11:31:40Z"
+  },
+  {
+   "name": "claude-qwen",
+   "description": "Run Claude Code with a local Qwen3.8-27B (or any GGUF) model via llama.cpp on Apple Silicon",
+   "url": "https://github.com/dikeckaan/claude-qwen",
+   "homepage": "",
+   "language": "Shell",
+   "stars": 1,
+   "forks": 0,
+   "issues": 0,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "",
+   "created": "2026-11-08T12:28:27Z",
+   "pushed": "2026-11-08T21:18:09Z"
   },
   {
    "name": "kindle-apps",
@@ -1258,22 +1274,6 @@
    "license": "MIT",
    "created": "2026-11-08T13:31:28Z",
    "pushed": "2026-11-08T21:18:14Z"
-  },
-  {
-   "name": "claude-qwen",
-   "description": "Run Claude Code with a local Qwen3.8-27B (or any GGUF) model via llama.cpp on Apple Silicon",
-   "url": "https://github.com/dikeckaan/claude-qwen",
-   "homepage": "",
-   "language": "Shell",
-   "stars": 0,
-   "forks": 0,
-   "issues": 0,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "",
-   "created": "2026-11-08T12:28:27Z",
-   "pushed": "2026-11-08T21:18:09Z"
   },
   {
    "name": "boreas",
