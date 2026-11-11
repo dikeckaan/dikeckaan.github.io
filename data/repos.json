@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T11:12:16.547Z",
+ "generated": "2026-11-11T10:57:08.263Z",
  "user": {
   "login": "dikeckaan",
   "name": "KAAN DIKEC",
@@ -7,7 +7,7 @@
   "avatar": "https://avatars.githubusercontent.com/u/21171681?v=4",
   "location": "Turkey/Istanbul",
   "followers": 91,
-  "public_repos": 169
+  "public_repos": 170
  },
  "repos": [
   {
@@ -16,9 +16,9 @@
    "url": "https://github.com/dikeckaan/mu300-linux",
    "homepage": "https://kaandikec.com/mu300-linux/",
    "language": "C",
-   "stars": 838,
-   "forks": 134,
-   "issues": 28,
+   "stars": 848,
+   "forks": 135,
+   "issues": 30,
    "fork": false,
    "archived": false,
    "topics": [
@@ -33,7 +33,7 @@
    ],
    "license": "",
    "created": "2026-09-16T18:51:14Z",
-   "pushed": "2026-11-06T19:30:24Z"
+   "pushed": "2026-11-10T16:02:56Z"
   },
   {
    "name": "zte-f50-toolkit",
@@ -113,7 +113,7 @@
    "topics": [],
    "license": "",
    "created": "2026-09-16T06:34:56Z",
-   "pushed": "2026-11-10T09:48:57Z"
+   "pushed": "2026-11-11T09:49:21Z"
   },
   {
    "name": "f50-magisk-modules",
@@ -130,6 +130,29 @@
    "license": "GPL-3.0",
    "created": "2026-05-18T21:35:36Z",
    "pushed": "2026-06-12T21:59:33Z"
+  },
+  {
+   "name": "mu5358-linux",
+   "description": "OpenWrt on the ZTE U30 Pro (MU5358, UMS9632) 5G hotspot, next to Android, with its round screen as a control panel",
+   "url": "https://github.com/dikeckaan/mu5358-linux",
+   "homepage": "https://kaandikec.com/mu5358-linux/",
+   "language": "C",
+   "stars": 6,
+   "forks": 0,
+   "issues": 1,
+   "fork": false,
+   "archived": false,
+   "topics": [
+    "5g-hotspot",
+    "openwrt",
+    "u30-pro",
+    "ums9632",
+    "unisoc",
+    "zte"
+   ],
+   "license": "",
+   "created": "2026-10-30T04:22:30Z",
+   "pushed": "2026-11-03T21:07:58Z"
   },
   {
    "name": "magisk-zte-f50-statusbot",
@@ -162,29 +185,6 @@
    "license": "",
    "created": "2026-05-30T10:24:33Z",
    "pushed": "2026-06-09T20:24:20Z"
-  },
-  {
-   "name": "mu5358-linux",
-   "description": "OpenWrt on the ZTE U30 Pro (MU5358, UMS9632) 5G hotspot, next to Android, with its round screen as a control panel",
-   "url": "https://github.com/dikeckaan/mu5358-linux",
-   "homepage": "https://kaandikec.com/mu5358-linux/",
-   "language": "C",
-   "stars": 5,
-   "forks": 0,
-   "issues": 1,
-   "fork": false,
-   "archived": false,
-   "topics": [
-    "5g-hotspot",
-    "openwrt",
-    "u30-pro",
-    "ums9632",
-    "unisoc",
-    "zte"
-   ],
-   "license": "",
-   "created": "2026-10-30T04:22:30Z",
-   "pushed": "2026-11-03T21:07:58Z"
   },
   {
    "name": "OpenEUICC-5ber",
@@ -670,7 +670,7 @@
    "topics": [],
    "license": "",
    "created": "2020-10-24T21:55:41Z",
-   "pushed": "2026-11-09T13:00:12Z"
+   "pushed": "2026-11-10T12:44:40Z"
   },
   {
    "name": "dikeckaan.github.io",
@@ -686,7 +686,7 @@
    "topics": [],
    "license": "",
    "created": "2019-06-23T07:23:06Z",
-   "pushed": "2026-11-09T11:31:40Z"
+   "pushed": "2026-11-10T11:12:17Z"
   },
   {
    "name": "claude-qwen",
@@ -1258,6 +1258,22 @@
    "license": "MIT",
    "created": "2017-11-22T17:47:13Z",
    "pushed": "2016-09-06T04:01:29Z"
+  },
+  {
+   "name": "xiaomi-rc-bridge",
+   "description": "Make Xiaomi BLE remotes work on Android TV boxes where keys do nothing — no root",
+   "url": "https://github.com/dikeckaan/xiaomi-rc-bridge",
+   "homepage": "",
+   "language": "Java",
+   "stars": 0,
+   "forks": 0,
+   "issues": 0,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "MIT",
+   "created": "2026-11-11T09:04:25Z",
+   "pushed": "2026-11-11T09:09:44Z"
   },
   {
    "name": "homebrew-claude-qwen",
