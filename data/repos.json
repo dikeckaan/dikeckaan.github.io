@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11T10:57:08.263Z",
+ "generated": "2026-11-12T11:08:56.707Z",
  "user": {
   "login": "dikeckaan",
   "name": "KAAN DIKEC",
@@ -16,9 +16,9 @@
    "url": "https://github.com/dikeckaan/mu300-linux",
    "homepage": "https://kaandikec.com/mu300-linux/",
    "language": "C",
-   "stars": 848,
-   "forks": 135,
-   "issues": 30,
+   "stars": 854,
+   "forks": 137,
+   "issues": 32,
    "fork": false,
    "archived": false,
    "topics": [
@@ -113,7 +113,7 @@
    "topics": [],
    "license": "",
    "created": "2026-09-16T06:34:56Z",
-   "pushed": "2026-11-11T09:49:21Z"
+   "pushed": "2026-11-12T09:49:42Z"
   },
   {
    "name": "f50-magisk-modules",
@@ -670,7 +670,7 @@
    "topics": [],
    "license": "",
    "created": "2020-10-24T21:55:41Z",
-   "pushed": "2026-11-10T12:44:40Z"
+   "pushed": "2026-11-11T11:56:53Z"
   },
   {
    "name": "dikeckaan.github.io",
@@ -686,7 +686,7 @@
    "topics": [],
    "license": "",
    "created": "2019-06-23T07:23:06Z",
-   "pushed": "2026-11-10T11:12:17Z"
+   "pushed": "2026-11-11T10:57:09Z"
   },
   {
    "name": "claude-qwen",
@@ -1260,6 +1260,28 @@
    "pushed": "2016-09-06T04:01:29Z"
   },
   {
+   "name": "boreas",
+   "description": "Free, open-source fan control and temperature monitor for Apple Silicon Macs — custom fan curves, menu bar app, safe by default.",
+   "url": "https://github.com/dikeckaan/boreas",
+   "homepage": "",
+   "language": "Swift",
+   "stars": 0,
+   "forks": 0,
+   "issues": 1,
+   "fork": false,
+   "archived": false,
+   "topics": [
+    "apple-silicon",
+    "fan-control",
+    "macos",
+    "menubar-app",
+    "swiftui"
+   ],
+   "license": "MIT",
+   "created": "2026-11-08T17:24:08Z",
+   "pushed": "2026-11-11T20:26:04Z"
+  },
+  {
    "name": "xiaomi-rc-bridge",
    "description": "Make Xiaomi BLE remotes work on Android TV boxes where keys do nothing — no root",
    "url": "https://github.com/dikeckaan/xiaomi-rc-bridge",
@@ -1290,28 +1312,6 @@
    "license": "MIT",
    "created": "2026-11-08T13:31:28Z",
    "pushed": "2026-11-08T21:18:14Z"
-  },
-  {
-   "name": "boreas",
-   "description": "Free, open-source fan control and temperature monitor for Apple Silicon Macs — custom fan curves, menu bar app, safe by default.",
-   "url": "https://github.com/dikeckaan/boreas",
-   "homepage": "",
-   "language": "Swift",
-   "stars": 0,
-   "forks": 0,
-   "issues": 1,
-   "fork": false,
-   "archived": false,
-   "topics": [
-    "apple-silicon",
-    "fan-control",
-    "macos",
-    "menubar-app",
-    "swiftui"
-   ],
-   "license": "MIT",
-   "created": "2026-11-08T17:24:08Z",
-   "pushed": "2026-11-08T17:34:32Z"
   },
   {
    "name": "pos-foto-makinesi",

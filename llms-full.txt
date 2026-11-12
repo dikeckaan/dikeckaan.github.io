@@ -2,11 +2,11 @@
 
 > Abdurrahman Kaan Dikeç (also written Kaan Dikeç or Kaan Dikec; GitHub: dikeckaan) is a computer engineer, developer and musician from Istanbul, Türkiye. Most of his work is close to the hardware: he created mu300-linux, which runs a full Ubuntu or OpenWrt next to Android on the ZTE F50, MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620), together with a flashing toolkit, a VPN module and a family of Magisk modules for those devices. He also builds native macOS apps (easy-vphone), Hackintosh EFIs, a Forza Horizon telemetry dashboard and networking / VPN tools. Almost all of it is open source on GitHub.
 
-Numbers as of 2026-11-11: 103 original public repositories (170 including forks), 1,072 stars and 417 forks on his own repositories, 91 GitHub followers.
+Numbers as of 2026-11-12: 103 original public repositories (170 including forks), 1,078 stars and 419 forks on his own repositories, 91 GitHub followers.
 
 ## Most-starred projects
 
-- [mu300-linux](https://github.com/dikeckaan/mu300-linux): Linux (Ubuntu 24.04/26.04 or OpenWrt) next to Android on the ZTE F50 / MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620): installer, vendor 5.4 and mainline 6.18 / 7.2 kernels, 5G modem, Wi-Fi, battery, LEDs, NFC, findings (website: https://kaandikec.com/mu300-linux/) (848 stars)
+- [mu300-linux](https://github.com/dikeckaan/mu300-linux): Linux (Ubuntu 24.04/26.04 or OpenWrt) next to Android on the ZTE F50 / MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620): installer, vendor 5.4 and mainline 6.18 / 7.2 kernels, 5G modem, Wi-Fi, battery, LEDs, NFC, findings (website: https://kaandikec.com/mu300-linux/) (854 stars)
 - [zte-f50-toolkit](https://github.com/dikeckaan/zte-f50-toolkit): ZTE F50 (5G MiFi) flashing toolkit — B09 downgrade, root, BL unlock, IMEI patch. Built on a custom spd_dump fork. (46 stars)
 - [mu300-linux-vpn](https://github.com/dikeckaan/mu300-linux-vpn): VPN toolkit for MU300 Linux (ZTE F50 / U30 Air): one command for Xray, sing-box, mihomo, WireGuard and OpenVPN profiles, as a module for Ubuntu and OpenWrt (17 stars)
 - [MacOS-Workflow-VNC](https://github.com/dikeckaan/MacOS-Workflow-VNC): A free macOS desktop over VNC in about five minutes, running on GitHub Actions runners with an ngrok tunnel. (16 stars)
@@ -46,7 +46,7 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - URL: https://github.com/dikeckaan/mu300-linux
 - Website: https://kaandikec.com/mu300-linux/
 - Description: Linux (Ubuntu 24.04/26.04 or OpenWrt) next to Android on the ZTE F50 / MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620): installer, vendor 5.4 and mainline 6.18 / 7.2 kernels, 5G modem, Wi-Fi, battery, LEDs, NFC, findings
-- Language: C · Stars: 848 · Forks: 135
+- Language: C · Stars: 854 · Forks: 137
 - Topics: 5g, embedded-linux, linux, linux-kernel, openwrt, ubuntu, unisoc, zte
 - Created: 2026-09-16 · Last push: 2026-11-10
 
@@ -332,7 +332,7 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Description: Native macOS GUI for vphone-cli with VM management and an integrated IPA library
 - Language: Swift · Stars: 12 · Forks: 2
 - Topics: none
-- Created: 2026-09-16 · Last push: 2026-11-11
+- Created: 2026-09-16 · Last push: 2026-11-12
 
 #### internetmerge
 - URL: https://github.com/dikeckaan/internetmerge
@@ -367,7 +367,7 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Description: Free, open-source fan control and temperature monitor for Apple Silicon Macs — custom fan curves, menu bar app, safe by default.
 - Language: Swift · Stars: 0 · Forks: 0 · License: MIT
 - Topics: apple-silicon, fan-control, macos, menubar-app, swiftui
-- Created: 2026-11-08 · Last push: 2026-11-08
+- Created: 2026-11-08 · Last push: 2026-11-11
 
 #### homebrew-easy-vphone
 - URL: https://github.com/dikeckaan/homebrew-easy-vphone
@@ -486,14 +486,14 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Description: (none)
 - Language: JavaScript · Stars: 1 · Forks: 0
 - Topics: none
-- Created: 2020-10-24 · Last push: 2026-11-10
+- Created: 2020-10-24 · Last push: 2026-11-11
 
 #### dikeckaan.github.io
 - URL: https://github.com/dikeckaan/dikeckaan.github.io
 - Description: my web site
 - Language: HTML · Stars: 1 · Forks: 0
 - Topics: none
-- Created: 2019-06-23 · Last push: 2026-11-10
+- Created: 2019-06-23 · Last push: 2026-11-11
 
 #### claude-qwen
 - URL: https://github.com/dikeckaan/claude-qwen
