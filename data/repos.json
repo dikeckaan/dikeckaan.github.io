@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-13T10:58:41.073Z",
+ "generated": "2026-11-14T10:25:39.853Z",
  "user": {
   "login": "dikeckaan",
   "name": "KAAN DIKEC",
   "bio": "Computer Engineer, linux lover. Developer",
   "avatar": "https://avatars.githubusercontent.com/u/21171681?v=4",
   "location": "Turkey/Istanbul",
-  "followers": 91,
+  "followers": 93,
   "public_repos": 170
  },
  "repos": [
@@ -16,7 +16,7 @@
    "url": "https://github.com/dikeckaan/mu300-linux",
    "homepage": "https://kaandikec.com/mu300-linux/",
    "language": "C",
-   "stars": 861,
+   "stars": 867,
    "forks": 137,
    "issues": 32,
    "fork": false,
@@ -41,7 +41,7 @@
    "url": "https://github.com/dikeckaan/zte-f50-toolkit",
    "homepage": "",
    "language": "C",
-   "stars": 47,
+   "stars": 48,
    "forks": 12,
    "issues": 1,
    "fork": false,
@@ -113,7 +113,7 @@
    "topics": [],
    "license": "",
    "created": "2026-09-16T06:34:56Z",
-   "pushed": "2026-11-13T10:23:56Z"
+   "pushed": "2026-11-14T06:37:01Z"
   },
   {
    "name": "f50-magisk-modules",
@@ -641,22 +641,6 @@
    "pushed": "2020-09-15T08:44:04Z"
   },
   {
-   "name": "keyflow-gallery",
-   "description": "Hazır KeyFlow akışları — pull request ile katkıya açık",
-   "url": "https://github.com/dikeckaan/keyflow-gallery",
-   "homepage": "",
-   "language": "Python",
-   "stars": 1,
-   "forks": 1,
-   "issues": 0,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "",
-   "created": "2026-08-29T09:36:21Z",
-   "pushed": "2026-11-12T22:10:46Z"
-  },
-  {
    "name": "dikeckaan",
    "description": "",
    "url": "https://github.com/dikeckaan/dikeckaan",
@@ -670,7 +654,7 @@
    "topics": [],
    "license": "",
    "created": "2020-10-24T21:55:41Z",
-   "pushed": "2026-11-12T12:51:54Z"
+   "pushed": "2026-11-13T12:19:38Z"
   },
   {
    "name": "dikeckaan.github.io",
@@ -686,7 +670,23 @@
    "topics": [],
    "license": "",
    "created": "2019-06-23T07:23:06Z",
-   "pushed": "2026-11-12T11:08:58Z"
+   "pushed": "2026-11-13T10:58:42Z"
+  },
+  {
+   "name": "keyflow-gallery",
+   "description": "Hazır KeyFlow akışları — pull request ile katkıya açık",
+   "url": "https://github.com/dikeckaan/keyflow-gallery",
+   "homepage": "",
+   "language": "Python",
+   "stars": 1,
+   "forks": 1,
+   "issues": 0,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "",
+   "created": "2026-08-29T09:36:21Z",
+   "pushed": "2026-11-12T22:10:46Z"
   },
   {
    "name": "claude-qwen",
