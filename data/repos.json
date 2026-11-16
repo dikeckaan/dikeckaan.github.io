@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15T10:53:23.205Z",
+ "generated": "2026-11-16T11:16:56.015Z",
  "user": {
   "login": "dikeckaan",
   "name": "KAAN DIKEC",
@@ -16,8 +16,8 @@
    "url": "https://github.com/dikeckaan/mu300-linux",
    "homepage": "https://kaandikec.com/mu300-linux/",
    "language": "C",
-   "stars": 875,
-   "forks": 138,
+   "stars": 880,
+   "forks": 140,
    "issues": 34,
    "fork": false,
    "archived": false,
@@ -33,7 +33,7 @@
    ],
    "license": "",
    "created": "2026-09-16T18:51:14Z",
-   "pushed": "2026-11-10T16:02:56Z"
+   "pushed": "2026-11-15T12:53:41Z"
   },
   {
    "name": "zte-f50-toolkit",
@@ -74,7 +74,7 @@
    "homepage": "",
    "language": "Shell",
    "stars": 16,
-   "forks": 191,
+   "forks": 190,
    "issues": 0,
    "fork": false,
    "archived": false,
@@ -105,7 +105,7 @@
    "url": "https://github.com/dikeckaan/easy-vphone",
    "homepage": "",
    "language": "Swift",
-   "stars": 12,
+   "stars": 13,
    "forks": 2,
    "issues": 0,
    "fork": false,
@@ -113,7 +113,7 @@
    "topics": [],
    "license": "",
    "created": "2026-09-16T06:34:56Z",
-   "pushed": "2026-11-15T06:44:04Z"
+   "pushed": "2026-11-16T06:42:21Z"
   },
   {
    "name": "f50-magisk-modules",
@@ -300,6 +300,22 @@
    "pushed": "2026-05-20T12:25:01Z"
   },
   {
+   "name": "mu300-linux-mirror",
+   "description": "Release files of dikeckaan/mu300-linux in parts, for the web installer (written by its release workflow; nothing to see here: use the main repository)",
+   "url": "https://github.com/dikeckaan/mu300-linux-mirror",
+   "homepage": "",
+   "language": "",
+   "stars": 3,
+   "forks": 2,
+   "issues": 0,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "",
+   "created": "2026-10-13T10:50:43Z",
+   "pushed": "2026-11-01T17:38:01Z"
+  },
+  {
    "name": "zte-u30-pro-launcher",
    "description": "ZTE MU5358 (U30 Pro) UFI router icin ozel launcher + Magisk modulu — 240x240 yuvarlak dokunmatik ekran, Kotlin/Canvas, Gradle'siz",
    "url": "https://github.com/dikeckaan/zte-u30-pro-launcher",
@@ -394,22 +410,6 @@
    "license": "GPL-3.0",
    "created": "2020-07-04T13:40:19Z",
    "pushed": "2020-08-20T18:49:15Z"
-  },
-  {
-   "name": "mu300-linux-mirror",
-   "description": "Release files of dikeckaan/mu300-linux in parts, for the web installer (written by its release workflow; nothing to see here: use the main repository)",
-   "url": "https://github.com/dikeckaan/mu300-linux-mirror",
-   "homepage": "",
-   "language": "",
-   "stars": 2,
-   "forks": 1,
-   "issues": 0,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "",
-   "created": "2026-10-13T10:50:43Z",
-   "pushed": "2026-11-01T17:38:01Z"
   },
   {
    "name": "forza-horizon-6-telemetry-dashboard",
@@ -654,7 +654,7 @@
    "topics": [],
    "license": "",
    "created": "2020-10-24T21:55:41Z",
-   "pushed": "2026-11-14T11:35:33Z"
+   "pushed": "2026-11-15T12:00:39Z"
   },
   {
    "name": "dikeckaan.github.io",
@@ -670,7 +670,7 @@
    "topics": [],
    "license": "",
    "created": "2019-06-23T07:23:06Z",
-   "pushed": "2026-11-14T10:25:41Z"
+   "pushed": "2026-11-15T10:53:24Z"
   },
   {
    "name": "keyflow-gallery",
