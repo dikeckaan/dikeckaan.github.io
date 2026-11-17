@@ -2,11 +2,11 @@
 
 > Abdurrahman Kaan Dikeç (also written Kaan Dikeç or Kaan Dikec; GitHub: dikeckaan) is a computer engineer, developer and musician from Istanbul, Türkiye. Most of his work is close to the hardware: he created mu300-linux, which runs a full Ubuntu or OpenWrt next to Android on the ZTE F50, MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620), together with a flashing toolkit, a VPN module and a family of Magisk modules for those devices. He also builds native macOS apps (easy-vphone), Hackintosh EFIs, a Forza Horizon telemetry dashboard and networking / VPN tools. Almost all of it is open source on GitHub.
 
-Numbers as of 2026-11-16: 103 original public repositories (170 including forks), 1,108 stars and 423 forks on his own repositories, 93 GitHub followers.
+Numbers as of 2026-11-17: 103 original public repositories (170 including forks), 1,117 stars and 426 forks on his own repositories, 94 GitHub followers.
 
 ## Most-starred projects
 
-- [mu300-linux](https://github.com/dikeckaan/mu300-linux): Linux (Ubuntu 24.04/26.04 or OpenWrt) next to Android on the ZTE F50 / MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620): installer, vendor 5.4 and mainline 6.18 / 7.2 kernels, 5G modem, Wi-Fi, battery, LEDs, NFC, findings (website: https://kaandikec.com/mu300-linux/) (880 stars)
+- [mu300-linux](https://github.com/dikeckaan/mu300-linux): Linux (Ubuntu 24.04/26.04 or OpenWrt) next to Android on the ZTE F50 / MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620): installer, vendor 5.4 and mainline 6.18 / 7.2 kernels, 5G modem, Wi-Fi, battery, LEDs, NFC, findings (website: https://kaandikec.com/mu300-linux/) (887 stars)
 - [zte-f50-toolkit](https://github.com/dikeckaan/zte-f50-toolkit): ZTE F50 (5G MiFi) flashing toolkit — B09 downgrade, root, BL unlock, IMEI patch. Built on a custom spd_dump fork. (49 stars)
 - [mu300-linux-vpn](https://github.com/dikeckaan/mu300-linux-vpn): VPN toolkit for MU300 Linux (ZTE F50 / U30 Air): one command for Xray, sing-box, mihomo, WireGuard and OpenVPN profiles, as a module for Ubuntu and OpenWrt (17 stars)
 - [MacOS-Workflow-VNC](https://github.com/dikeckaan/MacOS-Workflow-VNC): A free macOS desktop over VNC in about five minutes, running on GitHub Actions runners with an ngrok tunnel. (16 stars)
@@ -46,7 +46,7 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - URL: https://github.com/dikeckaan/mu300-linux
 - Website: https://kaandikec.com/mu300-linux/
 - Description: Linux (Ubuntu 24.04/26.04 or OpenWrt) next to Android on the ZTE F50 / MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620): installer, vendor 5.4 and mainline 6.18 / 7.2 kernels, 5G modem, Wi-Fi, battery, LEDs, NFC, findings
-- Language: C · Stars: 880 · Forks: 140
+- Language: C · Stars: 887 · Forks: 142
 - Topics: 5g, embedded-linux, linux, linux-kernel, openwrt, ubuntu, unisoc, zte
 - Created: 2026-09-16 · Last push: 2026-11-15
 
@@ -135,19 +135,19 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Topics: none
 - Created: 2026-10-13 · Last push: 2026-11-01
 
+#### zte-ums9620-kernel-5.4.254
+- URL: https://github.com/dikeckaan/zte-ums9620-kernel-5.4.254
+- Description: ZTE UMS9620 (Unisoc T760) Linux 5.4.254 kernel source from ZTE's GPL release (U30 Air), used to build a custom kernel for the ZTE F50/MU300. Mirror of Enceka/android_kernel_zte_ums9620_mifi_u30air.
+- Language: C · Stars: 3 · Forks: 2
+- Topics: none
+- Created: 2026-09-16 · Last push: 2026-09-16
+
 #### zte-u30-pro-launcher
 - URL: https://github.com/dikeckaan/zte-u30-pro-launcher
 - Description: ZTE MU5358 (U30 Pro) UFI router icin ozel launcher + Magisk modulu — 240x240 yuvarlak dokunmatik ekran, Kotlin/Canvas, Gradle'siz
 - Language: Kotlin · Stars: 3 · Forks: 0
 - Topics: none
 - Created: 2026-09-08 · Last push: 2026-10-25
-
-#### zte-ums9620-kernel-5.4.254
-- URL: https://github.com/dikeckaan/zte-ums9620-kernel-5.4.254
-- Description: ZTE UMS9620 (Unisoc T760) Linux 5.4.254 kernel source from ZTE's GPL release (U30 Air), used to build a custom kernel for the ZTE F50/MU300. Mirror of Enceka/android_kernel_zte_ums9620_mifi_u30air.
-- Language: C · Stars: 2 · Forks: 2
-- Topics: none
-- Created: 2026-09-16 · Last push: 2026-09-16
 
 #### magisk-zte-f50-sip-server
 - URL: https://github.com/dikeckaan/magisk-zte-f50-sip-server
@@ -316,7 +316,7 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 #### MacOS-Workflow-VNC
 - URL: https://github.com/dikeckaan/MacOS-Workflow-VNC
 - Description: A free macOS desktop over VNC in about five minutes, running on GitHub Actions runners with an ngrok tunnel.
-- Language: Shell · Stars: 16 · Forks: 190 · License: Apache-2.0
+- Language: Shell · Stars: 16 · Forks: 191 · License: Apache-2.0
 - Topics: none
 - Created: 2021-05-26 · Last push: 2026-03-30
 
@@ -332,7 +332,7 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Description: Native macOS GUI for vphone-cli with VM management and an integrated IPA library
 - Language: Swift · Stars: 13 · Forks: 2
 - Topics: none
-- Created: 2026-09-16 · Last push: 2026-11-16
+- Created: 2026-09-16 · Last push: 2026-11-17
 
 #### internetmerge
 - URL: https://github.com/dikeckaan/internetmerge
@@ -344,7 +344,7 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 #### z590-tomahawk-wifi-hackintosh-efi
 - URL: https://github.com/dikeckaan/z590-tomahawk-wifi-hackintosh-efi
 - Description: MSI MAG Z590 TOMAHAWK WIFI Hackintosh EFI
-- Language: n/a · Stars: 3 · Forks: 0
+- Language: n/a · Stars: 4 · Forks: 0
 - Topics: none
 - Created: 2022-04-23 · Last push: 2022-07-03
 
@@ -479,14 +479,14 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Description: (none)
 - Language: JavaScript · Stars: 1 · Forks: 0
 - Topics: none
-- Created: 2020-10-24 · Last push: 2026-11-15
+- Created: 2020-10-24 · Last push: 2026-11-16
 
 #### dikeckaan.github.io
 - URL: https://github.com/dikeckaan/dikeckaan.github.io
 - Description: my web site
 - Language: HTML · Stars: 1 · Forks: 0
 - Topics: none
-- Created: 2019-06-23 · Last push: 2026-11-15
+- Created: 2019-06-23 · Last push: 2026-11-16
 
 #### claude-qwen
 - URL: https://github.com/dikeckaan/claude-qwen
