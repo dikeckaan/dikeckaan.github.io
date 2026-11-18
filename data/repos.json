@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T11:52:17.543Z",
+ "generated": "2026-11-18T11:41:36.941Z",
  "user": {
   "login": "dikeckaan",
   "name": "KAAN DIKEC",
@@ -16,8 +16,8 @@
    "url": "https://github.com/dikeckaan/mu300-linux",
    "homepage": "https://kaandikec.com/mu300-linux/",
    "language": "C",
-   "stars": 887,
-   "forks": 142,
+   "stars": 893,
+   "forks": 144,
    "issues": 35,
    "fork": false,
    "archived": false,
@@ -57,7 +57,7 @@
    "url": "https://github.com/dikeckaan/mu300-linux-vpn",
    "homepage": "",
    "language": "Python",
-   "stars": 17,
+   "stars": 19,
    "forks": 2,
    "issues": 3,
    "fork": false,
@@ -113,7 +113,7 @@
    "topics": [],
    "license": "",
    "created": "2026-09-16T06:34:56Z",
-   "pushed": "2026-11-17T08:02:00Z"
+   "pushed": "2026-11-18T07:38:32Z"
   },
   {
    "name": "f50-magisk-modules",
@@ -138,7 +138,7 @@
    "homepage": "https://kaandikec.com/mu5358-linux/",
    "language": "C",
    "stars": 6,
-   "forks": 0,
+   "forks": 1,
    "issues": 1,
    "fork": false,
    "archived": false,
@@ -654,7 +654,7 @@
    "topics": [],
    "license": "",
    "created": "2020-10-24T21:55:41Z",
-   "pushed": "2026-11-16T12:52:51Z"
+   "pushed": "2026-11-17T13:34:52Z"
   },
   {
    "name": "dikeckaan.github.io",
@@ -670,7 +670,7 @@
    "topics": [],
    "license": "",
    "created": "2019-06-23T07:23:06Z",
-   "pushed": "2026-11-16T11:16:57Z"
+   "pushed": "2026-11-17T11:52:18Z"
   },
   {
    "name": "keyflow-gallery",
@@ -1260,6 +1260,32 @@
    "pushed": "2016-09-06T04:01:29Z"
   },
   {
+   "name": "swagger-dark-ui",
+   "description": "Dark-themed Swagger UI showcase — every OpenAPI 3.1 feature, live on GitHub Pages",
+   "url": "https://github.com/dikeckaan/swagger-dark-ui",
+   "homepage": "https://oasforge.dev",
+   "language": "JavaScript",
+   "stars": 0,
+   "forks": 0,
+   "issues": 0,
+   "fork": false,
+   "archived": false,
+   "topics": [
+    "api-documentation",
+    "openapi",
+    "openapi3",
+    "openapi3-1",
+    "openapi3-validation",
+    "openapi30",
+    "openapi31",
+    "openapi32",
+    "swagger"
+   ],
+   "license": "",
+   "created": "2026-07-08T09:17:50Z",
+   "pushed": "2026-11-17T12:17:45Z"
+  },
+  {
    "name": "boreas",
    "description": "Free, open-source fan control and temperature monitor for Apple Silicon Macs — custom fan curves, menu bar app, safe by default.",
    "url": "https://github.com/dikeckaan/boreas",
@@ -1392,32 +1418,6 @@
    "license": "",
    "created": "2026-10-12T15:38:08Z",
    "pushed": "2026-10-12T15:41:55Z"
-  },
-  {
-   "name": "swagger-dark-ui",
-   "description": "Dark-themed Swagger UI showcase — every OpenAPI 3.1 feature, live on GitHub Pages",
-   "url": "https://github.com/dikeckaan/swagger-dark-ui",
-   "homepage": "https://oasforge.dev",
-   "language": "JavaScript",
-   "stars": 0,
-   "forks": 0,
-   "issues": 0,
-   "fork": false,
-   "archived": false,
-   "topics": [
-    "api-documentation",
-    "openapi",
-    "openapi3",
-    "openapi3-1",
-    "openapi3-validation",
-    "openapi30",
-    "openapi31",
-    "openapi32",
-    "swagger"
-   ],
-   "license": "",
-   "created": "2026-07-08T09:17:50Z",
-   "pushed": "2026-10-09T10:52:19Z"
   },
   {
    "name": "claude-system-promt",
