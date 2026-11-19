@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T11:41:36.941Z",
+ "generated": "2026-11-19T11:39:32.520Z",
  "user": {
   "login": "dikeckaan",
   "name": "KAAN DIKEC",
@@ -16,8 +16,8 @@
    "url": "https://github.com/dikeckaan/mu300-linux",
    "homepage": "https://kaandikec.com/mu300-linux/",
    "language": "C",
-   "stars": 893,
-   "forks": 144,
+   "stars": 901,
+   "forks": 145,
    "issues": 35,
    "fork": false,
    "archived": false,
@@ -113,7 +113,7 @@
    "topics": [],
    "license": "",
    "created": "2026-09-16T06:34:56Z",
-   "pushed": "2026-11-18T07:38:32Z"
+   "pushed": "2026-11-19T07:34:30Z"
   },
   {
    "name": "f50-magisk-modules",
@@ -654,7 +654,7 @@
    "topics": [],
    "license": "",
    "created": "2020-10-24T21:55:41Z",
-   "pushed": "2026-11-17T13:34:52Z"
+   "pushed": "2026-11-18T13:10:28Z"
   },
   {
    "name": "dikeckaan.github.io",
@@ -670,7 +670,7 @@
    "topics": [],
    "license": "",
    "created": "2019-06-23T07:23:06Z",
-   "pushed": "2026-11-17T11:52:18Z"
+   "pushed": "2026-11-18T11:41:38Z"
   },
   {
    "name": "keyflow-gallery",
