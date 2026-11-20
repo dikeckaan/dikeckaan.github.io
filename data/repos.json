@@ -1,13 +1,13 @@
 {
- "generated": "2026-11-19T11:39:32.520Z",
+ "generated": "2026-11-20T11:39:29.307Z",
  "user": {
   "login": "dikeckaan",
   "name": "KAAN DIKEC",
   "bio": "Computer Engineer, linux lover. Developer",
   "avatar": "https://avatars.githubusercontent.com/u/21171681?v=4",
   "location": "Turkey/Istanbul",
-  "followers": 94,
-  "public_repos": 170
+  "followers": 95,
+  "public_repos": 173
  },
  "repos": [
   {
@@ -16,9 +16,9 @@
    "url": "https://github.com/dikeckaan/mu300-linux",
    "homepage": "https://kaandikec.com/mu300-linux/",
    "language": "C",
-   "stars": 901,
-   "forks": 145,
-   "issues": 35,
+   "stars": 906,
+   "forks": 147,
+   "issues": 36,
    "fork": false,
    "archived": false,
    "topics": [
@@ -41,7 +41,7 @@
    "url": "https://github.com/dikeckaan/zte-f50-toolkit",
    "homepage": "",
    "language": "C",
-   "stars": 49,
+   "stars": 51,
    "forks": 12,
    "issues": 1,
    "fork": false,
@@ -74,7 +74,7 @@
    "homepage": "",
    "language": "Shell",
    "stars": 16,
-   "forks": 191,
+   "forks": 192,
    "issues": 0,
    "fork": false,
    "archived": false,
@@ -113,7 +113,7 @@
    "topics": [],
    "license": "",
    "created": "2026-09-16T06:34:56Z",
-   "pushed": "2026-11-19T07:34:30Z"
+   "pushed": "2026-11-20T07:25:34Z"
   },
   {
    "name": "f50-magisk-modules",
@@ -654,7 +654,7 @@
    "topics": [],
    "license": "",
    "created": "2020-10-24T21:55:41Z",
-   "pushed": "2026-11-18T13:10:28Z"
+   "pushed": "2026-11-19T13:23:52Z"
   },
   {
    "name": "dikeckaan.github.io",
@@ -670,7 +670,7 @@
    "topics": [],
    "license": "",
    "created": "2019-06-23T07:23:06Z",
-   "pushed": "2026-11-18T11:41:38Z"
+   "pushed": "2026-11-19T11:39:33Z"
   },
   {
    "name": "keyflow-gallery",
@@ -1258,6 +1258,54 @@
    "license": "MIT",
    "created": "2017-11-22T17:47:13Z",
    "pushed": "2016-09-06T04:01:29Z"
+  },
+  {
+   "name": "homebrew-dikecdpi",
+   "description": "Homebrew tap for Dikec DPI · brew tap dikeckaan/dikecdpi",
+   "url": "https://github.com/dikeckaan/homebrew-dikecdpi",
+   "homepage": "",
+   "language": "Ruby",
+   "stars": 0,
+   "forks": 0,
+   "issues": 0,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "",
+   "created": "2026-11-19T23:22:17Z",
+   "pushed": "2026-11-20T00:34:38Z"
+  },
+  {
+   "name": "DikecDPI",
+   "description": "DPI engellerini aşan, ağınızı tarayıp en iyi ayarı seçen proxy · menü çubuğu uygulaması + CLI (SpoofDPI tabanlı)",
+   "url": "https://github.com/dikeckaan/DikecDPI",
+   "homepage": "",
+   "language": "Go",
+   "stars": 0,
+   "forks": 0,
+   "issues": 0,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "Apache-2.0",
+   "created": "2026-11-19T23:18:03Z",
+   "pushed": "2026-11-20T00:33:02Z"
+  },
+  {
+   "name": "AwakeMAC",
+   "description": "macOS menü çubuğu uygulaması: MacBook'u kapak kapalıyken bile uyanık tut (pmset disablesleep, pil eşiği, süreli mod, girişte başlat)",
+   "url": "https://github.com/dikeckaan/AwakeMAC",
+   "homepage": "",
+   "language": "Python",
+   "stars": 0,
+   "forks": 0,
+   "issues": 1,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "MIT",
+   "created": "2026-11-19T23:22:21Z",
+   "pushed": "2026-11-19T23:45:17Z"
   },
   {
    "name": "swagger-dark-ui",
