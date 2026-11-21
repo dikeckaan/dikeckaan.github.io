@@ -1,13 +1,13 @@
 {
- "generated": "2026-11-20T11:39:29.307Z",
+ "generated": "2026-11-21T11:00:33.767Z",
  "user": {
   "login": "dikeckaan",
   "name": "KAAN DIKEC",
   "bio": "Computer Engineer, linux lover. Developer",
   "avatar": "https://avatars.githubusercontent.com/u/21171681?v=4",
   "location": "Turkey/Istanbul",
-  "followers": 95,
-  "public_repos": 173
+  "followers": 96,
+  "public_repos": 174
  },
  "repos": [
   {
@@ -16,9 +16,9 @@
    "url": "https://github.com/dikeckaan/mu300-linux",
    "homepage": "https://kaandikec.com/mu300-linux/",
    "language": "C",
-   "stars": 906,
-   "forks": 147,
-   "issues": 36,
+   "stars": 913,
+   "forks": 148,
+   "issues": 37,
    "fork": false,
    "archived": false,
    "topics": [
@@ -33,7 +33,7 @@
    ],
    "license": "",
    "created": "2026-09-16T18:51:14Z",
-   "pushed": "2026-11-15T12:53:41Z"
+   "pushed": "2026-11-20T13:53:22Z"
   },
   {
    "name": "zte-f50-toolkit",
@@ -113,7 +113,7 @@
    "topics": [],
    "license": "",
    "created": "2026-09-16T06:34:56Z",
-   "pushed": "2026-11-20T07:25:34Z"
+   "pushed": "2026-11-21T07:19:45Z"
   },
   {
    "name": "f50-magisk-modules",
@@ -654,7 +654,7 @@
    "topics": [],
    "license": "",
    "created": "2020-10-24T21:55:41Z",
-   "pushed": "2026-11-19T13:23:52Z"
+   "pushed": "2026-11-20T13:04:04Z"
   },
   {
    "name": "dikeckaan.github.io",
@@ -670,7 +670,7 @@
    "topics": [],
    "license": "",
    "created": "2019-06-23T07:23:06Z",
-   "pushed": "2026-11-19T11:39:33Z"
+   "pushed": "2026-11-20T11:39:30Z"
   },
   {
    "name": "keyflow-gallery",
@@ -1273,7 +1273,7 @@
    "topics": [],
    "license": "",
    "created": "2026-11-19T23:22:17Z",
-   "pushed": "2026-11-20T00:34:38Z"
+   "pushed": "2026-11-20T14:07:39Z"
   },
   {
    "name": "DikecDPI",
@@ -1289,7 +1289,7 @@
    "topics": [],
    "license": "Apache-2.0",
    "created": "2026-11-19T23:18:03Z",
-   "pushed": "2026-11-20T00:33:02Z"
+   "pushed": "2026-11-20T14:05:54Z"
   },
   {
    "name": "AwakeMAC",
@@ -1305,7 +1305,23 @@
    "topics": [],
    "license": "MIT",
    "created": "2026-11-19T23:22:21Z",
-   "pushed": "2026-11-19T23:45:17Z"
+   "pushed": "2026-11-20T13:27:28Z"
+  },
+  {
+   "name": "homebrew-tap",
+   "description": "Homebrew tap for Awake Mac",
+   "url": "https://github.com/dikeckaan/homebrew-tap",
+   "homepage": "",
+   "language": "Ruby",
+   "stars": 0,
+   "forks": 0,
+   "issues": 0,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "",
+   "created": "2026-11-20T13:22:15Z",
+   "pushed": "2026-11-20T13:27:25Z"
   },
   {
    "name": "swagger-dark-ui",
