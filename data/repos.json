@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T12:39:44.844Z",
+ "generated": "2026-11-24T13:43:02.541Z",
  "user": {
   "login": "dikeckaan",
   "name": "KAAN DIKEC",
@@ -16,9 +16,9 @@
    "url": "https://github.com/dikeckaan/mu300-linux",
    "homepage": "https://kaandikec.com/mu300-linux/",
    "language": "C",
-   "stars": 922,
-   "forks": 152,
-   "issues": 38,
+   "stars": 932,
+   "forks": 153,
+   "issues": 39,
    "fork": false,
    "archived": false,
    "topics": [
@@ -33,7 +33,7 @@
    ],
    "license": "",
    "created": "2026-09-16T18:51:14Z",
-   "pushed": "2026-11-20T13:53:22Z"
+   "pushed": "2026-11-24T08:46:46Z"
   },
   {
    "name": "zte-f50-toolkit",
@@ -41,7 +41,7 @@
    "url": "https://github.com/dikeckaan/zte-f50-toolkit",
    "homepage": "",
    "language": "C",
-   "stars": 52,
+   "stars": 53,
    "forks": 11,
    "issues": 1,
    "fork": false,
@@ -57,7 +57,7 @@
    "url": "https://github.com/dikeckaan/mu300-linux-vpn",
    "homepage": "",
    "language": "Python",
-   "stars": 19,
+   "stars": 20,
    "forks": 2,
    "issues": 3,
    "fork": false,
@@ -113,7 +113,7 @@
    "topics": [],
    "license": "",
    "created": "2026-09-16T06:34:56Z",
-   "pushed": "2026-11-23T07:49:16Z"
+   "pushed": "2026-11-24T10:01:23Z"
   },
   {
    "name": "f50-magisk-modules",
@@ -654,7 +654,7 @@
    "topics": [],
    "license": "",
    "created": "2020-10-24T21:55:41Z",
-   "pushed": "2026-11-22T12:41:00Z"
+   "pushed": "2026-11-23T14:49:50Z"
   },
   {
    "name": "dikeckaan.github.io",
@@ -670,7 +670,7 @@
    "topics": [],
    "license": "",
    "created": "2019-06-23T07:23:06Z",
-   "pushed": "2026-11-22T11:24:55Z"
+   "pushed": "2026-11-23T12:39:46Z"
   },
   {
    "name": "keyflow-gallery",
