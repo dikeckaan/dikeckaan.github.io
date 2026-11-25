@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-24T13:43:02.541Z",
+ "generated": "2026-11-25T12:55:07.240Z",
  "user": {
   "login": "dikeckaan",
   "name": "KAAN DIKEC",
   "bio": "Computer Engineer, linux lover. Developer",
   "avatar": "https://avatars.githubusercontent.com/u/21171681?v=4",
   "location": "Turkey/Istanbul",
-  "followers": 95,
+  "followers": 94,
   "public_repos": 174
  },
  "repos": [
@@ -16,9 +16,9 @@
    "url": "https://github.com/dikeckaan/mu300-linux",
    "homepage": "https://kaandikec.com/mu300-linux/",
    "language": "C",
-   "stars": 932,
+   "stars": 938,
    "forks": 153,
-   "issues": 39,
+   "issues": 41,
    "fork": false,
    "archived": false,
    "topics": [
@@ -74,7 +74,7 @@
    "homepage": "",
    "language": "Shell",
    "stars": 16,
-   "forks": 193,
+   "forks": 192,
    "issues": 0,
    "fork": false,
    "archived": false,
@@ -113,7 +113,7 @@
    "topics": [],
    "license": "",
    "created": "2026-09-16T06:34:56Z",
-   "pushed": "2026-11-24T10:01:23Z"
+   "pushed": "2026-11-25T08:45:21Z"
   },
   {
    "name": "f50-magisk-modules",
@@ -654,7 +654,7 @@
    "topics": [],
    "license": "",
    "created": "2020-10-24T21:55:41Z",
-   "pushed": "2026-11-23T14:49:50Z"
+   "pushed": "2026-11-24T14:57:40Z"
   },
   {
    "name": "dikeckaan.github.io",
@@ -670,7 +670,7 @@
    "topics": [],
    "license": "",
    "created": "2019-06-23T07:23:06Z",
-   "pushed": "2026-11-23T12:39:46Z"
+   "pushed": "2026-11-24T13:43:03Z"
   },
   {
    "name": "keyflow-gallery",
@@ -1260,22 +1260,6 @@
    "pushed": "2016-09-06T04:01:29Z"
   },
   {
-   "name": "homebrew-dikecdpi",
-   "description": "Homebrew tap for Dikec DPI · brew tap dikeckaan/dikecdpi",
-   "url": "https://github.com/dikeckaan/homebrew-dikecdpi",
-   "homepage": "",
-   "language": "Ruby",
-   "stars": 0,
-   "forks": 0,
-   "issues": 0,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "",
-   "created": "2026-11-19T23:22:17Z",
-   "pushed": "2026-11-20T14:07:39Z"
-  },
-  {
    "name": "DikecDPI",
    "description": "DPI engellerini aşan, ağınızı tarayıp en iyi ayarı seçen proxy · menü çubuğu uygulaması + CLI (SpoofDPI tabanlı)",
    "url": "https://github.com/dikeckaan/DikecDPI",
@@ -1289,7 +1273,23 @@
    "topics": [],
    "license": "Apache-2.0",
    "created": "2026-11-19T23:18:03Z",
-   "pushed": "2026-11-20T14:05:54Z"
+   "pushed": "2026-11-24T19:02:37Z"
+  },
+  {
+   "name": "homebrew-dikecdpi",
+   "description": "Homebrew tap for Dikec DPI · brew tap dikeckaan/dikecdpi",
+   "url": "https://github.com/dikeckaan/homebrew-dikecdpi",
+   "homepage": "",
+   "language": "Ruby",
+   "stars": 0,
+   "forks": 0,
+   "issues": 0,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "",
+   "created": "2026-11-19T23:22:17Z",
+   "pushed": "2026-11-24T18:28:51Z"
   },
   {
    "name": "AwakeMAC",
