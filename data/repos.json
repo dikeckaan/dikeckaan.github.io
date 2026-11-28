@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-27T12:18:56.746Z",
+ "generated": "2026-11-28T11:44:36.555Z",
  "user": {
   "login": "dikeckaan",
   "name": "KAAN DIKEC",
@@ -16,9 +16,9 @@
    "url": "https://github.com/dikeckaan/mu300-linux",
    "homepage": "https://kaandikec.com/mu300-linux/",
    "language": "C",
-   "stars": 946,
-   "forks": 154,
-   "issues": 41,
+   "stars": 955,
+   "forks": 157,
+   "issues": 42,
    "fork": false,
    "archived": false,
    "topics": [
@@ -42,7 +42,7 @@
    "homepage": "",
    "language": "C",
    "stars": 53,
-   "forks": 11,
+   "forks": 12,
    "issues": 1,
    "fork": false,
    "archived": false,
@@ -113,7 +113,7 @@
    "topics": [],
    "license": "",
    "created": "2026-09-16T06:34:56Z",
-   "pushed": "2026-11-27T08:44:24Z"
+   "pushed": "2026-11-28T07:57:57Z"
   },
   {
    "name": "f50-magisk-modules",
@@ -228,6 +228,22 @@
    "pushed": "2024-11-23T08:55:57Z"
   },
   {
+   "name": "mu300-linux-mirror",
+   "description": "Release files of dikeckaan/mu300-linux in parts, for the web installer (written by its release workflow; nothing to see here: use the main repository)",
+   "url": "https://github.com/dikeckaan/mu300-linux-mirror",
+   "homepage": "",
+   "language": "",
+   "stars": 4,
+   "forks": 2,
+   "issues": 0,
+   "fork": false,
+   "archived": false,
+   "topics": [],
+   "license": "",
+   "created": "2026-10-13T10:50:43Z",
+   "pushed": "2026-11-01T17:38:01Z"
+  },
+  {
    "name": "u30prov2ray",
    "description": "v2ray client for a 240x240 round-screen Android watch (MU5358). Patched Xray-core keeps allowInsecure working. GPL-3.0, derived from v2rayNG.",
    "url": "https://github.com/dikeckaan/u30prov2ray",
@@ -314,22 +330,6 @@
    "license": "",
    "created": "2022-04-23T03:48:50Z",
    "pushed": "2022-07-03T21:03:52Z"
-  },
-  {
-   "name": "mu300-linux-mirror",
-   "description": "Release files of dikeckaan/mu300-linux in parts, for the web installer (written by its release workflow; nothing to see here: use the main repository)",
-   "url": "https://github.com/dikeckaan/mu300-linux-mirror",
-   "homepage": "",
-   "language": "",
-   "stars": 3,
-   "forks": 2,
-   "issues": 0,
-   "fork": false,
-   "archived": false,
-   "topics": [],
-   "license": "",
-   "created": "2026-10-13T10:50:43Z",
-   "pushed": "2026-11-01T17:38:01Z"
   },
   {
    "name": "zte-u30-pro-launcher",
@@ -654,7 +654,7 @@
    "topics": [],
    "license": "",
    "created": "2020-10-24T21:55:41Z",
-   "pushed": "2026-11-26T13:59:33Z"
+   "pushed": "2026-11-27T13:57:55Z"
   },
   {
    "name": "dikeckaan.github.io",
@@ -670,7 +670,7 @@
    "topics": [],
    "license": "",
    "created": "2019-06-23T07:23:06Z",
-   "pushed": "2026-11-26T12:33:20Z"
+   "pushed": "2026-11-27T12:18:57Z"
   },
   {
    "name": "keyflow-gallery",

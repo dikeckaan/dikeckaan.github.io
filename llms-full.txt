@@ -2,11 +2,11 @@
 
 > Abdurrahman Kaan Dikeç (also written Kaan Dikeç or Kaan Dikec; GitHub: dikeckaan) is a computer engineer, developer and musician from Istanbul, Türkiye. Most of his work is close to the hardware: he created mu300-linux, which runs a full Ubuntu or OpenWrt next to Android on the ZTE F50, MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620), together with a flashing toolkit, a VPN module and a family of Magisk modules for those devices. He also builds native macOS apps (easy-vphone), Hackintosh EFIs, a Forza Horizon telemetry dashboard and networking / VPN tools. Almost all of it is open source on GitHub.
 
-Numbers as of 2026-11-27: 107 original public repositories (174 including forks), 1,183 stars and 440 forks on his own repositories, 94 GitHub followers.
+Numbers as of 2026-11-28: 107 original public repositories (174 including forks), 1,193 stars and 444 forks on his own repositories, 94 GitHub followers.
 
 ## Most-starred projects
 
-- [mu300-linux](https://github.com/dikeckaan/mu300-linux): Linux (Ubuntu 24.04/26.04 or OpenWrt) next to Android on the ZTE F50 / MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620): installer, vendor 5.4 and mainline 6.18 / 7.2 kernels, 5G modem, Wi-Fi, battery, LEDs, NFC, findings (website: https://kaandikec.com/mu300-linux/) (946 stars)
+- [mu300-linux](https://github.com/dikeckaan/mu300-linux): Linux (Ubuntu 24.04/26.04 or OpenWrt) next to Android on the ZTE F50 / MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620): installer, vendor 5.4 and mainline 6.18 / 7.2 kernels, 5G modem, Wi-Fi, battery, LEDs, NFC, findings (website: https://kaandikec.com/mu300-linux/) (955 stars)
 - [zte-f50-toolkit](https://github.com/dikeckaan/zte-f50-toolkit): ZTE F50 (5G MiFi) flashing toolkit — B09 downgrade, root, BL unlock, IMEI patch. Built on a custom spd_dump fork. (53 stars)
 - [mu300-linux-vpn](https://github.com/dikeckaan/mu300-linux-vpn): VPN toolkit for MU300 Linux (ZTE F50 / U30 Air): one command for Xray, sing-box, mihomo, WireGuard and OpenVPN profiles, as a module for Ubuntu and OpenWrt (20 stars)
 - [MacOS-Workflow-VNC](https://github.com/dikeckaan/MacOS-Workflow-VNC): A free macOS desktop over VNC in about five minutes, running on GitHub Actions runners with an ngrok tunnel. (16 stars)
@@ -46,14 +46,14 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - URL: https://github.com/dikeckaan/mu300-linux
 - Website: https://kaandikec.com/mu300-linux/
 - Description: Linux (Ubuntu 24.04/26.04 or OpenWrt) next to Android on the ZTE F50 / MU300 and U30 Air 5G hotspots (Unisoc T760 / UMS9620): installer, vendor 5.4 and mainline 6.18 / 7.2 kernels, 5G modem, Wi-Fi, battery, LEDs, NFC, findings
-- Language: C · Stars: 946 · Forks: 154
+- Language: C · Stars: 955 · Forks: 157
 - Topics: 5g, embedded-linux, linux, linux-kernel, openwrt, ubuntu, unisoc, zte
 - Created: 2026-09-16 · Last push: 2026-11-26
 
 #### zte-f50-toolkit
 - URL: https://github.com/dikeckaan/zte-f50-toolkit
 - Description: ZTE F50 (5G MiFi) flashing toolkit — B09 downgrade, root, BL unlock, IMEI patch. Built on a custom spd_dump fork.
-- Language: C · Stars: 53 · Forks: 11
+- Language: C · Stars: 53 · Forks: 12
 - Topics: none
 - Created: 2026-05-21 · Last push: 2026-09-12
 
@@ -100,6 +100,13 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Topics: none
 - Created: 2025-01-19 · Last push: 2025-01-19
 
+#### mu300-linux-mirror
+- URL: https://github.com/dikeckaan/mu300-linux-mirror
+- Description: Release files of dikeckaan/mu300-linux in parts, for the web installer (written by its release workflow; nothing to see here: use the main repository)
+- Language: n/a · Stars: 4 · Forks: 2
+- Topics: none
+- Created: 2026-10-13 · Last push: 2026-11-01
+
 #### magisk-zte-f50-ims-voice-fix
 - URL: https://github.com/dikeckaan/magisk-zte-f50-ims-voice-fix
 - Description: Magisk overlay for ZTE F50 IMS apk — patches the PhoneStateMonitor SCREEN_OFF handler to stop call drops on screen lock. UNDER DEVELOPMENT: root cause not yet confirmed.
@@ -127,13 +134,6 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Language: Shell · Stars: 4 · Forks: 0 · License: GPL-3.0
 - Topics: none
 - Created: 2026-06-12 · Last push: 2026-06-12
-
-#### mu300-linux-mirror
-- URL: https://github.com/dikeckaan/mu300-linux-mirror
-- Description: Release files of dikeckaan/mu300-linux in parts, for the web installer (written by its release workflow; nothing to see here: use the main repository)
-- Language: n/a · Stars: 3 · Forks: 2
-- Topics: none
-- Created: 2026-10-13 · Last push: 2026-11-01
 
 #### zte-ums9620-kernel-5.4.254
 - URL: https://github.com/dikeckaan/zte-ums9620-kernel-5.4.254
@@ -332,7 +332,7 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Description: Native macOS GUI for vphone-cli with VM management and an integrated IPA library
 - Language: Swift · Stars: 13 · Forks: 2
 - Topics: none
-- Created: 2026-09-16 · Last push: 2026-11-27
+- Created: 2026-09-16 · Last push: 2026-11-28
 
 #### internetmerge
 - URL: https://github.com/dikeckaan/internetmerge
@@ -500,14 +500,14 @@ The best way to reach him is the contact form at https://kaandikec.com/#contact 
 - Description: (none)
 - Language: JavaScript · Stars: 1 · Forks: 0
 - Topics: none
-- Created: 2020-10-24 · Last push: 2026-11-26
+- Created: 2020-10-24 · Last push: 2026-11-27
 
 #### dikeckaan.github.io
 - URL: https://github.com/dikeckaan/dikeckaan.github.io
 - Description: my web site
 - Language: HTML · Stars: 1 · Forks: 0
 - Topics: none
-- Created: 2019-06-23 · Last push: 2026-11-26
+- Created: 2019-06-23 · Last push: 2026-11-27
 
 #### claude-qwen
 - URL: https://github.com/dikeckaan/claude-qwen
